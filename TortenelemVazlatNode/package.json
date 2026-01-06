@@ -1,0 +1,21 @@
+{
+  "name": "tortenelemvazlatvizsga",
+  "version": "1.0.0",
+  "description": "Történelem Vázlat vizsgaremek 2025 - 2026",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szabomate0124/TortenelemVazlatVizsga.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/szabomate0124/TortenelemVazlatVizsga/issues"
+  },
+  "homepage": "https://github.com/szabomate0124/TortenelemVazlatVizsga#readme"
+}
