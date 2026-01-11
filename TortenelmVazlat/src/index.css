@@ -1,24 +1,87 @@
-.navbar-background {
-  background-color: #2f3c4f;
+
+:root {
+  --primary-dark: #2f3c4f;
+  --primary-gold: #c6a173;
 }
+
+
+.navbar-background {
+  background-color: var(--primary-dark);
+}
+
+.navbar-brand-custom {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-gold) !important;
+}
+
+.navbar-links .nav-link {
+  color: #eaeaea !important;
+  margin: 0 0.4rem;
+  font-weight: 500;
+}
+
+.navbar-links .nav-link:hover {
+  color: var(--primary-gold) !important;
+}
+
+
+.btn-filled-custom {
+  background-color: var(--primary-gold);
+  border: none;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.btn-filled-custom:hover {
+  background-color: #b49363;
+  color: #fff;
+}
+
+.btn-outline-custom {
+  background: transparent;
+  border: 2px solid var(--primary-gold);
+  color: var(--primary-gold);
+  font-weight: 600;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--primary-gold);
+  color: var(--primary-dark);
+}
+
 
 .slogen-box {
   background-image: url("./assets/ladiesinblue.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  min-height: 280px;
-  padding: 2rem 1rem;
+  background-size: contain;
 
+  min-height: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
+
+
+.slogen-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
+
+  background: rgba(47, 60, 79, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
 
 .slogentext {
   max-width: 700px;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
+
 
 .search-box {
   display: flex;
@@ -32,6 +95,10 @@
 }
 
 @media (max-width: 576px) {
+  .slogen-box {
+    min-height: 260px;
+  }
+
   .search-box {
     flex-direction: column;
   }
@@ -40,6 +107,7 @@
     width: 100%;
   }
 }
+
 
 .content-card {
   border: none;
