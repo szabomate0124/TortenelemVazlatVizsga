@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import { useNavigate } from "react-router-dom";
 
 import card1 from "./assets/card1.jpg";
 import card2 from "./assets/card2.jpg";
@@ -15,107 +16,87 @@ import card5 from "./assets/card5.jpg";
 import card6 from "./assets/card6.jpg";
 
 function Fooldal() {
+  const navigate = useNavigate();
+
   const cards = [
-    {
-      title: "Egyetemes történelem",
-      image: card1,
-    },
-    {
-      title: "Magyar történelem vázlatok",
-      image: card2,
-    },
-    {
-      title: "Érettségi felkészülés",
-      image: card3,
-    },
-    {
-      title: "Segédanyagok tanuláshoz",
-      image: card4,
-    },
-    {
-      title: "Történelmi források",
-      image: card5,
-    },
-    {
-      title: "Folyóiratok, érdekességek",
-      image: card6,
-    },
+    { title: "Egyetemes történelem", image: card1 },
+    { title: "Magyar történelem", image: card2 },
+    { title: "Érettségi felkészülés", image: card3 },
+    { title: "Segédanyagok", image: card4 },
+    { title: "Források", image: card5 },
+    { title: "Érdekességek", image: card6 },
   ];
 
   return (
     <>
       <Navbar expand="lg" className="navbar-background py-3" variant="dark">
-        <Container>
-          <Navbar.Brand href="#" className="navbar-brand-custom">
-            Törivázlat
-          </Navbar.Brand>
+  <Container>
+    <Navbar.Brand href="/" className="navbar-brand-custom">
+      Törivázlat
+    </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="mx-auto navbar-links" navbarScroll>
-              <Nav.Link href="#">Kezdőlap</Nav.Link>
-              <Nav.Link href="#">Tartalom</Nav.Link>
-              <Nav.Link href="#">Egyetemes történelem</Nav.Link>
-              <Nav.Link href="#">Magyar történelem</Nav.Link>
-              <Nav.Link href="#">Segédanyagok</Nav.Link>
-              <Nav.Link href="#">Érettségi</Nav.Link>
-            </Nav>
+    <Navbar.Toggle aria-controls="main-navbar" />
+    <Navbar.Collapse id="main-navbar">
+      <Nav className="mx-auto navbar-links">
+        <Nav.Link href="/">Kezdőlap</Nav.Link>
+        <Nav.Link href="#">Tartalom</Nav.Link>
+        <Nav.Link href="#">Egyetemes történelem</Nav.Link>
+        <Nav.Link href="#">Magyar történelem</Nav.Link>
+        <Nav.Link href="#">Segédanyagok</Nav.Link>
+        <Nav.Link href="#">Érettségi</Nav.Link>
+      </Nav>
 
-            <Form className="d-flex gap-2">
-              <Button className="btn-outline-custom">Regisztráció</Button>
-              <Button className="btn-filled-custom">Bejelentkezés</Button>
+      <div className="d-flex gap-2">
+        <Button
+          className="btn-outline-custom"
+          onClick={() => navigate("/register")}
+        >
+          Regisztráció
+        </Button>
+
+        <Button
+          className="btn-filled-custom"
+          onClick={() => navigate("/login")}
+        >
+          Bejelentkezés
+        </Button>
+      </div>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+
+      <div className="slogen-box">
+        <div className="slogen-overlay text-center">
+          <div>
+            <h2>Történelem vázlatok</h2>
+            <p className="slogentext">
+              Tanuláshoz – felkészüléshez – források – filmajánlók
+            </p>
+            <Form className="search-box">
+              <Form.Control placeholder="Keresés..." />
+              <Button className="btn-filled-custom">Keresés</Button>
             </Form>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
-      <Container fluid className="slogen-box">
-        <div className="slogen-overlay">
-          <Row className="w-100">
-            <Col className="text-center d-flex flex-column align-items-center">
-              <h2 className="fw-bold mb-3">Történelem vázlatok</h2>
-
-              <p className="slogentext mb-4">
-                Tanuláshoz – felkészüléshez – források – érdekességek –
-                filmajánlók
-              </p>
-
-              <Form className="search-box">
-                <Form.Control
-                  type="search"
-                  placeholder="Keress történelmi témákra..."
-                />
-                <Button className="btn-filled-custom">Keresés</Button>
-              </Form>
-            </Col>
-          </Row>
+          </div>
         </div>
-      </Container>
+      </div>
 
       <Container className="my-5">
         <Row className="g-4">
-          {cards.map((card, index) => (
-            <Col md={4} key={index}>
-              <Card className="content-card h-100">
-                <Card.Img variant="top" src={card.image} alt={card.title} />
+          {cards.map((c, i) => (
+            <Col md={4} key={i}>
+              <Card className="content-card">
+                <Card.Img src={c.image} />
                 <Card.Body>
-                  <Card.Title>{card.title}</Card.Title>
+                  <Card.Title>{c.title}</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
           ))}
         </Row>
       </Container>
+
       <footer className="site-footer">
-        <Container>
-          <Row className="align-items-center">
-            <Col className="text-center">
-              <p className="footer-text mb-0">
-                © {new Date().getFullYear()} Törivázlat: Holczman József, Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
-              </p>
-            </Col>
-          </Row>
-        </Container>
+        © {new Date().getFullYear()} Törivázlat: Holczman József, Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
       </footer>
     </>
   );
