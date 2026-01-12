@@ -7,6 +7,26 @@
   background-color: var(--primary-dark);
 }
 
+.navbar-links .nav-link {
+  position: relative;
+}
+
+.navbar-links .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-gold);
+  transition: width 0.25s ease;
+}
+
+.navbar-links .nav-link:hover::after {
+  width: 100%;
+}
+
+
 .navbar-brand-custom {
   font-size: 1.4rem;
   font-weight: 700;
@@ -16,11 +36,6 @@
 .navbar-links .nav-link {
   color: #eaeaea !important;
   margin: 0 0.4rem;
-  font-weight: 500;
-}
-
-.navbar-links .nav-link:hover {
-  color: var(--primary-gold) !important;
 }
 
 .btn-filled-custom {
@@ -30,85 +45,48 @@
   font-weight: 600;
 }
 
-.btn-filled-custom:hover {
-  background-color: #b49363;
-  color: #fff;
-}
-
 .btn-outline-custom {
-  background: transparent;
   border: 2px solid var(--primary-gold);
+  background: transparent;
   color: var(--primary-gold);
-  font-weight: 600;
 }
-
-.btn-outline-custom:hover {
-  background-color: var(--primary-gold);
-  color: var(--primary-dark);
-}
-
 
 .slogen-box {
   position: relative;
-  width: 100%;
-
-  background-image: url("./assets/ladiesinblue.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+  background: url("./assets/ladiesinblue.jpg") center/cover no-repeat;
   min-height: 360px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 
 .slogen-overlay {
   position: absolute;
   inset: 0;
-
   background: rgba(47, 60, 79, 0.65);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  padding: 3rem 1rem;
-  color: #fff;
+  color: white;
 }
 
 .slogentext {
   max-width: 720px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  text-align: center;
 }
 
 .search-box {
   display: flex;
   gap: 0.5rem;
-  width: 100%;
   max-width: 500px;
-  margin: 1.5rem auto 0;
-}
-
-.search-box input {
-  flex: 1;
+  margin: auto;
 }
 
 
 .content-card {
   border: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
 
 .content-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-6px);
 }
 
 .content-card img {
@@ -120,40 +98,6 @@
   background-color: var(--primary-dark);
   padding: 1.5rem 0;
   margin-top: 4rem;
-}
-
-.footer-text {
-  color: #d6d6d6;
-  font-size: 0.9rem;
-  letter-spacing: 0.4px;
-}
-
-.footer-text span {
-  color: var(--primary-gold);
-  font-weight: 600;
-}
-
-
-@media (max-width: 768px) {
-  .slogen-box {
-    min-height: 300px;
-  }
-
-  .slogentext {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .slogen-box {
-    min-height: 260px;
-  }
-
-  .search-box {
-    flex-direction: column;
-  }
-
-  .search-box button {
-    width: 100%;
-  }
+  color: #ccc;
+  text-align: center;
 }

@@ -1,0 +1,32 @@
+.auth-page {
+  min-height: 100vh;
+  background-color: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background-color: var(--primary-gold);
+  padding: 2.5rem;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 460px;
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.auth-btn {
+  background-color: var(--primary-dark);
+  border: none;
+  font-weight: 600;
+}
+
+.auth-footer {
+  margin-top: 1rem;
+  text-align: center;
+}
