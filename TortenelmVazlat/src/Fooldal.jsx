@@ -106,6 +106,17 @@ function Fooldal() {
           ))}
         </Row>
       </Container>
+      <footer className="site-footer">
+        <Container>
+          <Row className="align-items-center">
+            <Col className="text-center">
+              <p className="footer-text mb-0">
+                © {new Date().getFullYear()} Törivázlat: Holczman József, Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
     </>
   );
 }
