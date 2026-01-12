@@ -1,9 +1,7 @@
-
 :root {
   --primary-dark: #2f3c4f;
   --primary-gold: #c6a173;
 }
-
 
 .navbar-background {
   background-color: var(--primary-dark);
@@ -24,7 +22,6 @@
 .navbar-links .nav-link:hover {
   color: var(--primary-gold) !important;
 }
-
 
 .btn-filled-custom {
   background-color: var(--primary-gold);
@@ -52,12 +49,16 @@
 
 
 .slogen-box {
+  position: relative;
+  width: 100%;
+
   background-image: url("./assets/ladiesinblue.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
-  min-height: 320px;
+  min-height: 360px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,47 +66,36 @@
 
 
 .slogen-overlay {
-  width: 100%;
-  height: 100%;
-  padding: 3rem 1rem;
+  position: absolute;
+  inset: 0;
 
   background: rgba(47, 60, 79, 0.65);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 3rem 1rem;
   color: #fff;
 }
 
-
 .slogentext {
-  max-width: 700px;
+  max-width: 720px;
   font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
 }
-
 
 .search-box {
   display: flex;
   gap: 0.5rem;
   width: 100%;
   max-width: 500px;
+  margin: 1.5rem auto 0;
 }
 
 .search-box input {
   flex: 1;
-}
-
-@media (max-width: 576px) {
-  .slogen-box {
-    min-height: 260px;
-  }
-
-  .search-box {
-    flex-direction: column;
-  }
-
-  .search-box button {
-    width: 100%;
-  }
 }
 
 
@@ -124,4 +114,46 @@
 .content-card img {
   height: 200px;
   object-fit: cover;
+}
+
+.site-footer {
+  background-color: var(--primary-dark);
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+}
+
+.footer-text {
+  color: #d6d6d6;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+}
+
+.footer-text span {
+  color: var(--primary-gold);
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  .slogen-box {
+    min-height: 300px;
+  }
+
+  .slogentext {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slogen-box {
+    min-height: 260px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
 }
