@@ -21,10 +21,7 @@ function Register() {
     setConfirmPassword(e.target.value);
   }
 
-  function handleSubmit(e) {
-    
-  }
-
+  function handleSubmit(e) {}
 
   return (
     <div className="auth-page">
