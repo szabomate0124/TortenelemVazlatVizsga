@@ -22,6 +22,7 @@ function Register() {
   }
 
   function handleSubmit(e) {}
+  
 
   return (
     <div className="auth-page">
