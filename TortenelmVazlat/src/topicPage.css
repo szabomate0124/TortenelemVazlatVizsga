@@ -1,0 +1,55 @@
+
+.topic-header {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.topic-header h1 {
+  color: var(--primary-gold);
+  font-weight: 700;
+}
+
+.topic-header p {
+  max-width: 720px;
+  margin: 1rem auto 0;
+  color: #ddd;
+}
+
+.topic-card {
+  border: none;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.topic-card:hover {
+  transform: translateY(-6px);
+}
+
+.topic-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.topic-card .card-title {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.topic-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.back-button {
+  color: var(--primary-gold);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
