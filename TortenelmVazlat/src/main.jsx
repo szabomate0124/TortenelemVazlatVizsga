@@ -8,6 +8,7 @@ import './index.css'
 import Fooldal from './Fooldal'
 import Login from './Login'
 import Register from './Register'
+import TopicPage from './TopicPage'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Fooldal />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/tema/:slug" element={<TopicPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
