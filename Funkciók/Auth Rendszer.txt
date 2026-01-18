@@ -1,0 +1,35 @@
+AUTH RENDSZER
+
+
+backend:
+
+Users tábla (már van)
+authority (már van)
+
+frontend:
+
+login / register (már van)
+
+
+Hiányzik még:
+
+- backend /register
+- backend /login
+- frontend tudja: ki van belépve
+
+
+Belépés:
+
+Kell egy dolog, amit hívunk:
+
+session
+vagy token (JWT)
+vagy ideiglenesen localStorage
+
+JWT + localStorage (tanulási standard)
+
+Ez teszi lehetővé:
+
+navbarban ember ikon
+oldalfrissítés után is belépve maradjon
+

@@ -1,0 +1,32 @@
+authority
+
+Ez lehet:
+
+user
+admin
+
+Frontend:
+
+admin → „témák feltöltése”
+
+user → csak olvasás
+
+
+TÖRTÉNELEM TÉMÁK:
+
+Backend:
+
+category
+topics
+updates
+
+API:
+
+/topics
+/topics/:id
+/categories
+
+Frontend:
+
+főoldalon listázás
+kattintás → részletes oldal

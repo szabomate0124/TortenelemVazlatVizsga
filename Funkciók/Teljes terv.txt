@@ -1,0 +1,30 @@
+Regisztráció:
+
+- username
+- név
+- email
+- jelszó
+	→ adatbázisba mentve
+
+
+Bejelentkezés:
+
+- ellenőrzés DB-ből
+- siker esetén „bejelentkezett állapot”
+
+
+Főoldalon:
+
+- ember ikon
+- lenyitva:
+	- név
+	- email
+	- szerepkör (felhasználó / admin)
+
+
+
+Történelem témák:
+
+- adatbázisban tárolva
+- Reactből lekérdezve
+- kártyák / oldalak ezekből
