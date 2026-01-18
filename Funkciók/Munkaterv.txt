@@ -1,0 +1,26 @@
+Első mérföldkő
+
+regisztráció DB-be
+login DB-ből
+belépés után navbar változik
+
+
+Második mérföldkő
+
+felhasználói adatok megjelenítése
+role megjelenítése
+logout
+
+
+Harmadik mérföldkő
+
+témák lekérése DB-ből
+kártyák Reactben
+részletes oldal
+
+
+Negyedik mérföldkő
+
+végleges dokumentáció
+tesztelések
+végleges design megvalósítása 
