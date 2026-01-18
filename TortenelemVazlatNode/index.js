@@ -36,7 +36,7 @@ function createTables() {
         )`,
     (err) => {
       if (err) throw new Error(err);
-    }
+    },
   );
 
   connection.query(
@@ -47,7 +47,7 @@ function createTables() {
         )`,
     (err) => {
       if (err) throw new Error(err);
-    }
+    },
   );
 
   connection.query(
@@ -61,7 +61,7 @@ function createTables() {
         )`,
     (err) => {
       if (err) throw new Error(err);
-    }
+    },
   );
 
   connection.query(
@@ -75,7 +75,7 @@ function createTables() {
     )`,
     (err) => {
       if (err) throw new Error(err);
-    }
+    },
   );
 
   connection.query(
@@ -85,7 +85,7 @@ function createTables() {
     )`,
     (err) => {
       if (err) throw new Error(err);
-    }
+    },
   );
 
   connection.query(
@@ -100,7 +100,7 @@ function createTables() {
     )`,
     (err) => {
       if (err) throw new Error(err);
-    }
+    },
   );
 
   connection.query(
@@ -117,6 +117,6 @@ function createTables() {
     )`,
     (err) => {
       if (err) throw new Error(err);
-    }
+    },
   );
 }
