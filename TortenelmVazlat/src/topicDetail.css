@@ -1,0 +1,52 @@
+.topic-detail-header {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.topic-detail-header h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.topic-detail-header p {
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+.topic-detail-content {
+  max-width: 900px;
+  margin: 4rem auto;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+}
+
+.content-section h3 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content-section p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.image-section {
+  text-align: center;
+}
+
+.image-section img {
+  max-height: 420px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.image-section small {
+  display: block;
+  color: #666;
+}

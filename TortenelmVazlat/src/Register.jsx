@@ -5,34 +5,38 @@ import { useState } from "react";
 import "./auth.css";
 
 function Register() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  function handleEmailChange(e) {
-    setEmail(e.target.value);
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!email || !password || !confirmPassword) {
+      alert("Kérlek töltsd ki az összes mezőt!");
+      return;
+    }
+    if (password !== confirmPassword) {
+      alert("A jelszavak nem egyeznek!");
+      return;
+    }
+    // Itt lehet backend regisztráció logika
+    alert("Sikeres regisztráció!");
+    navigate("/login");
   }
-
-  function handlePasswordChange(e) {
-    setPassword(e.target.value);
-  }
-
-  function handleConfirmPasswordChange(e) {
-    setConfirmPassword(e.target.value);
-  }
-
-  function handleSubmit(e) {}
-  
 
   return (
     <div className="auth-page">
       <div className="auth-card">
         <h2 className="auth-title">Regisztráció</h2>
-
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label>Email</Form.Label>
-            <Form.Control value={email} onChange={handleEmailChange} />
+            <Form.Control
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3">
@@ -40,7 +44,7 @@ function Register() {
             <Form.Control
               type="password"
               value={password}
-              onChange={handlePasswordChange}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
 
@@ -49,11 +53,11 @@ function Register() {
             <Form.Control
               type="password"
               value={confirmPassword}
-              onChange={handleConfirmPasswordChange}
+              onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </Form.Group>
 
-          <Button className="auth-btn w-100" onClick={handleSubmit}>
+          <Button type="submit" className="auth-btn w-100">
             Fiók létrehozása
           </Button>
         </Form>

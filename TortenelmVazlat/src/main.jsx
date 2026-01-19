@@ -9,6 +9,7 @@ import Fooldal from './Fooldal'
 import Login from './Login'
 import Register from './Register'
 import TopicPage from './TopicPage'
+import TopicDetailPage from "./TopicDetailPage"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/tema/:slug" element={<TopicPage />} />
+        <Route path="/topic-detail/:id" element={<TopicDetailPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
