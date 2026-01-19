@@ -2,9 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
-import "./topicDetail.css"; // győződj meg róla, hogy a fájl pontosan így van elnevezve
+import "./topicDetail.css"; 
 
-// Topics adatok, képek a public/assets mappából
 const topics = {
   oskor: {
     title: "Az őskor",
