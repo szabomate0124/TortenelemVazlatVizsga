@@ -15,11 +15,10 @@ const connection = mysql.createConnection({
 
 //Adatbázis létrehozása
 connection.connect((err) => {
-  if (err) throw  Error(err);
   connection.query("CREATE DATABASE IF NOT EXISTS ToriTartalom", (err) => {
-    if (err) throw  Error(err);
+    if (err) console.error(err);
     connection.changeUser({ database: "ToriTartalom" }, (err) => {
-      if (err) throw Error(err);
+      if (err) console.error(err);
       createTables();
       insertIntoTables()
     });
@@ -141,15 +140,6 @@ function insertIntoTables(){
     `, err => { 
       if (err) throw err; 
 });
-
-
-//4. topics
-//  connection.query(`    
-//    INSERT IGNORE INTO topics (title, category_id, content, img) VALUES
-//    `, (err) => {
-//      if (err) throw err;
-//});
-
 
     // 5. update
   connection.query(`
