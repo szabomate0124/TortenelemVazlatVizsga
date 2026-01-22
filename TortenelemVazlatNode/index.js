@@ -1,6 +1,12 @@
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
+const topics = require("./topics.data");
+const fs = require("fs");
+const path = require("path");
+
+let pending = topics.length;
+
 
 const app = express();
 const PORT = 3000;
@@ -9,10 +15,13 @@ app.use(cors());
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "root",
-  database: "ToriTartalom",
-  port: 3307
+  password: "",
+  //database: "ToriTartalom",
+  //port: 3307
 });
+
+
+
 
 
 //Adatbázis létrehozása
@@ -122,7 +131,7 @@ function insertIntoTables(){
     // 2. Users – javított auth_id-k
   connection.query(`
     INSERT IGNORE INTO Users (username, email, password, auth_id) VALUES
-      ('admin_József',    'admin@tori.hu',          'admin123',           1),
+      ('admin_József',    'admin@tori.hu',          'admin12',           1),
       ('kukac42',         'kukac42@gmail.com',      'kukac1234',          2),
       ('tortenetfan',     'tortenetfan99@gmail.hu', 'tortenelemfan',      2),
       ('ujtag_2003',      'ujtag2025@gmail.me',     'titkos2025',         2)
@@ -142,6 +151,8 @@ function insertIntoTables(){
     `, err => { 
       if (err) throw err; 
 });
+    //4. topics
+    
 
     // 5. update
   connection.query(`
