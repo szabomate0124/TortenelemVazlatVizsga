@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,41 +7,27 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./topicPage.css";
 
-import card1 from "./assets/card1.jpg";
-import card2 from "./assets/card2.jpg";
-import card4 from "./assets/card4.jpg";
-
-const topicData = {
-  egyetemes: {
-    title: "Egyetemes történelem",
-    description: "Az ókortól a modern korig: fontos események, korszakok és összefüggések érthetően.",
-    items: [
-      { id: "oskor", title: "Az őskor", text: "Ősember, civilizációk, kultúrák kialakulása.", image: card1 },
-      { id: "okoriKelet", title: "Az ókori Kelet", text: "Mezopotámia, Egyiptom, India és Kína.", image: card2 },
-    ],
-  },
-  magyar: {
-    title: "Magyar történelem",
-    description: "A honfoglalástól napjainkig – a magyar történelem fő korszakai.",
-    items: [
-      { id: "honfoglalas", title: "A magyar honfoglalás", text: "A magyar törzsek letelepedése.", image: card4 },
-    ],
-  },
-};
-
 function TopicPage() {
-  const { slug } = useParams();
+  const { categoryId } = useParams(); 
   const navigate = useNavigate();
+  const [topics, setTopics] = useState([]);
+  const [error, setError] = useState(false);
 
-  const topic = topicData[slug];
+  useEffect(() => {
+    fetch(`http://localhost:3000/api/topics/category/${categoryId}`)
+      .then(res => {
+        if (!res.ok) throw new Error("Hiba");
+        return res.json();
+      })
+      .then(data => setTopics(data))
+      .catch(() => setError(true));
+  }, [categoryId]);
 
-  if (!topic) {
+  if (error) {
     return (
       <Container className="my-5 text-center">
-        <h2>Ez a téma nem található</h2>
-        <Button className="btn-filled-custom mt-3" onClick={() => navigate("/")}>
-          Vissza a főoldalra
-        </Button>
+        <h2>Hiba történt az adatok betöltésekor</h2>
+        <Button onClick={() => navigate("/")}>Vissza</Button>
       </Container>
     );
   }
@@ -49,24 +36,30 @@ function TopicPage() {
     <>
       <div className="topic-header text-center">
         <Container>
-          <h1>{topic.title}</h1>
-          <p>{topic.description}</p>
+          <h1>Témák</h1>
+          <p>Válassz egy tananyagot</p>
         </Container>
       </div>
 
       <Container className="my-5">
         <Row className="g-4">
-          {topic.items.map((item) => (
-            <Col md={4} key={item.id}>
+          {topics.map(topic => (
+            <Col md={4} key={topic.id}>
               <Card className="topic-card h-100">
-                <Card.Img variant="top" src={item.image} alt={item.title} />
+                {topic.img && (
+                  <Card.Img
+                    variant="top"
+                    src={topic.img}
+                    alt={topic.title}
+                  />
+                )}
+
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title>{item.title}</Card.Title>
-                  <Card.Text>{item.text}</Card.Text>
+                  <Card.Title>{topic.title}</Card.Title>
 
                   <Button
-                    className="btn-outline-custom mt-auto"
-                    onClick={() => navigate(`/topic-detail/${item.id}`)}
+                    className="mt-auto"
+                    onClick={() => navigate(`/topic-detail/${topic.id}`)}
                   >
                     Megnyitás
                   </Button>
@@ -78,7 +71,7 @@ function TopicPage() {
 
         <div className="text-center mt-5">
           <span className="back-button" onClick={() => navigate("/")}>
-            ← Vissza a főoldalra
+            ← Vissza
           </span>
         </div>
       </Container>
