@@ -1,3 +1,4 @@
+require('dotenv').config(); 
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
@@ -17,8 +18,10 @@ const connection = mysql.createConnection({
   user: "root",
   password: "",
   //database: "ToriTartalom",
-  //port: 3307
+  port: process.env.DB_PORT
 });
+
+
 
 
 
