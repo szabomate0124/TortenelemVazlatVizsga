@@ -190,13 +190,46 @@
 
 .site-footer {
   background-color: var(--primary-dark);
-  padding: 1.5rem 0;
-  margin-top: 4rem;
   color: #ccc;
-  text-align: center;
   font-size: 0.9rem;
   letter-spacing: 0.3px;
 }
+
+.site-footer h5 {
+  color: var(--primary-gold);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #eaeaea;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary-gold);
+}
+
+.footer-icon {
+  color: #eaeaea;
+  font-size: 1.4rem;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  color: var(--primary-gold);
+}
+
+.text-light-50 {
+  color: #ccc !important;
+}
+
+hr.border-secondary {
+  border-color: rgba(198, 161, 115, 0.3);
+}
+
 
 @keyframes fadeUp {
   from {
