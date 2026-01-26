@@ -186,3 +186,16 @@ function insertIntoTables(){
 app.listen(PORT, () => {
   console.log(`Szerver fut a http://localhost:${PORT} címen`)
 })
+
+
+/* 
+1. get /api/topics/:id a végpontok ilyen formátuban legyenek
+   Az adott id témakörnek a részeltei pl cím tartalom kiírja
+
+2. get /api/category/:id
+  Az adott id kategória részeit írja ki pl a honfoglalás
+  
+  
+
+
+*/
