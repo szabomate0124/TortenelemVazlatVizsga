@@ -4,29 +4,117 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
 }
 
+
 .auth-card {
+  position: relative;
   background-color: var(--primary-gold);
-  padding: 2.5rem;
-  border-radius: 14px;
+  padding: 2.8rem 2.5rem 2.6rem;
+  border-radius: 16px;
   width: 100%;
   max-width: 460px;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+  animation: authFadeUp 0.8s ease both;
+}
+
+.auth-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18),
+    transparent 45%
+  );
+  pointer-events: none;
 }
 
 .auth-title {
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--primary-dark);
+}
+
+
+.auth-card .form-control {
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+  border: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.auth-card .form-control:focus {
+  box-shadow:
+    inset 0 0 0 1px var(--primary-dark),
+    0 0 0 3px rgba(47, 60, 79, 0.25);
+  transform: scale(1.01);
 }
 
 .auth-btn {
+  width: 100%;
+  margin-top: 0.5rem;
   background-color: var(--primary-dark);
   border: none;
   font-weight: 600;
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+
 .auth-footer {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   text-align: center;
+  font-size: 0.9rem;
+  color: var(--primary-dark);
+}
+
+.auth-footer a {
+  color: var(--primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.auth-footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-dark);
+  transition: width 0.25s ease;
+}
+
+.auth-footer a:hover::after {
+  width: 100%;
+}
+
+@keyframes authFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 2.2rem 1.8rem;
+  }
 }

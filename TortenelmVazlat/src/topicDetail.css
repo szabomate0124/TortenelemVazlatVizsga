@@ -1,52 +1,131 @@
 .topic-detail-header {
+  position: relative;
   background-color: var(--primary-dark);
   color: white;
-  padding: 4rem 1rem;
+  padding: 5rem 1rem 4.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.topic-detail-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    transparent 60%
+  );
+  pointer-events: none;
 }
 
 .topic-detail-header h1 {
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+  animation: fadeDown 0.8s ease both;
 }
 
 .topic-detail-header p {
   max-width: 700px;
   margin: auto;
   opacity: 0.9;
+  line-height: 1.6;
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.15s;
 }
 
 .topic-detail-content {
   max-width: 900px;
-  margin: 4rem auto;
+  margin: 4.5rem auto;
+  padding-inline: 1rem;
 }
 
 .content-section {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
+  animation: fadeUp 0.8s ease both;
 }
 
 .content-section h3 {
   color: var(--primary-dark);
   margin-bottom: 1rem;
   font-weight: 600;
+  position: relative;
+  padding-left: 0.75rem;
+}
+
+.content-section h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  width: 4px;
+  height: 1.2em;
+  background-color: var(--primary-gold);
+  border-radius: 2px;
 }
 
 .content-section p {
-  line-height: 1.7;
+  line-height: 1.75;
   font-size: 1.05rem;
   color: #333;
 }
 
+
 .image-section {
   text-align: center;
+  margin: 3rem 0;
 }
 
 .image-section img {
   max-height: 420px;
+  width: 100%;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  border-radius: 14px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.35);
 }
 
 .image-section small {
   display: block;
   color: #666;
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .topic-detail-header {
+    padding: 4rem 1rem 3.5rem;
+  }
+
+  .topic-detail-content {
+    margin: 3.5rem auto;
+  }
 }
