@@ -7,6 +7,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 import card1 from "./assets/card1.jpg";
 import card2 from "./assets/card2.jpg";
@@ -135,10 +137,60 @@ function Fooldal() {
         </Row>
       </Container>
 
-      <footer className="site-footer">
-        © {new Date().getFullYear()} Törivázlat – Holczman József, Zsupos Dominik,
-        Szabó Máté – Minden jog fenntartva.
-      </footer>
+       <footer className="site-footer pt-5">
+      <Container>
+        <Row className="mb-4">
+          <Col md={4} className="mb-3">
+            <h5>Rólunk</h5>
+            <p className="text-light-50">
+              Törivázlat – tanuláshoz, felkészüléshez és érdekességekhez. 
+              Professzionális tartalom diákoknak és történelemrajongóknak.
+            </p>
+          </Col>
+ 
+          <Col md={4} className="mb-3">
+            <h5>Gyors linkek</h5>
+            <ul className="list-unstyled">
+              <li>
+                <i className="bi bi-book me-2"></i>
+                <a href="/tema/egyetemes" className="footer-link">Egyetemes történelem</a>
+              </li>
+              <li>
+                <i className="bi bi-book-half me-2"></i>
+                <a href="/tema/magyar" className="footer-link">Magyar történelem</a>
+              </li>
+              <li>
+                <i className="bi bi-pencil-square me-2"></i>
+                <a href="/tema/segedanyagok" className="footer-link">Segédanyagok</a>
+              </li>
+              <li>
+                <i className="bi bi-journal-check me-2"></i>
+                <a href="/tema/erettsegi" className="footer-link">Érettségi</a>
+              </li>
+            </ul>
+          </Col>
+
+          <Col md={4} className="mb-3">
+            <h5>Kövess minket</h5>
+            <div className="d-flex gap-3 mt-2">
+              <a href="#" className="footer-icon"><i className="bi bi-facebook"></i></a>
+              <a href="#" className="footer-icon"><i className="bi bi-instagram"></i></a>
+            </div>
+          </Col>
+        </Row>
+
+        <hr className="border-secondary" />
+
+        <Row>
+          <Col className="text-center">
+            <small className="text-light-50">
+              © {new Date().getFullYear()} Törivázlat – Holczman József, Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
+            </small>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+
     </>
   );
 }
