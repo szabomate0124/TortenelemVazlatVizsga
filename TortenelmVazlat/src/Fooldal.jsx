@@ -9,7 +9,6 @@ import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-
 import card1 from "./assets/card1.jpg";
 import card2 from "./assets/card2.jpg";
 import card3 from "./assets/card3.jpg";
@@ -19,6 +18,15 @@ import card6 from "./assets/card6.jpg";
 
 function Fooldal() {
   const navigate = useNavigate();
+
+  const categoryMap = {
+    egyetemes: 1,
+    magyar: 2,
+    erettsegi: 3,
+    segedanyagok: 4,
+    forrasok: 5,
+    erdekessegek: 6,
+  };
 
   const cards = [
     {
@@ -69,16 +77,16 @@ function Fooldal() {
           <Navbar.Collapse id="main-navbar">
             <Nav className="mx-auto navbar-links">
               <Nav.Link onClick={() => navigate("/")}>Kezdőlap</Nav.Link>
-              <Nav.Link onClick={() => navigate("/tema/egyetemes")}>
+              <Nav.Link onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}>
                 Egyetemes történelem
               </Nav.Link>
-              <Nav.Link onClick={() => navigate("/tema/magyar")}>
+              <Nav.Link onClick={() => navigate(`/tema/${categoryMap.magyar}`)}>
                 Magyar történelem
               </Nav.Link>
-              <Nav.Link onClick={() => navigate("/tema/segedanyagok")}>
+              <Nav.Link onClick={() => navigate(`/tema/${categoryMap.segedanyagok}`)}>
                 Segédanyagok
               </Nav.Link>
-              <Nav.Link onClick={() => navigate("/tema/erettsegi")}>
+              <Nav.Link onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}>
                 Érettségi
               </Nav.Link>
             </Nav>
@@ -124,7 +132,7 @@ function Fooldal() {
             <Col md={4} key={i}>
               <Card
                 className="content-card"
-                onClick={() => navigate(`/tema/${c.slug}`)}
+                onClick={() => navigate(`/tema/${categoryMap[c.slug]}`)}
                 style={{ cursor: "pointer" }}
               >
                 <Card.Img src={c.image} />
@@ -137,60 +145,83 @@ function Fooldal() {
         </Row>
       </Container>
 
-       <footer className="site-footer pt-5">
-      <Container>
-        <Row className="mb-4">
-          <Col md={4} className="mb-3">
-            <h5>Rólunk</h5>
-            <p className="text-light-50">
-              Törivázlat – tanuláshoz, felkészüléshez és érdekességekhez. 
-              Professzionális tartalom diákoknak és történelemrajongóknak.
-            </p>
-          </Col>
- 
-          <Col md={4} className="mb-3">
-            <h5>Gyors linkek</h5>
-            <ul className="list-unstyled">
-              <li>
-                <i className="bi bi-book me-2"></i>
-                <a href="/tema/egyetemes" className="footer-link">Egyetemes történelem</a>
-              </li>
-              <li>
-                <i className="bi bi-book-half me-2"></i>
-                <a href="/tema/magyar" className="footer-link">Magyar történelem</a>
-              </li>
-              <li>
-                <i className="bi bi-pencil-square me-2"></i>
-                <a href="/tema/segedanyagok" className="footer-link">Segédanyagok</a>
-              </li>
-              <li>
-                <i className="bi bi-journal-check me-2"></i>
-                <a href="/tema/erettsegi" className="footer-link">Érettségi</a>
-              </li>
-            </ul>
-          </Col>
+      <footer className="site-footer pt-5">
+        <Container>
+          <Row className="mb-4">
+            <Col md={4} className="mb-3">
+              <h5>Rólunk</h5>
+              <p className="text-light-50">
+                Törivázlat – tanuláshoz, felkészüléshez és érdekességekhez. 
+                Professzionális tartalom diákoknak és történelemrajongóknak.
+              </p>
+            </Col>
 
-          <Col md={4} className="mb-3">
-            <h5>Kövess minket</h5>
-            <div className="d-flex gap-3 mt-2">
-              <a href="#" className="footer-icon"><i className="bi bi-facebook"></i></a>
-              <a href="#" className="footer-icon"><i className="bi bi-instagram"></i></a>
-            </div>
-          </Col>
-        </Row>
+            <Col md={4} className="mb-3">
+              <h5>Gyors linkek</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <i className="bi bi-book me-2"></i>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}
+                  >
+                    Egyetemes történelem
+                  </span>
+                </li>
+                <li>
+                  <i className="bi bi-book-half me-2"></i>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate(`/tema/${categoryMap.magyar}`)}
+                  >
+                    Magyar történelem
+                  </span>
+                </li>
+                <li>
+                  <i className="bi bi-pencil-square me-2"></i>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate(`/tema/${categoryMap.segedanyagok}`)}
+                  >
+                    Segédanyagok
+                  </span>
+                </li>
+                <li>
+                  <i className="bi bi-journal-check me-2"></i>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}
+                  >
+                    Érettségi
+                  </span>
+                </li>
+              </ul>
+            </Col>
 
-        <hr className="border-secondary" />
+            <Col md={4} className="mb-3">
+              <h5>Kövess minket</h5>
+              <div className="d-flex gap-3 mt-2">
+                <a href="#" className="footer-icon"><i className="bi bi-facebook"></i></a>
+                <a href="#" className="footer-icon"><i className="bi bi-instagram"></i></a>
+              </div>
+            </Col>
+          </Row>
 
-        <Row>
-          <Col className="text-center">
-            <small className="text-light-50">
-              © {new Date().getFullYear()} Törivázlat – Holczman József, Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
-            </small>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+          <hr className="border-secondary" />
 
+          <Row>
+            <Col className="text-center">
+              <small className="text-light-50">
+                © {new Date().getFullYear()} Törivázlat – Holczman József, Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
+              </small>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
     </>
   );
 }

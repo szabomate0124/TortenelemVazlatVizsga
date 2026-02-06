@@ -8,25 +8,31 @@ import Button from "react-bootstrap/Button";
 import "./topicPage.css";
 
 function TopicPage() {
-  const { categoryId } = useParams(); 
+  const { categoryId } = useParams();
   const navigate = useNavigate();
+
   const [topics, setTopics] = useState([]);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/topics/category/${categoryId}`)
+    fetch(`http://localhost:3000/api/topicsByCategory/${categoryId}`)
       .then(res => {
         if (!res.ok) throw new Error("Hiba");
         return res.json();
       })
-      .then(data => setTopics(data))
-      .catch(() => setError(true));
+      .then(data => {
+        setTopics(data);
+      })
+      .catch(err => {
+        console.error(err);
+        setError(true);
+      });
   }, [categoryId]);
 
   if (error) {
     return (
       <Container className="my-5 text-center">
-        <h2>Hiba történt az adatok betöltésekor</h2>
+        <h2>Nem sikerült betölteni a témákat</h2>
         <Button onClick={() => navigate("/")}>Vissza</Button>
       </Container>
     );
@@ -43,15 +49,11 @@ function TopicPage() {
 
       <Container className="my-5">
         <Row className="g-4">
-          {topics.map(topic => (
+          {topics.map((topic) => (
             <Col md={4} key={topic.id}>
               <Card className="topic-card h-100">
                 {topic.img && (
-                  <Card.Img
-                    variant="top"
-                    src={topic.img}
-                    alt={topic.title}
-                  />
+                  <Card.Img variant="top" src={topic.img} alt={topic.title} />
                 )}
 
                 <Card.Body className="d-flex flex-column">
