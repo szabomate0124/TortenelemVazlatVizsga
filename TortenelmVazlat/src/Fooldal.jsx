@@ -29,36 +29,12 @@ function Fooldal() {
   };
 
   const cards = [
-    {
-      title: "Egyetemes történelem",
-      image: card1,
-      slug: "egyetemes",
-    },
-    {
-      title: "Magyar történelem",
-      image: card2,
-      slug: "magyar",
-    },
-    {
-      title: "Érettségi felkészülés",
-      image: card3,
-      slug: "erettsegi",
-    },
-    {
-      title: "Segédanyagok",
-      image: card4,
-      slug: "segedanyagok",
-    },
-    {
-      title: "Források",
-      image: card5,
-      slug: "forrasok",
-    },
-    {
-      title: "Érdekességek",
-      image: card6,
-      slug: "erdekessegek",
-    },
+    { title: "Egyetemes történelem", image: card1, slug: "egyetemes" },
+    { title: "Magyar történelem", image: card2, slug: "magyar" },
+    { title: "Érettségi felkészülés", image: card3, slug: "erettsegi" },
+    { title: "Segédanyagok", image: card4, slug: "segedanyagok" },
+    { title: "Források", image: card5, slug: "forrasok" },
+    { title: "Érdekességek", image: card6, slug: "erdekessegek" },
   ];
 
   return (
@@ -92,17 +68,10 @@ function Fooldal() {
             </Nav>
 
             <div className="d-flex gap-2">
-              <Button
-                className="btn-outline-custom"
-                onClick={() => navigate("/register")}
-              >
+              <Button className="btn-outline-custom" onClick={() => navigate("/register")}>
                 Regisztráció
               </Button>
-
-              <Button
-                className="btn-filled-custom"
-                onClick={() => navigate("/login")}
-              >
+              <Button className="btn-filled-custom" onClick={() => navigate("/login")}>
                 Bejelentkezés
               </Button>
             </div>
@@ -151,8 +120,7 @@ function Fooldal() {
             <Col md={4} className="mb-3">
               <h5>Rólunk</h5>
               <p className="text-light-50">
-                Törivázlat – tanuláshoz, felkészüléshez és érdekességekhez. 
-                Professzionális tartalom diákoknak és történelemrajongóknak.
+                Törivázlat – tanuláshoz, felkészüléshez és érdekességekhez.
               </p>
             </Col>
 
@@ -161,41 +129,25 @@ function Fooldal() {
               <ul className="list-unstyled">
                 <li>
                   <i className="bi bi-book me-2"></i>
-                  <span
-                    className="footer-link"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}
-                  >
+                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}>
                     Egyetemes történelem
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-book-half me-2"></i>
-                  <span
-                    className="footer-link"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => navigate(`/tema/${categoryMap.magyar}`)}
-                  >
+                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.magyar}`)}>
                     Magyar történelem
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-pencil-square me-2"></i>
-                  <span
-                    className="footer-link"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => navigate(`/tema/${categoryMap.segedanyagok}`)}
-                  >
+                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.segedanyagok}`)}>
                     Segédanyagok
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-journal-check me-2"></i>
-                  <span
-                    className="footer-link"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}
-                  >
+                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}>
                     Érettségi
                   </span>
                 </li>
