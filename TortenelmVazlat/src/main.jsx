@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Fooldal />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/tema/:slug" element={<TopicPage />} />
+        <Route path="/tema/:categoryId" element={<TopicPage />} />
         <Route path="/topic-detail/:id" element={<TopicDetailPage />} />
       </Routes>
     </BrowserRouter>
