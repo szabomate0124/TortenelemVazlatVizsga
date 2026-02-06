@@ -1,10 +1,9 @@
 const express = require("express");
 const mysql = require("mysql2");
-const cors = require("cors");
 
 const app = express();
 const PORT = 3000;
-app.use(cors());
+
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -108,7 +107,7 @@ function createTables() {
       change_time DATETIME DEFAULT CURRENT_TIMESTAMP,
       topics_id INT NOT NULL,
       users_id INT NOT NULL,
-      FOREIGN KEY (update_id) REFERENCES topics(id)
+      FOREIGN KEY (topics_id) REFERENCES topics(id)
         ON UPDATE CASCADE,
       FOREIGN KEY (users_id) REFERENCES Users(id)
         ON UPDATE CASCADE
