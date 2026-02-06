@@ -80,6 +80,7 @@ function createTables() {
       title VARCHAR(255) NOT NULL,
       category_id INT NOT NULL,
       content TEXT NOT NULL,
+      img VARCHAR(255) NULL, 
       FOREIGN KEY (category_id) REFERENCES category(id)
         ON UPDATE CASCADE
     )
@@ -88,7 +89,7 @@ function createTables() {
   });
 
   connection.query(`
-    CREATE TABLE topic_images (
+    CREATE TABLE IF NOT EXISTS topic_images (
     id INT AUTO_INCREMENT PRIMARY KEY,
     topic_id INT NOT NULL,
     image_path VARCHAR(255) NOT NULL,
@@ -97,7 +98,7 @@ function createTables() {
         REFERENCES topics(id)
     )`
   , (err) => {
-    if (err) throw  err;
+    if (err) throw  console.log(err);
   });
 
   connection.query(`
@@ -123,7 +124,4 @@ function createTables() {
 
 
 
-app.listen(PORT, () => {
-  console.log(`Szerver fut a http://localhost:${PORT} címen`)
-})
 
