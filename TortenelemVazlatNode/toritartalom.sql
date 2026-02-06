@@ -6,6 +6,13 @@
 -- Létrehozás ideje: 2026. Feb 06. 01:44
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.0.30
+CREATE DATABASE IF NOT EXISTS toritartalom
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_general_ci;
+
+USE toritartalom;
+
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -205,7 +212,7 @@ ALTER TABLE `topic_images`
 --
 ALTER TABLE `update`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `update_id` (`topics_id`),
+  ADD KEY `topics_id` (`topics_id`),
   ADD KEY `users_id` (`users_id`);
 
 --
