@@ -1,6 +1,9 @@
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+
 
 const app = express();
 const PORT = 3000;
@@ -36,20 +39,19 @@ app.get('/api/topicsByCategory/:id', (req, res)=>{
 });
 
 
-app.get('/api/content/:id', (req, res)=>{
-    const id = req.params.id;
-    const sql = `SELECT  topics.title, topics.content FROM topics WHERE topics.id = ${id}`;
-    connection.query(sql, (error, results) =>{
+app.get('/api/content/:catId/:tpcId', (req, res)=>{
+    const {tpcId, catId} = req.params;
+    const sql = `SELECT  topics.title, topics.content FROM topics WHERE topics.category_id = ${catId} AND topics.id = ${tpcId}`;
+    connection.query(sql, [tpcId, catId], (error, results) =>{
         if (error){
             console.error('hiba a lekérdezés során:', error);
             return res.status(500).json({ error: 'Adatbázis hiba'});
-
         }
         if(results.length === 0){
             return res.status(404).json({ message: 'Nem található ez a category'})
         }
 
-        res.json(results);
+        res.json(results[0]);
     });
 });
 
