@@ -5,6 +5,7 @@ const cors = require("cors");
 const app = express();
 const PORT = 3000;
 app.use(cors());
+app.use(express.json());
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -37,7 +38,7 @@ app.get('/api/topicsByCategory/:id', (req, res)=>{
 
 app.get('/api/content/:id', (req, res)=>{
     const id = req.params.id;
-    const sql = `SELECT topics.content FROM topics WHERE topics.id = ${id}`;
+    const sql = `SELECT  topics.title, topics.content FROM topics WHERE topics.id = ${id}`;
     connection.query(sql, (error, results) =>{
         if (error){
             console.error('hiba a lekérdezés során:', error);
