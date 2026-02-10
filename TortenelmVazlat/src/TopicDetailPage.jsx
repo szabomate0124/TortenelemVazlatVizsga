@@ -6,44 +6,34 @@ import Button from "react-bootstrap/Button";
 import "./topicDetail.css";
 
 function TopicDetailPage() {
-  const { id } = useParams();
+  const { catId, tpcId } = useParams();
   const navigate = useNavigate();
 
   const [topic, setTopic] = useState(null);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    if (!id || id === "undefined" || id === "0") {
-      setError(true);
-      return;
-    }
+  if (!catId || !tpcId) {
+    setError(true);
+    return;
+  }
 
-    fetch(`http://localhost:3000/api/content/${id}`)
-      .then(res => {
-        if (!res.ok) throw new Error("Nem található");
-        return res.json();
-      })
-      .then(data => {
-        const item = data[0];
-
-        if (!item) {
-          setError(true);
-          return;
-        }
-
-        // Ez a backended szerinti struktúra
-        setTopic({
-          title: item.title || "Téma",
-          description: item.description || "Tananyag részletek",
-          content: item.content || "",
-          img: item.img || null
-        });
-      })
-      .catch(err => {
-        console.error(err);
-        setError(true);
+  fetch(`http://localhost:3000/api/content/${catId}/${tpcId}`)
+    .then(res => {
+      if (!res.ok) throw new Error("Nem található");
+      return res.json();
+    })
+    .then(data => {
+      setTopic({
+        title: data.title,
+        content: data.content,
       });
-  }, [id]);
+    })
+    .catch(err => {
+      console.error(err);
+      setError(true);
+    });
+}, [catId, tpcId]);
 
   if (error) {
     return (
