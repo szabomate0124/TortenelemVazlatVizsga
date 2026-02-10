@@ -65,7 +65,7 @@ function TopicPage() {
 
                     <Button
                       className="mt-auto"
-                      onClick={() => navigate(`/topic-detail/${topicId}`)}
+                      onClick={() => navigate(`/topic/${categoryId}/${topicId}`)}
                     >
                       Megnyitás
                     </Button>
