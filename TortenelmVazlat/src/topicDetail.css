@@ -46,31 +46,67 @@
   animation: fadeUp 0.8s ease both;
 }
 
-.content-section h3 {
-  color: var(--primary-dark);
-  margin-bottom: 1rem;
-  font-weight: 600;
-  position: relative;
-  padding-left: 0.75rem;
+.topic-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-main);
 }
 
-.content-section h3::before {
+.topic-content p {
+  margin-bottom: 1.4rem;
+}
+
+.topic-content h1,
+.topic-content h2,
+.topic-content h3,
+.topic-content h4 {
+  margin: 2.8rem 0 1rem;
+  padding-left: 0.75rem;
+  position: relative;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.topic-content h1 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.topic-content h2 {
+  font-size: 1.6rem;
+  margin-top: 1.4rem;
+}
+
+.topic-content h3 {
+  font-size: 1.35rem;
+  margin-top: 1.2rem;
+}
+
+.topic-content h2::before,
+.topic-content h3::before,
+.topic-content h4::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.2rem;
+  top: 0.25rem;
   width: 4px;
   height: 1.2em;
   background-color: var(--primary-gold);
   border-radius: 2px;
 }
 
-.content-section p {
-  line-height: 1.75;
-  font-size: 1.05rem;
-  color: #333;
+.topic-content ul,
+.topic-content ol {
+  margin: 1.5rem 0 1.5rem 1.2rem;
 }
 
+.topic-content li {
+  margin-bottom: 0.6rem;
+}
+
+.topic-content strong {
+  color: var(--primary-dark);
+}
 
 .image-section {
   text-align: center;
@@ -96,6 +132,17 @@
   color: #666;
   margin-top: 0.6rem;
   font-style: italic;
+}
+
+.topic-footer {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.topic-footer button {
+  background-color: var(--primary-dark);
+  border: none;
+  color: var(--primary-gold);
 }
 
 @keyframes fadeUp {
