@@ -13,33 +13,38 @@ function TopicDetailPage() {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-  if (!catId || !tpcId) {
-    setError(true);
-    return;
-  }
-
-  fetch(`http://localhost:3000/api/content/${catId}/${tpcId}`)
-    .then(res => {
-      if (!res.ok) throw new Error("Nem található");
-      return res.json();
-    })
-    .then(data => {
-      setTopic({
-        title: data.title,
-        content: data.content,
-      });
-    })
-    .catch(err => {
-      console.error(err);
+    if (!catId || !tpcId) {
       setError(true);
-    });
-}, [catId, tpcId]);
+      return;
+    }
+
+    fetch(`http://localhost:3000/api/content/${catId}/${tpcId}`)
+      .then(res => {
+        if (!res.ok) throw new Error("Nem található");
+        return res.json();
+      })
+      .then(data => {
+        setTopic({
+          title: data.title,
+          content: data.content,
+        });
+      })
+      .catch(err => {
+        console.error(err);
+        setError(true);
+      });
+  }, [catId, tpcId]);
 
   if (error) {
     return (
       <Container className="my-5 text-center">
         <h2>Ez a tananyag nem található</h2>
-        <Button onClick={() => navigate(-1)}>Vissza</Button>
+        <Button
+          className="btn-outline-custom mt-3"
+          onClick={() => navigate(-1)}
+        >
+          ← Vissza
+        </Button>
       </Container>
     );
   }
@@ -53,30 +58,27 @@ function TopicDetailPage() {
   }
 
   return (
-    <>
-      <div className="topic-detail-header">
-        <h1>{topic.title}</h1>
-        <p>{topic.description}</p>
-      </div>
+    <Container className="my-5">
+      
+      <div className="history-content">
 
-      <div className="topic-detail-content">
-        {topic.img && (
-          <div className="image-section">
-            <img src={topic.img} alt={topic.title} />
-            <small>Forrás: {topic.title}</small>
-          </div>
-        )}
+        <h1>{topic.title}</h1>
 
         <div
-          className="content-section"
           dangerouslySetInnerHTML={{ __html: topic.content }}
         />
-      </div>
 
-      <div className="topic-detail-content topic-footer">
-        <Button onClick={() => navigate(-1)}>← Vissza</Button>
+        <div style={{ marginTop: "40px", textAlign: "center" }}>
+          <Button
+            className="btn-filled-custom"
+            onClick={() => navigate(-1)}
+          >
+            ← Vissza a témákhoz
+          </Button>
+        </div>
+
       </div>
-    </>
+    </Container>
   );
 }
 
