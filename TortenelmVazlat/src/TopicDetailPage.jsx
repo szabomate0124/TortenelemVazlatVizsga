@@ -54,13 +54,11 @@ function TopicDetailPage() {
 
   return (
     <>
-      {/* HEADER */}
       <div className="topic-detail-header">
         <h1>{topic.title}</h1>
         <p>{topic.description}</p>
       </div>
 
-      {/* CONTENT */}
       <div className="topic-detail-content">
         {topic.img && (
           <div className="image-section">

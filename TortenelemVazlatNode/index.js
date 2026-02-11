@@ -24,7 +24,7 @@ const connection = mysql.createConnection({
 
 app.get('/api/topicsByCategory/:id', (req, res)=>{
     const id = req.params.id;
-    const sql = `SELECT DISTINCT topics.title, topics.img from topics WHERE topics.category_id = ${id}`;
+    const sql = `SELECT DISTINCT topics.id, topics.title, topics.img from topics WHERE topics.category_id = ${id}`;
     connection.query(sql, (error, results) =>{
         if (error){
             console.error('hiba a lekérdezés során:', error);
