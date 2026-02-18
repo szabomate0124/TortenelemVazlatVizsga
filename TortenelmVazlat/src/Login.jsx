@@ -18,12 +18,34 @@ function Login() {
     setPassword(e.target.value);
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
-   
-    if (email && password) {
-      navigate("/");
+    try {
+      const loginData = {
+        email: email,
+        password: password,
+      };
+
+      const response = await fetch("http://localhost:3000/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(loginData),
+      });
+
+      const data = await response.json();
+
+      if (data.error) {
+        alert(`Hiba: ${data.error}`);
+      } else {
+        alert("Sikeres bejelentkezés!");
+        navigate("/");
+      }
+    } catch (error) {
+      console.error("Hiba történt:", error);
+      alert("Szerverhiba történt!");
     }
   }
 
@@ -36,8 +58,10 @@ function Login() {
           <Form.Group className="mb-3">
             <Form.Label>Email</Form.Label>
             <Form.Control
+              type="email"
               value={email}
               onChange={handleEmailChange}
+              required
             />
           </Form.Group>
 
@@ -47,6 +71,7 @@ function Login() {
               type="password"
               value={password}
               onChange={handlePasswordChange}
+              required
             />
           </Form.Group>
 
