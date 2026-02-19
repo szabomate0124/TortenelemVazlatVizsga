@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import "./Layout.css"; 
 
 function Layout() {
   const navigate = useNavigate();
@@ -22,8 +23,7 @@ function Layout() {
       <Navbar expand="lg" className="navbar-background py-3" variant="dark">
         <Container>
           <Navbar.Brand
-            className="navbar-brand-custom"
-            style={{ cursor: "pointer" }}
+            className="navbar-brand-custom clickable"
             onClick={() => navigate("/")}
           >
             Törivázlat
@@ -48,17 +48,20 @@ function Layout() {
             </Nav>
 
             <div className="d-flex gap-2 align-items-center">
-
               {user ? (
                 <>
-                  <span style={{ color: "#c6a173", fontWeight: "600" }}>
-                    {user.username} 
-                  </span>
+                  <div className="user-profile-container">
+                    <span className="username-display">{user.username}</span>
+                    <div className="profile-popup">
+                      <p><strong>Felhasználónév:</strong> {user.username}</p>
+                      <p><strong>Email:</strong> {user.email}</p>
+                    </div>
+                  </div>
 
                   <Button
                     className="btn-outline-custom"
                     onClick={() => {
-                      logout(); 
+                      logout();
                       navigate("/");
                     }}
                   >
@@ -82,7 +85,6 @@ function Layout() {
                   </Button>
                 </>
               )}
-
             </div>
           </Navbar.Collapse>
         </Container>

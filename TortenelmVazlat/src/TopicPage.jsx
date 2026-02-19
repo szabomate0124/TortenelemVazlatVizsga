@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import "./topicPage.css";
 
 function TopicPage() {
@@ -33,7 +32,9 @@ function TopicPage() {
     return (
       <Container className="my-5 text-center">
         <h2>Nem sikerült betölteni a témákat</h2>
-        <Button onClick={() => navigate("/")}>Vissza</Button>
+        <button className="open-button" onClick={() => navigate("/")}>
+          Vissza
+        </button>
       </Container>
     );
   }
@@ -50,7 +51,6 @@ function TopicPage() {
       <Container className="my-5">
         <Row className="g-4">
           {topics.map((topic, index) => {
-
             const topicId = topic.id ?? index + 1;
 
             return (
@@ -59,16 +59,16 @@ function TopicPage() {
                   {topic.img && (
                     <Card.Img variant="top" src={topic.img} alt={topic.title} />
                   )}
-
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>{topic.title || "Névtelen téma"}</Card.Title>
+                    <p className="card-text">{topic.description || ""}</p>
 
-                    <Button
-                      className="mt-auto"
+                    <button
+                      className="open-button mt-auto"
                       onClick={() => navigate(`/topic/${categoryId}/${topicId}`)}
                     >
                       Megnyitás
-                    </Button>
+                    </button>
                   </Card.Body>
                 </Card>
               </Col>

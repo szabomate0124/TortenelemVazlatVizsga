@@ -43,7 +43,7 @@ function Fooldal() {
       <div className="slogen-box">
         <div className="slogen-overlay text-center">
           <div>
-            <h2>Történelem vázlatok</h2>
+            <h2>Törivázlat</h2>
             <p className="slogentext">
               Tanuláshoz – felkészüléshez – források – filmajánlók
             </p>
