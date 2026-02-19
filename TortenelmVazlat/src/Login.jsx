@@ -1,38 +1,25 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AuthContext } from "./AuthContext"; 
 import "./auth.css";
 
 function Login() {
   const navigate = useNavigate();
+  const { login } = useContext(AuthContext); 
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  function handleEmailChange(e) {
-    setEmail(e.target.value);
-  }
-
-  function handlePasswordChange(e) {
-    setPassword(e.target.value);
-  }
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     try {
-      const loginData = {
-        email: email,
-        password: password,
-      };
-
       const response = await fetch("http://localhost:3000/api/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(loginData),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
       });
 
       const data = await response.json();
@@ -40,11 +27,10 @@ function Login() {
       if (data.error) {
         alert(`Hiba: ${data.error}`);
       } else {
-        alert("Sikeres bejelentkezés!");
+        login(data.token); 
         navigate("/");
       }
     } catch (error) {
-      console.error("Hiba történt:", error);
       alert("Szerverhiba történt!");
     }
   }
@@ -60,7 +46,7 @@ function Login() {
             <Form.Control
               type="email"
               value={email}
-              onChange={handleEmailChange}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </Form.Group>
@@ -70,7 +56,7 @@ function Login() {
             <Form.Control
               type="password"
               value={password}
-              onChange={handlePasswordChange}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
           </Form.Group>
@@ -82,10 +68,7 @@ function Login() {
 
         <div className="auth-footer">
           Nincs fiókod?{" "}
-          <span
-            onClick={() => navigate("/register")}
-            style={{ cursor: "pointer" }}
-          >
+          <span onClick={() => navigate("/register")} style={{ cursor: "pointer" }}>
             Regisztráció
           </span>
         </div>

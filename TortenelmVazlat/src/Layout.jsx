@@ -1,4 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
+import { useContext } from "react"; 
+import { AuthContext } from "./AuthContext"; 
 import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,6 +8,7 @@ import Container from "react-bootstrap/Container";
 
 function Layout() {
   const navigate = useNavigate();
+  const { user, logout } = useContext(AuthContext); 
 
   const categoryMap = {
     egyetemes: 1,
@@ -16,7 +19,6 @@ function Layout() {
 
   return (
     <>
-      {/* NAVBAR */}
       <Navbar expand="lg" className="navbar-background py-3" variant="dark">
         <Container>
           <Navbar.Brand
@@ -45,19 +47,42 @@ function Layout() {
               </Nav.Link>
             </Nav>
 
-            <div className="d-flex gap-2">
-              <Button
-                className="btn-outline-custom"
-                onClick={() => navigate("/register")}
-              >
-                Regisztráció
-              </Button>
-              <Button
-                className="btn-filled-custom"
-                onClick={() => navigate("/login")}
-              >
-                Bejelentkezés
-              </Button>
+            <div className="d-flex gap-2 align-items-center">
+
+              {user ? (
+                <>
+                  <span style={{ color: "#c6a173", fontWeight: "600" }}>
+                    {user.username} 
+                  </span>
+
+                  <Button
+                    className="btn-outline-custom"
+                    onClick={() => {
+                      logout(); 
+                      navigate("/");
+                    }}
+                  >
+                    Kijelentkezés
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button
+                    className="btn-outline-custom"
+                    onClick={() => navigate("/register")}
+                  >
+                    Regisztráció
+                  </Button>
+
+                  <Button
+                    className="btn-filled-custom"
+                    onClick={() => navigate("/login")}
+                  >
+                    Bejelentkezés
+                  </Button>
+                </>
+              )}
+
             </div>
           </Navbar.Collapse>
         </Container>
