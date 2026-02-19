@@ -12,23 +12,25 @@ import Register from './Register'
 import TopicPage from './TopicPage'
 import TopicDetailPage from "./TopicDetailPage"
 
+import { AuthProvider } from "./AuthContext"
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
+    <AuthProvider> 
+      <BrowserRouter>
+        <Routes>
 
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
 
-        <Route element={<Layout />}>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Fooldal />} />
+            <Route path="/tema/:categoryId" element={<TopicPage />} />
+            <Route path="/topic/:catId/:tpcId" element={<TopicDetailPage />} />
+          </Route>
 
-          <Route path="/" element={<Fooldal />} />
-          <Route path="/tema/:categoryId" element={<TopicPage />} />
-          <Route path="/topic/:catId/:tpcId" element={<TopicDetailPage />} />
-
-        </Route>
-
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider> 
   </StrictMode>
 )
