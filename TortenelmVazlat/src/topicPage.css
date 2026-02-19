@@ -1,68 +1,90 @@
+:root {
+  --primary-dark: #2f3c4f;
+  --primary-dark-deep: #1f2935;
+
+  --primary-gold: #c6a173;
+  --gold-light: #e4c79d;
+  --gold-dark: #a88457;
+
+  --gold-gradient: linear-gradient(
+    135deg,
+    var(--gold-light),
+    var(--primary-gold),
+    var(--gold-dark)
+  );
+
+  --text-light: #f0f0f0;
+  --text-dark: #222;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --section-spacing: 6rem;
+  --card-radius: 14px;
+  --topic-card-radius: 18px;
+  --btn-radius: 8px;
+  --transition-fast: 0.3s ease;
+  --transition-smooth: 0.45s cubic-bezier(.2,.8,.2,1);
+}
+
+/* --- Topic Header --- */
 .topic-header {
   position: relative;
-  background-color: var(--primary-dark);
+  background: linear-gradient(145deg, var(--primary-dark), var(--primary-dark-deep));
   color: var(--primary-gold);
-  padding: 3.5rem 1rem 3.2rem;
-  margin-bottom: 3.5rem;
+  padding: 4rem 1rem 3.6rem;
+  margin-bottom: var(--section-spacing);
   text-align: center;
   overflow: hidden;
+  border-radius: var(--card-radius);
 }
 
 .topic-header::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06),
-    transparent 60%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 65%);
   pointer-events: none;
 }
 
 .topic-header h1 {
-  color: var(--primary-gold);
+  font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
   animation: fadeDown 0.8s ease both;
 }
 
 .topic-header p {
   max-width: 720px;
-  margin: 1rem auto 0;
-  color: #ddd;
-  line-height: 1.6;
+  margin: 1.2rem auto 0;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  font-size: 1.15rem;
   animation: fadeUp 0.8s ease both;
   animation-delay: 0.15s;
 }
 
+/* --- Topic Cards --- */
 .topic-card {
   position: relative;
-  border: none;
-  border-radius: 14px;
-  height: 100%;
   overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
-  transition:
-    transform 0.4s cubic-bezier(.2,.8,.2,1),
-    box-shadow 0.4s ease;
+  border-radius: var(--topic-card-radius);
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15),
+              0 2px 6px rgba(0,0,0,0.08);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-fast);
+  cursor: pointer;
 }
 
 .topic-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    120deg,
-    transparent 30%,
-    rgba(198, 161, 115, 0.35),
-    transparent 70%
-  );
+  background: linear-gradient(120deg, transparent 30%, rgba(198, 161, 115, 0.25), transparent 70%);
   opacity: 0;
   transform: translateX(-100%);
-  transition: transform 0.6s ease, opacity 0.3s ease;
+  transition: transform 0.7s ease, opacity 0.4s ease;
   pointer-events: none;
 }
 
@@ -73,42 +95,68 @@
 
 .topic-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35);
 }
 
 .topic-card img {
-  height: 180px;
+  height: 190px;
   width: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, filter 0.4s ease;
 }
 
 .topic-card:hover img {
-  transform: scale(1.08);
+  transform: scale(1.05);
+  filter: brightness(1.05);
 }
 
 .topic-card .card-body {
   position: relative;
   z-index: 2;
+  padding: 1.4rem 1.3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .topic-card .card-title {
   font-weight: 600;
-  color: var(--primary-dark);
-  margin-bottom: 0.4rem;
-  transition: letter-spacing 0.3s ease;
+  color: var(--primary-dark-deep);
+  margin-bottom: 0.5rem;
+  transition: letter-spacing var(--transition-fast);
 }
 
 .topic-card:hover .card-title {
-  letter-spacing: 0.4px;
+  letter-spacing: 1.2px;
 }
 
 .topic-card .card-text {
   font-size: 0.95rem;
-  color: #555;
-  line-height: 1.5;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.6;
 }
 
+/* --- Megnyitás gomb --- */
+.topic-card .open-button {
+  background: var(--gold-gradient);
+  color: var(--primary-dark-deep);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--btn-radius);
+  padding: 0.6rem 1.6rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+  margin-top: auto;
+}
+
+.topic-card .open-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  color: var(--primary-dark-deep);
+}
+
+/* --- Back Button --- */
 .back-button {
   display: inline-block;
   color: var(--primary-gold);
@@ -116,7 +164,7 @@
   text-decoration: none;
   font-weight: 500;
   position: relative;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .back-button::after {
@@ -128,6 +176,7 @@
 
 .back-button:hover {
   opacity: 0.85;
+  transform: translateX(-2px);
 }
 
 .back-button:hover::after {
@@ -135,6 +184,7 @@
   transform: translateX(-3px);
 }
 
+/* --- Animations --- */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -154,5 +204,17 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  .topic-header h1,
+  .topic-header p,
+  .topic-card,
+  .topic-card img,
+  .topic-card .open-button {
+    animation: none !important;
+    transition: none !important;
   }
 }

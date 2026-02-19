@@ -1,0 +1,216 @@
+:root {
+  --primary-dark: #2f3c4f;
+  --primary-dark-deep: #1f2935;
+
+  --primary-gold: #c6a173;
+  --gold-light: #e4c79d;
+  --gold-dark: #a88457;
+
+  --gold-gradient: linear-gradient(
+    135deg,
+    var(--gold-light),
+    var(--primary-gold),
+    var(--gold-dark)
+  );
+
+  --text-light: #eaeaea;
+  --text-dark: #222;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --section-spacing: 6rem;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-body);
+  background: url("./assets/paperstylebackground.png") center center / cover no-repeat fixed;
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.015) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+section {
+  padding: var(--section-spacing) 0;
+}
+
+
+h1, h2, h3, .navbar-brand-custom {
+  font-family: var(--font-display);
+  letter-spacing: -0.5px;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 3px;
+}
+
+.navbar-background {
+  position: relative; 
+  z-index: 2000;    
+  background: linear-gradient(to bottom, var(--primary-dark), var(--primary-dark-deep));
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand-custom {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-gold) !important;
+  letter-spacing: 1px;
+}
+
+.navbar-links .nav-link {
+  position: relative;
+  color: var(--text-light) !important;
+  margin: 0 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.navbar-links .nav-link:hover {
+  color: var(--gold-light) !important;
+  letter-spacing: 1.5px;
+}
+
+.navbar-links .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: var(--gold-gradient);
+  transition: width 0.3s ease;
+}
+
+.navbar-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-filled-custom {
+  background: var(--gold-gradient);
+  border: none;
+  color: var(--primary-dark-deep);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-filled-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.btn-outline-custom {
+  border: 1.5px solid var(--primary-gold);
+  background: transparent;
+  color: var(--primary-gold);
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background: var(--gold-gradient);
+  color: var(--primary-dark-deep);
+}
+
+.user-profile-container {
+  position: relative;
+  display: inline-block;
+  z-index: 2100; 
+}
+
+.username-display {
+  color: var(--primary-gold);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  font-family: var(--font-display);
+}
+
+.username-display:hover {
+  background: rgba(198, 161, 115, 0.15);
+  transform: translateY(-1px);
+}
+
+.profile-popup {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  width: 240px;
+  background: rgba(255, 255, 255, 0.97);
+  color: var(--text-dark);
+  border: 2px solid var(--primary-gold);
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  z-index: 2200;
+}
+
+.user-profile-container:hover .profile-popup {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.profile-popup p {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.profile-popup strong {
+  color: var(--primary-gold);
+  font-family: var(--font-display);
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
