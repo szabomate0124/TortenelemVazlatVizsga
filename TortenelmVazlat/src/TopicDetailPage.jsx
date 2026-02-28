@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import { AuthContext } from "./AuthContext" 
 
 import "./topicDetail.css";
 
@@ -11,7 +12,8 @@ function TopicDetailPage() {
 
   const [topic, setTopic] = useState(null);
   const [error, setError] = useState(false);
-
+  const { user, isAdmin } = useContext(AuthContext); 
+  console.log(user)
   useEffect(() => {
     if (!catId || !tpcId) {
       setError(true);
@@ -63,6 +65,12 @@ function TopicDetailPage() {
       <div className="history-content">
 
         <h1>{topic.title}</h1>
+        {isAdmin() 
+          ? <div> 
+              <button>Admin gomb 1</button>
+              <button>Admin gomb 2</button>
+             </div> 
+          : null}
 
         <div
           dangerouslySetInnerHTML={{ __html: topic.content }}

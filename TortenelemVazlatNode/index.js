@@ -68,7 +68,7 @@ app.post("/api/register", async (req, res) => {
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        const sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
+        const sql = "INSERT INTO users (username, email, password, auth_id) VALUES (?, ?, ?, 2)";
         connection.query(sql, [username, email, hashedPassword], (err, results) => {
             if (err) {
                 console.error("Adatbázis hiba:", err);
@@ -107,8 +107,8 @@ app.post("/api/login", (req, res) => {
         if (!match) {
             return res.status(401).json({ error: "Helytelen email vagy jelszó" });
         }
-
-        const token = jwt.sign({ id: user.id, username: user.username }, SECRET_KEY, { expiresIn: "1h" });
+        console.log(user)
+        const token = jwt.sign({ id: user.id, username: user.username, email: user.email, auth_id: user.auth_id }, SECRET_KEY, { expiresIn: "1h" });
         res.json({ message: "Sikeres bejelentkezés", token });
     });
 });

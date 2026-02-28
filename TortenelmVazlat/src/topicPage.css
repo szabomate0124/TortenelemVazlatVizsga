@@ -27,7 +27,6 @@
   --transition-smooth: 0.45s cubic-bezier(.2,.8,.2,1);
 }
 
-/* --- Topic Header --- */
 .topic-header {
   position: relative;
   background: linear-gradient(145deg, var(--primary-dark), var(--primary-dark-deep));
@@ -65,7 +64,6 @@
   animation-delay: 0.15s;
 }
 
-/* --- Topic Cards --- */
 .topic-card {
   position: relative;
   overflow: hidden;
@@ -135,7 +133,6 @@
   line-height: 1.6;
 }
 
-/* --- Megnyitás gomb --- */
 .topic-card .open-button {
   background: var(--gold-gradient);
   color: var(--primary-dark-deep);
@@ -156,7 +153,6 @@
   color: var(--primary-dark-deep);
 }
 
-/* --- Back Button --- */
 .back-button {
   display: inline-block;
   color: var(--primary-gold);
@@ -207,7 +203,6 @@
   }
 }
 
-/* --- Reduced Motion --- */
 @media (prefers-reduced-motion: reduce) {
   .topic-header h1,
   .topic-header p,
