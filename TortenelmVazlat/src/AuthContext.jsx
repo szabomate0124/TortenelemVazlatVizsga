@@ -33,8 +33,20 @@ export function AuthProvider({ children }) {
     setUser(null);
   }
 
+  //Admin vizsgáló
+  function isAdmin(){
+    if(user != null && user.auth_id == 1){
+      return true
+    }
+
+    else{
+      return false
+    }
+  }
+
+
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, login, logout, isAdmin }}>
       {children}
     </AuthContext.Provider>
   );
