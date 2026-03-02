@@ -27,43 +27,43 @@
   --transition-smooth: 0.45s cubic-bezier(.2,.8,.2,1);
 }
 
-.topic-header {
+/* HEADER STÍLUS */
+.portfolio-header {
   position: relative;
-  background: linear-gradient(145deg, var(--primary-dark), var(--primary-dark-deep));
-  color: var(--primary-gold);
-  padding: 4rem 1rem 3.6rem;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: var(--section-spacing);
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 2rem 2.5rem;
+  border-radius: 14px;
   text-align: center;
-  overflow: hidden;
-  border-radius: var(--card-radius);
+  max-width: 800px;
 }
 
-.topic-header::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 65%);
-  pointer-events: none;
-}
-
-.topic-header h1 {
+.header-overlay h1 {
   font-family: var(--font-display);
-  font-weight: 700;
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   letter-spacing: 1px;
-  margin-bottom: 0.6rem;
   animation: fadeDown 0.8s ease both;
 }
 
-.topic-header p {
-  max-width: 720px;
-  margin: 1.2rem auto 0;
-  color: rgba(255,255,255,0.75);
-  line-height: 1.7;
-  font-size: 1.15rem;
+.header-overlay p {
+  color: #f0f0f0;
+  font-size: 1.25rem;
   animation: fadeUp 0.8s ease both;
   animation-delay: 0.15s;
 }
 
+/* TOPIC KÁRTYÁK */
 .topic-card {
   position: relative;
   overflow: hidden;
@@ -97,8 +97,7 @@
 }
 
 .topic-card img {
-  height: 190px;
-  width: 100%;
+  height: 220px;
   object-fit: cover;
   transition: transform 0.6s ease, filter 0.4s ease;
 }
@@ -159,15 +158,7 @@
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
-  position: relative;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.back-button::after {
-  content: "←";
-  margin-left: 0.4rem;
-  opacity: 0;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  margin-top: 1rem;
 }
 
 .back-button:hover {
@@ -175,41 +166,19 @@
   transform: translateX(-2px);
 }
 
-.back-button:hover::after {
-  opacity: 1;
-  transform: translateX(-3px);
-}
-
-/* --- Animations --- */
+/* --- Animációk --- */
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .topic-header h1,
-  .topic-header p,
-  .topic-card,
-  .topic-card img,
-  .topic-card .open-button {
-    animation: none !important;
-    transition: none !important;
-  }
+@media (max-width: 768px) {
+  .header-overlay h1 { font-size: 2rem; }
+  .header-overlay p { font-size: 1rem; }
+  .topic-card img { height: 180px; }
 }
