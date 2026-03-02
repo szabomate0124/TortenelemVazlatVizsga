@@ -27,7 +27,6 @@
   --transition-smooth: 0.45s cubic-bezier(.2,.8,.2,1);
 }
 
-/* HEADER STÍLUS */
 .portfolio-header {
   position: relative;
   background-size: cover;
@@ -63,7 +62,6 @@
   animation-delay: 0.15s;
 }
 
-/* TOPIC KÁRTYÁK */
 .topic-card {
   position: relative;
   overflow: hidden;
@@ -166,7 +164,6 @@
   transform: translateX(-2px);
 }
 
-/* --- Animációk --- */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
