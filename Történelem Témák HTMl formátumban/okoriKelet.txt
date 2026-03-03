@@ -1,0 +1,269 @@
+<h2>Az első államok kialakulása</h2>
+
+<p>
+Az első államok az i. e. 4. és 3. évezredben a nagy folyók völgyében alakultak ki
+a Közel-Kelet („Termékeny Félhold” térsége), India és Kína területén.
+</p>
+
+<div class="image-section">
+  <img src="/uploads/termekeny_felhold.jpg" alt="Termékeny Félhold térsége">
+  <small>A nagy folyóvölgyi civilizációk területe</small>
+</div>
+
+<h3>Az első államok jellemzői</h3>
+
+<ul>
+  <li>Elterjedt az öntözéses földművelés</li>
+  <li>Állattartás fejlődése</li>
+  <li>Hatalmi központok emelkedtek ki</li>
+  <li>Kialakult az írás</li>
+  <li>Létrejött az állam</li>
+</ul>
+
+<p>
+Az állam biztosította az:
+</p>
+
+<ul>
+  <li>Irányítást</li>
+  <li>Elosztást (cserekereskedelem)</li>
+  <li>Védelmet</li>
+</ul>
+
+<blockquote>
+Az állam megszervezte a termelést, biztosította a rendet és a külső támadások elleni védelmet.
+</blockquote>
+
+<hr>
+
+<h2>Az ókori keleti állam és társadalom működése</h2>
+
+<p>
+Az állam élén az uralkodó állt (király, főpap, fáraó, császár stb.).
+Az arisztokrácia tagjai a papok, hivatalnokok és a katonai vezetők voltak,
+akik az uralkodó hatalmát védték és segítették az állam és a hadsereg irányítását.
+</p>
+
+<p>
+A közrendű szabadok (parasztok, kézművesek stb.) végezték a termelést.
+A társadalom alján álló rabszolgák átmenetileg (adós rabszolgák)
+vagy örökre elveszítették szabadságukat.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Társadalmi réteg</th>
+      <th>Szerepe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Uralkodó</td>
+      <td>Teljhatalmú vezető</td>
+    </tr>
+    <tr>
+      <td>Arisztokrácia</td>
+      <td>Állam és hadsereg irányítása</td>
+    </tr>
+    <tr>
+      <td>Közrendű szabadok</td>
+      <td>Termelés</td>
+    </tr>
+    <tr>
+      <td>Rabszolgák</td>
+      <td>Kényszermunka</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Egyiptom – „a Nílus ajándéka”</h2>
+
+<h3>Földrajzi jellemzői</h3>
+
+<p>
+Afrikában a Nílus folyó mentén alakult ki.
+A rendszeres áradások termékennyé tették a földeket,
+ami lehetővé tette az öntözéses földművelést.
+Természeti határai (sivatagok, tenger) miatt területe könnyen védhető volt.
+</p>
+
+<div class="image-section">
+  <img src="/uploads/nilus.jpg" alt="Nílus folyó">
+  <small>A Nílus áradása biztosította a termékenységet</small>
+</div>
+
+<h3>Története</h3>
+
+<p>
+A Nílus völgyében két állam alakult ki: Alsó- és Felső-Egyiptom.
+Aha-Ménész fáraó egyesítette őket i. e. 2950 körül (Archaikus kor).
+</p>
+
+<ul>
+  <li>Óbirodalom: a fáraók korlátlan hatalommal rendelkeztek, piramisépítkezések</li>
+  <li>Középbirodalom: megnőtt az Ámon-papság befolyása</li>
+  <li>Újbirodalom: hódítások, gazdasági fellendülés</li>
+  <li>Az 1. évezredben asszír majd perzsa hódítások → összeomlás</li>
+</ul>
+
+<h3>Az egyiptomi állam és társadalom</h3>
+
+<p>
+A fáraót isteni eredetű uralkodónak tartották,
+aki vallási, katonai és politikai vezető volt egy személyben.
+</p>
+
+<p>
+A központi irányítást írnokok, hivatalnokok, papság és katonaság végezte.
+A termelés nagy része állami tulajdonban volt: templomgazdaság és uralkodói birtokok.
+</p>
+
+<h3>Társadalmi piramis</h3>
+
+<ul>
+  <li>Fáraó</li>
+  <li>Főpapok és hivatalnokok</li>
+  <li>Katonák</li>
+  <li>Kézművesek és földművesek</li>
+  <li>Rabszolgák (háborús foglyok; nem meghatározó mennyiségben)</li>
+</ul>
+
+<h3>Az egyiptomi kultúra</h3>
+
+<ul>
+  <li>Hieroglifikus írás – papirusz</li>
+  <li>Matematika (törtek, területmérés)</li>
+  <li>Csillagászat (naptár)</li>
+  <li>Orvostudomány (sebészet, gyógyítás, mumifikálás)</li>
+  <li>Irodalom: bölcsességirodalom, himnuszok, halotti szövegek</li>
+</ul>
+
+<p>
+Monumentális építmények:
+</p>
+
+<ul>
+  <li>Piramisok (Kheopsz, Kefrén, Mükerinosz)</li>
+  <li>Templomok (Luxor, Karnak)</li>
+  <li>Szfinx</li>
+</ul>
+
+<blockquote>
+Az egyiptomi művészetre az oldalnézet, a szigorú szabályrendszer,
+az arany használata és az idealizált ábrázolás volt jellemző.
+</blockquote>
+
+<hr>
+
+<h2>Mezopotámia – a folyóköz</h2>
+
+<p>
+A Tigris és az Eufrátesz folyók völgye.
+Élelemben bővelkedett, de ásványkincsekben szegény volt,
+ezért élénk kereskedelem alakult ki.
+</p>
+
+<p>
+A termelést és az elosztást a templomgazdaság irányította,
+központja a toronytemplom (zikkurat) volt.
+</p>
+
+<h3>Története</h3>
+
+<ul>
+  <li>Sumer városállamok az i. e. 4. évezredben</li>
+  <li>Találmányok: eke, kerék, iskola</li>
+  <li>Akkádok I. Sarrukin vezetésével egyesítés</li>
+  <li>Óbabiloni Birodalom – Hammurapi törvényei</li>
+</ul>
+
+<h3>Kultúra</h3>
+
+<ul>
+  <li>Ékírás – agyagtáblák</li>
+  <li>60-as számrendszer</li>
+  <li>Naptár</li>
+  <li>Sokistenhit</li>
+  <li>Domborművek és paloták</li>
+</ul>
+
+<hr>
+
+<h2>India</h2>
+
+<p>
+Az Indiai-félsziget, az Indus és a Gangesz folyók völgye,
+termékeny területek, monszun éghajlat.
+</p>
+
+<ul>
+  <li>Dravida civilizáció (Harappa, Mohendzsodaro)</li>
+  <li>Árják hódítása → kasztrendszer</li>
+  <li>Brahmanizmus → lélekvándorlás</li>
+  <li>Buddhizmus megjelenése</li>
+  <li>Maurja Birodalom – Asóka király</li>
+</ul>
+
+<hr>
+
+<h2>Kína</h2>
+
+<p>
+A 4. évezredben földművelő civilizáció alakult ki
+a Sárga- és Kék-folyó völgyében.
+</p>
+
+<ul>
+  <li>Sang-dinasztia – első állam</li>
+  <li>Cin-si Huang-ti – Kína egyesítése</li>
+  <li>Nagy Fal, Nagy Csatorna</li>
+  <li>Egységes mértékrendszer, úthálózat, posta</li>
+  <li>Találmányok: selyem, porcelán, iránytű, papír, könyvnyomtatás, puskapor</li>
+</ul>
+
+<blockquote>
+A kínai vallásban fontos a jin és jang harmóniája.
+</blockquote>
+
+<hr>
+
+<h2>Hódító népek</h2>
+
+<ul>
+  <li>Asszíria – Assur, Ninive</li>
+  <li>Újbabiloni Birodalom – Babilon</li>
+  <li>Médek – Zagrosz-hegység</li>
+  <li>Perzsa Birodalom – Kürosz, I. Dareiosz</li>
+</ul>
+
+<h3>A perzsa állam jellemzői</h3>
+
+<ul>
+  <li>Tartományok (szatrapiák)</li>
+  <li>Királyi út</li>
+  <li>Aranypénz (dareikos)</li>
+  <li>Adórendszer</li>
+  <li>Posta</li>
+  <li>Zarathusztra vallása – jó és rossz küzdelme</li>
+</ul>
+
+<hr>
+
+<h2>Közvetítő népek</h2>
+
+<ul>
+  <li>Hettiták – vas feldolgozása</li>
+  <li>Föníciaiak – tengeri kereskedelem, Karthágó (i. e. 814)</li>
+  <li>22 betűs mássalhangzóírás</li>
+  <li>Palesztina – zsidó nép, Saul, Dávid, Salamon</li>
+  <li>Izrael és Judea kettészakadása</li>
+  <li>Babiloni fogság</li>
+  <li>Egyistenhit kialakulása</li>
+</ul>
+
+<blockquote>
+A zsidó nép történetét az Ószövetség (Biblia) beszéli el.
+</blockquote>

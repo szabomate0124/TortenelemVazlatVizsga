@@ -1,0 +1,209 @@
+<h2>A világ keletkezése</h2>
+
+<p>
+A világ keletkezése az emberiség legősibb kérdései közé tartozik. Az ember mindig kereste a választ arra, 
+hogyan jött létre a világegyetem, a Föld és maga az ember. A különböző korok és kultúrák eltérő magyarázatokat 
+adtak erre a kérdésre, amelyek lehettek mitológiai, vallásos, filozófiai vagy tudományos jellegűek.
+</p>
+
+<h3>Mitológiai és vallásos magyarázatok</h3>
+
+<p>
+Az ókori népek teremtésmítoszai istenekhez és természetfeletti erőkhöz kötötték a világ létrejöttét. 
+A vallásos magyarázatok szerint a világ egy felsőbb hatalom akaratából jött létre.
+</p>
+
+<blockquote>
+„Kezdetben teremté Isten az eget és a földet.”
+</blockquote>
+
+<h3>Filozófiai és tudományos magyarázatok</h3>
+
+<p>
+A filozófusok már az ókorban megpróbálták racionálisan értelmezni a világ eredetét. 
+A modern tudomány szerint a világegyetem az ősrobbanás (Big Bang) következtében jött létre körülbelül 13,8 milliárd évvel ezelőtt.
+Az élővilág kialakulását az evolúció elmélete magyarázza, amely szerint az élőlények hosszú biológiai fejlődés eredményeként alakultak ki.
+</p>
+
+<div class="image-section">
+  <img src="/uploads/osrobbanas.jpg" alt="Az ősrobbanás szemléltetése">
+  <small>Az ősrobbanás elméletének illusztrációja</small>
+</div>
+
+<hr>
+
+<h2>Az emberré válás</h2>
+
+<p>
+Az ember az állatvilágból alakult ki hosszú biológiai fejlődés útján. Az emberré válás nem egyik napról a másikra történt, 
+hanem több millió éves folyamat eredménye volt.
+</p>
+
+<h3>Az ember kialakulásának fő állomásai</h3>
+
+<ul>
+  <li>Főemlősök</li>
+  <li>Emberszabásúak</li>
+  <li>Előember</li>
+  <li>Ősember</li>
+  <li>Mai ember</li>
+</ul>
+
+<p>
+Az emberré váláshoz hozzájárult a gondolkodás fejlődése, az eszközhasználat és eszközkészítés képessége, 
+a beszéd kialakulása és a tűz használatának felfedezése.
+</p>
+
+<blockquote>
+Az ember kialakulása hosszú fejlődés eredménye, amelynek részleteit ma sem ismerjük teljes bizonyossággal.
+</blockquote>
+
+<p>
+Kevés tárgyi lelet áll rendelkezésünkre, ezért nincs minden kérdésre egyértelmű válasz.
+Az emberiség egyik „bölcsője” Afrika keleti része lehetett, ahonnan az emberek szétvándoroltak.
+</p>
+
+<h3>Az emberi rasszok kialakulása</h3>
+
+<ul>
+  <li>Europid</li>
+  <li>Mongoloid</li>
+  <li>Negrid</li>
+  <li>Ausztraloid</li>
+</ul>
+
+<div class="image-section">
+  <img src="/uploads/africa_osember.jpg" alt="Ősember Afrikában">
+  <small>Az emberiség egyik bölcsője Kelet-Afrika lehetett</small>
+</div>
+
+<hr>
+
+<h2>Az őskor szakaszai</h2>
+
+<p>
+Az őskor az emberré válás és az írást ismerő kultúrák közötti időszak.
+</p>
+
+<h3>Paleolitikum – őskőkorszak (i. e. 3 millió – i. e. 12.000)</h3>
+
+<p>
+Az emberek hordaközösségekben éltek. Kialakult a nemek közti munkamegosztás.
+</p>
+
+<ul>
+  <li>Nők: gyűjtögetés (biztosabb megélhetés), gyermeknevelés → matriarchátus</li>
+  <li>Férfiak: vadászat, halászat, eszközkészítés</li>
+  <li>Eszközök: kő, csont, fa</li>
+  <li>A tűz használata</li>
+</ul>
+
+<h3>Mezolitikum – átmeneti kőkorszak (i. e. 12.000 – i. e. 10.000)</h3>
+
+<p>
+Megindult az élelemtermelés. Elkezdődött az állatok háziasítása (domesztikáció) és a földművelés.
+Fő helyszíne a „Termékeny Félhold” területe volt a Közel-Keleten.
+</p>
+
+<h3>Neolitikum – újkőkorszak (i. e. 10.000 – i. e. 3.000)</h3>
+
+<p>
+Az élelemtermelés lehetővé tette a letelepedést, falvak és városok kialakulását.
+Megjelentek az első mesterségek: fonás, szövés, fazekasság.
+</p>
+
+<ul>
+  <li>Fazekaskorong</li>
+  <li>Agyagedények</li>
+  <li>Szövőszék</li>
+  <li>Eke</li>
+  <li>Vitorla</li>
+  <li>Kerék</li>
+  <li>Tégla</li>
+</ul>
+
+<h3>A fémek kora</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Korszak</th>
+      <th>Időszak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rézkor</td>
+      <td>i. e. 4.000 – i. e. 3.000</td>
+    </tr>
+    <tr>
+      <td>Bronzkor</td>
+      <td>i. e. 3.000 – i. e. 2.000</td>
+    </tr>
+    <tr>
+      <td>Vaskor</td>
+      <td>i. e. 2.000 – i. e. 1.000</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>A változások következményei</h3>
+
+<ul>
+  <li>Felesleg kialakulása → cserekereskedelem</li>
+  <li>Népességrobbanás</li>
+  <li>Patriarchátus kialakulása</li>
+  <li>Magántulajdon megjelenése</li>
+  <li>Ősközösségi társadalom felbomlása</li>
+</ul>
+
+<hr>
+
+<h2>Az őskor művészete</h2>
+
+<p>
+A paleolitikum emberének hiedelemvilágában meghatározó volt a természetfeletti erőkbe vetett hit.
+A varázslók (sámánok) mágikus szertartások segítségével próbálták befolyásolni a természetet.
+</p>
+
+<h3>Barlangfestmények és szobrok</h3>
+
+<p>
+Az őskőkori alkotások közé tartoznak a barlangfestmények és karcolatok, amelyek gyakran állatábrázolásokat mutatnak.
+</p>
+
+<div class="image-section">
+  <img src="/uploads/lascaux.jpg" alt="Lascaux barlangfestmény">
+  <small>Barlangfestmény a Lascaux-barlangból</small>
+</div>
+
+<p>
+Híres lelőhelyek:
+</p>
+
+<ul>
+  <li>Lascaux (Franciaország)</li>
+  <li>Altamira (Spanyolország)</li>
+  <li>Willendorf (Ausztria)</li>
+</ul>
+
+<h3>Megalitikus építmények</h3>
+
+<p>
+Az újkőkorból fennmaradt megalitok („nagy kövek”) hatalmas faragatlan kőtömbökből készültek.
+</p>
+
+<ul>
+  <li>Dolmenek – több tonnás kövek szabályos alakzatban</li>
+  <li>Menhirek – függőlegesen felállított kövek</li>
+  <li>Összetett kőépítmények – kultikus célokra</li>
+</ul>
+
+<div class="image-section">
+  <img src="/uploads/stonehenge.jpg" alt="Stonehenge Angliában">
+  <small>Stonehenge – az egyik legismertebb megalitikus építmény</small>
+</div>
+
+<blockquote>
+A legismertebb megalitikus építmény az angliai Stonehenge.
+</blockquote>
