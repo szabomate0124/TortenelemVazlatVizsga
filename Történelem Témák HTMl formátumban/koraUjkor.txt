@@ -1,0 +1,424 @@
+ <h2>I. A nagy földrajzi felfedezések és következményei</h2>
+
+    <h3>Kiváltó okai:</h3>
+    <ul>
+        <li>Európában a 15. század elején jelentősen megnőtt a távol keleti luxuscikkek (fűszerek, selyem és porcelán) iránti igény. A megdrágult kereskedelem ellenértéke főként az arany lehetett, ezért kimerültek az európai nemesfém bányák (pl.: Magyarország), és aranyéhség keletkezett.</li>
+        <li>Ezzel együtt a török terjeszkedés elzárta az évszázados levantei kereskedelmi utakat, ezért drágult a behozott áruk értéke.</li>
+        <li>A nagy nyereség reményében portugál és spanyol hajósok új útvonalat kerestek India és Kína felé az Atlanti-óceán irányában.</li>
+    </ul>
+
+    <h3>A felfedezések előfeltételei:</h3>
+    <ul>
+        <li>Technikai-tudományos fejlődés ment végbe: új hajótípus jelent meg a caravella, elterjedt az iránytű, asztroláb, sextáns és a kormánylapát.</li>
+        <li>Tengerész Henrik (portugál) herceg hajózási iskolát hozott létre.</li>
+        <li>Előkerültek az ókori tudományos ismeretek, pl.: Ptolemaiosz Föld térképe (gömb alak), fejlődött a csillagászat, Toscanelli megrajzolta az Atlanti-óceán térképét.</li>
+    </ul>
+
+    <h3>A felfedezések menete:</h3>
+    <ul>
+        <li>1487-ben Bartolomeo Diaz elérte Afrika déli csúcsát (Jóreménység-foka).</li>
+        <li>1492-ben Kolumbusz Kristóf felfedezte Amerikát.</li>
+        <li>1499-1507 között Amerigo Vespucci feltérképezte Dél-Amerika keleti partvonalát (Újvilág).</li>
+        <li>1498-ban Afrika körül hajózásával Vasco da Gama eljutott Indiába.</li>
+        <li>1519-22 között Magellán expedíciója körbe hajózta a Földet.</li>
+    </ul>
+
+    <h3>A felfedezések következményei:</h3>
+    <ul>
+        <li>A közép és Dél-Amerikában talált birodalmakat (maja, azték, inka) elpusztították.</li>
+        <li>Az őslakosság nagy része a járványok és a nehéz munka hatására kihalt, ezért Afrikából négereket hurcoltak be Amerikába rabszolgának.</li>
+        <li>Új növényfajták jelentek meg Európában, pl.: kukorica, burgonya, paprika, paradicsom, napraforgó, dohány, kakaó, vanília, ananász.</li>
+        <li>Amerikában megkezdődött az ültetvényes gazdálkodás: gyapot, cukornád, dohány.</li>
+        <li>A portugálok és a spanyolok gyarmatbirodalmat hoztak létre az Újvilágban (Eldorádó=„az ígéret földje”).</li>
+    </ul>
+
+    <h3>A felfedezések gazdasági következményei:</h3>
+    <ul>
+        <li>Az Újvilág nemesfémbányáiból nagy mennyiségű nemesfém áramlott Európába, ezért „árrobbanás” ment végbe → nőtt a pénz mennyisége és csökkent az értéke → megnőttek az árak → infláció keletkezett.</li>
+        <li>Nyugat-Európa a felfedezések hatására centrális helyzetbe került, ezért a gabonatermelés csökkent, a juhtenyésztés és az ipari termelés került előtérbe, mert árucikkei jól eladhatók voltak aranyért.</li>
+        <li>Kelet-Európa a nyugati élelmiszerigény miatt a mezőgazdasági termelésre helyezte a hangsúlyt, ezért kialakult a második jobbágyság.</li>
+        <li>A folyamat hatására Európa gazdaságilag kettészakadt. Nyugaton az Atlanti–óceán térségében fellendült az ipar és a kereskedelem, háttérbe szorult a mezőgazdaság, közép és kelet-Európában fellendült az élelmiszertermelés a Nyugat számára.</li>
+        <li>A gyors ipari fejlődés hatására létrejöttek a manufaktúrák, kiépült a hitelszervezet és a bankhálózat. Kialakult a világpiac (globalizáció).</li>
+        <li>A korszak végén megjelent a vetésforgó és a belterjes, istállózó állattenyésztés, ezért kevés ember sok élelmiszert tudott termelni kis területen, ami Kelet-Európa számára kedvezőtlen hatással járt.</li>
+        <li>A fellendülő ipari termelés hatására intenzív városiasodás zajlott Nyugat-Európában.</li>
+        <li>A reformáció polgári irányzata, a kálvinizmus elősegítette a polgári mentalitás elterjedését (pl.: predestináció tana). Az ismeretek gyors áramlását a könyvnyomtatás biztosította.</li>
+        <li>Az öntudatosodás a polgári forradalmak sorozatához vezetett, pl.: németalföldi szabadságharc, angol polgári forradalom.</li>
+        <li>A katolicizmus visszaszorult, a tekintélyelv helyét a kritikus gondolkodás vette át, pl.: Kopernikusz, Galilei, Newton felfedezései.</li>
+    </ul>
+
+    <h2>II. A reformáció és fő irányzatai</h2>
+
+    <h3>A reformáció kialakulásának okai:</h3>
+    <ul>
+        <li>A 15. században a katolikus egyház ismét súlyos válságba került. Okai:
+            <ul>
+                <li>A papság fényűző élete s a reneszánsz pápák világias és züllött életmódja.</li>
+                <li>Búcsúcédulák árusítása: X. Leó pápa a Szent Péter Székesegyház építési költségeit búcsúcédulákból kívánta fedezni. A búcsúcédula megvásárlásával felmentést lehetett nyerni a bocsánatos bűnök vagy a vezeklés alól, ezért általános elégedetlenség és felháborodás bontakozott ki a hívek körében.</li>
+                <li>A reneszánsz és a humanizmus eszmerendszere, a felfedezések eredményei és a természettudományok fejlődése szétrombolta a hagyományos középkori világképet.</li>
+            </ul>
+        </li>
+        <li>A felfedezések hatására az európai kereskedelem központja az Atlanti-óceán partvidékére helyeződött át, ezért elsorvadtak a hagyományos középkori kereskedő utak.</li>
+        <li>A német kereskedővárosok elszegényedtek, és a széttagolt birodalomban a fejedelmek a gazdag német egyház földjeinek megszerzésére törekedtek (összes földek 1/3-a).</li>
+    </ul>
+
+    <h3>A reformáció fő irányzatai:</h3>
+
+    <h4>1. A fejedelmi irányzat (evangélikusok vagy lutheránusok):</h4>
+    <ul>
+        <li>Luther Márton Szent Ágoston rendi szerzetes (egyetemi tanár) római útján megbizonyosodott a pápaság romlottságáról, a búcsúcédulák árusításának igazi okairól. Összefoglalta kifogásait a katolikus egyházzal szemben, és 1517. október 31-én kifüggesztette vitairatát a wittenbergi vártemplom kapujára. Luther tanainak (95 tétel) alapja a Biblia:
+            <ul>
+                <li>"a bűnt egyedül Isten bocsáthatja meg" – Az ember egyedül Isten kegyelméből, a hit által nyerheti el bűnei bocsánatát.</li>
+                <li>"egyedül a hit által üdvözülhet az ember" – ezért nincs szükség egyházi közvetítésre, pl.: pápa.</li>
+                <li>Az egyházi birtokok kiárusítása (szekularizáció).</li>
+                <li>A gyónás, a cölibátus és a szerzetesség eltörlése.</li>
+                <li>Bevezette az anyanyelvű igehirdetést, ezért lefordította a Bibliát német nyelvre. Követői az evangélium szó után az evangelista nevet kapták.</li>
+            </ul>
+        </li>
+        <li>Luther fellépésének következményei:
+            <ul>
+                <li>A pápa kiátkozta Luthert, ezért V. Károly császár eretnekké nyilvánította.</li>
+                <li>Luther elégette az őt kiátkozó pápai bullát.</li>
+                <li>A német fejedelmek Luther mellé álltak. Céljuk a katolikus egyház földjeinek megszerzése volt hatalmuk növelése érdekében.</li>
+                <li>1529-ben a speyeri birodalmi gyűlés döntése értelmében Luther követői megmaradhattak hitükön, de nem terjeszthették azt (protestánsok), ezért a Schmalkaldeni szövetség (protestáns fejedelmek) és a császár közt kitört a német vallásháború, melyet az augsburgi vallásbéke zárt le 1555-ben („Akié a föld, azé a vallás”).</li>
+                <li>V. Károly uralma megingott (politikai és vallási megosztottság), és 1556-ban lemondott a spanyol trónról fia II. Fülöp javára.</li>
+                <li>Az evangélikus egyház elterjedése: német területek, Skandinávia, Ausztria, Csehország, Magyarország.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>2. A népi irányzatok:</h4>
+    <ul>
+        <li>Münzer Tamás zwickaui prédikátor tanításainak hatására bontakoztak ki:
+            <ul>
+                <li>Csecsemőkeresztelés elvetése.</li>
+                <li>A jézusi (evangéliumi) szegénység hirdetése.</li>
+                <li>A magántulajdon elvetése, a Bibliát szó szerint értelmezik.</li>
+            </ul>
+        </li>
+        <li>Hatására 1524-25 között zajlott a német parasztháború (Dél-Közép Németország), melyben Münzert és követőit megölték. Maradék híveik elmenekültek, pl. Magyarországra.</li>
+        <li>Irányzatai:
+            <ul>
+                <li>Antitrinitáriusok (= szentháromság tagadók) elvetették Jézus Krisztus istenségét, az eredendő bűnt és a predesztinációt. Vezetőjüket Servét Mihályt Kálvin János kivégeztette.</li>
+                <li>Anabaptisták (újrakeresztelők): a gyermekkeresztség ellen tiltakoztak - csak akkor kell keresztelni, amikor a gyermek erre már megérett.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>3. A polgári irányzat (reformátusok vagy kálvinisták):</h4>
+    <ul>
+        <li>Vezetője Kálvin János genfi prédikátor volt. Tanításai:
+            <ul>
+                <li>Predesztináció = eleve elrendeltetés tana: Isten az emberek sorsát születésüktől fogva meghatározza.</li>
+                <li>Puritánság = egyszerű egyházi szertartások.</li>
+                <li>Az ember szorgalmas tevékenységével teljesíti Isten akaratát (világi aszkézis: szerény, mértéktartó, szorgalmas élet).</li>
+                <li>Zsarnokölési elmélete: a polgárok megölhetik a zsarnokokat.</li>
+                <li>Pénzfelhalmozás jogossága, bármit lehet szabadon vásárolni (kamatszedés engedélyezése).</li>
+                <li>Demokratikus egyházszervezet: alapvető intézmény a presbitérium (presbitérium = világi jellegű tanács) felállítása.</li>
+                <li>Az egyház irányelveket fogalmaz meg a polgárok számára.</li>
+            </ul>
+        </li>
+        <li>A kálvinizmus (református hit) elterjedése: Svájc, Franciaország, Németalföld, Skócia, Magyarország.</li>
+    </ul>
+    <h2>III. Az abszolutizmus kora</h2>
+
+    <h3>1. A spanyol abszolutizmus kialakulása:</h3>
+    <ul>
+        <li>Spanyolország 1479-ben jött létre Kasztília és Aragónia egyesülésével.</li>
+        <li>1492-ben kiűzték az arabokat a félsziget déli részéről.</li>
+        <li>Amerika felfedezése után nagy mennyiségű nemesfém áramlott az országba, ezért Spanyolország nagyhatalommá vált.</li>
+        <li>Habsburg Szép Fülöp herceg és Őrült Johanna házasságával a spanyol trón a Habsburgok kezébe került.</li>
+        <li>I. Károly (1516-1556) 1519-ben megszerezte a Német-Római császári címet (V. Károly). Célja: a császári hatalom tekintélyének visszaállítása volt, ezért:
+            <ul>
+                <li>Zsoldoshadsereget hozott létre.</li>
+                <li>Flottaépítés (Nagy Armada).</li>
+                <li>Visszaszorította a tartományi rendeket.</li>
+                <li>Központosított hivatalrendszert épített ki (uralkodó feltétlen hatalma).</li>
+                <li>Megerősítette a katolikus egyház hatalmát (ellenreformáció elindítása – Tridenti zsinat).</li>
+            </ul>
+        </li>
+        <li>II. Fülöp (1556-1598) célja: katolikus világhatalom létrehozása volt, ezért:
+            <ul>
+                <li>Kiépítette az abszolút királyi hatalmat.</li>
+                <li>1571-ben szövetségeseivel (pl.: Velence) Lepantónál megállította az oszmánok előrenyomulását (török flotta pusztulása).</li>
+            </ul>
+        </li>
+        <li>De:
+            <ul>
+                <li>1588-ban a spanyol “Nagy Armada” vereséget szenvedett az angol flottától.</li>
+                <li>Hollandia kialakulásával elveszítette Németalföld északi részét.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>2. Az angol abszolutizmus létrejötte:</h3>
+    <ul>
+        <li>A rózsák háborúja után VII. (Tudor) Henrik (1485-1509) szerezte meg a trónt. Célja: erős királyi hatalom megteremtése volt, ezért:
+            <ul>
+                <li>Létrehozta a Titkos Tanácsot.</li>
+                <li>Zsoldos hadsereget állított fel.</li>
+                <li>Megerősítette a központi hatalmat.</li>
+            </ul>
+        </li>
+        <li>VIII. Henrik (1509-1547):
+            <ul>
+                <li>Egyeduralkodóként kormányzott.</li>
+                <li>Elszakította az angol egyházat Rómától (anglikán egyház kiépítése - 1534).</li>
+            </ul>
+        </li>
+        <li>I. Erzsébet (1558-1603):
+            <ul>
+                <li>Támogatta a tengeri kereskedelmet (monopóliumok).</li>
+                <li>Anglia nagyhatalommá vált (1588 Nagy Armada legyőzése).</li>
+                <li>Uralkodása az angol abszolutizmus tetőfokát jelentette.</li>
+            </ul>
+        </li>
+        <li>I. Jakab és I. Károly uralkodása (1603-49):
+            <ul>
+                <li>Céljuk: a teljes abszolutizmus kiépítése volt, ezért:
+                    <ul>
+                        <li>Felújították a királyi regálékat.</li>
+                        <li>Adóemelést hajtottak végre.</li>
+                        <li>Növelték a katolikus egyház szerepét.</li>
+                    </ul>
+                </li>
+                <li>Következményei: puritánok (a kálvinizmus angol képviselői) és a parlament képviselői ellenálltak a királynak.</li>
+                <li>Skóciában felkelés kezdődött 1638-ban, ezért a királynak (I. Károly) pénzre volt szüksége és összehívta a parlamentet 1640-ben.</li>
+                <li>De: a király és a Parlament ellentéte miatt kitört a forradalom.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Az angol polgári forradalom szakaszai:</h3>
+
+    <ul>
+        <li><strong>A polgárháború kora (1642-49):</strong>
+            <ul>
+                <li>I. Károly (1625-49) erőszakhoz folyamodott a Parlamenttel szemben.</li>
+                <li>A radikális puritánok hadsereget szerveztek Oliver Cromwell vezetésével (vasbordájúak hadserege) és legyőzték a királyt (1648).</li>
+                <li>Következményei: 1649-ben kivégezték a királyt, Anglia köztársasággá vált.</li>
+            </ul>
+        </li>
+
+        <li><strong>A Köztársaság kora (1649-60):</strong>
+            <ul>
+                <li>Cromwell katonai diktatúrát hozott létre. Intézkedései:
+                    <ul>
+                        <li>1651-ben bevezette a hajózási törvényt (csak angol hajók szállíthattak, ezért ellentétbe került Hollandiával).</li>
+                        <li>Hatására Anglia lett a tengerek ura.</li>
+                        <li>Elfoglalta Skóciát és Írországot: létrejött Nagy-Britannia.</li>
+                        <li>Cromwell halála után a tőkés vállalkozók visszahívták a Stuart királyokat.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li><strong>A Stuart restauráció (1660-1688):</strong>
+            <ul>
+                <li>II. Károly és II. Jakab vissza akarták állítani az abszolutizmust, ezért meghívták a trónra a holland protestáns fejedelmet III. Orániai Vilmost (1688-1702).</li>
+            </ul>
+        </li>
+
+        <li><strong>A dicsőséges forradalom 1688-89:</strong>
+            <ul>
+                <li>Jognyilatkozat – polgári szabadságjogok biztosítása.</li>
+                <li>Államforma: alkotmányos monarchia „a király uralkodik, de nem kormányoz”.</li>
+                <li>Alapját az 1689-ben kiadott Jogok Nyilatkozata (Bill of Rights) szolgáltatta, tartalma:
+                    <ul>
+                        <li>A törvényhozó testület a parlament.</li>
+                        <li>A végrehajtó hatalom a parlamentnek felelős kormány.</li>
+                        <li>Független bíróságok létrehozása.</li>
+                        <li>A parlamentnek évente üléseznie kell.</li>
+                        <li>A király uralkodik, de nem kormányoz.</li>
+                        <li>A parlament beleszólhatott az adószedésbe és a hadsereg fenntartásába.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>3. A Francia abszolutizmus:</h3>
+    <ul>
+        <li>Franciaországban a 16. század első felében, I. Ferenc (1515-1547) uralkodása idején erősödött meg a királyi hatalom, aki Habsburgok megnövekedett európai hatalma miatt szövetségeseket keresett (Cognac-i Liga).</li>
+        <li>Halála után trónharcok kezdődtek, melyek vallási ellentétek formájában bontakoztak ki. Okai:
+            <ul>
+                <li>Elterjedt a kálvini reformáció Dél-Franciaországban: hugenották = francia protestánsok (főleg városi lakosok és parasztok).</li>
+                <li>A katolikusok és a hugenották között vallási, politikai ellentétek alakultak ki.</li>
+            </ul>
+        </li>
+        <li>Következménye:
+            <ul>
+                <li>1572-ben Párizsban Szt. Bertalan éjszakáján 3000 hugenottát mészároltak le a katolikusok (Bourbon-Valois esküvő), ezért vallási és polgárháború zajlott 1572-1589 között.</li>
+                <li>A küzdelem IV. (Bourbon) Henrik (1589-1610) királlyá koronázásával ért véget „Párizs megér egy misét”. Célja a belső béke megteremtése volt, ezért:
+                    <ul>
+                        <li>1598-ban kiadta a nantes-i ediktumot, ami biztosította a szabad vallásgyakorlást.</li>
+                        <li>Csökkentette a parasztok adóterheit.</li>
+                        <li>Fejlesztette a gazdaságot királyi manufaktúrák létrehozásával (luxus ipar).</li>
+                        <li>Támogatta a gyarmatosítást és a kereskedelmet.</li>
+                    </ul>
+                </li>
+                <li>XIII. Lajos (1610-1643) államminisztere Richelieu bíboros építette ki az abszolutizmus rendszerét:
+                    <ul>
+                        <li>Kiűzte a hugenottákat Franciaországból.</li>
+                        <li>1614 után nem hívta össze a rendi gyűlést, ezért a király rendeletekkel kormányoz.</li>
+                        <li>Királytól függő hivatalnokszervezetet és zsoldos haderőt szervezett.</li>
+                    </ul>
+                </li>
+                <li>XIV. Lajos (1643-1715) a „napkirály” uralkodása idején Franciaország Európa vezető nagyhatalma lett. Alapját a merkantilista gazdaságpolitika képezte:
+                    <ul>
+                        <li>Colbert pénzügyminiszter alakította ki.</li>
+                        <li>Cél: vámok segítségével megvédeni a belső ipart és exportálni a termékeket külföldre, hogy pénzt kapjanak érte.</li>
+                        <li>Manufaktúrákat hoztak létre, megszabják a minőséget és segítik a kereskedelmet.</li>
+                    </ul>
+                </li>
+                <li>De: a spanyol örökösödési háború (1701-1714) idején Franciaország súlyos politikai és gazdasági válságba került.</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>4. A Dunai Habsburg Birodalom</h3>
+    <ul>
+        <li>A Habsburgok osztrák birodalmai I. Ferdinánd és utódai uralma alá kerültek:
+            <ul>
+                <li>Magyarországon csak megállítani tudták a török terjeszkedést.</li>
+                <li>A rendek és a központi hatalom viszonya vallási színezetet kapott:
+                    <ul>
+                        <li>Az osztrák tartományokban sikerült betiltatni a protestantizmust.</li>
+                        <li>Magyarországon és Csehországban a rendek ellenálltak (pl.: Bocskai felkelés).</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>A cseh nemesség ellenállása miatt robbant ki a Harminc éves háború 1618-48 között (katolikus Liga – protestáns Unió küzdelme):
+            <ul>
+                <li>A háború első szakaszában (cseh szakasz) a cseh nemesség vereséget szenvedett (Fehér-hegyi csata), ezért:
+                    <ul>
+                        <li>Felszámolták a cseh rendi jogokat.</li>
+                        <li>A cseh nemesség birtokait németeknek adták.</li>
+                        <li>Csehország örökös tartománnyá vált.</li>
+                    </ul>
+                </li>
+                <li>A háború második és harmadik szakaszában (dán és svéd szakasz) váltakozó fölényű küzdelem zajlott a dán és a svéd uralkodók részvételével.</li>
+                <li>A negyedik, befejező szakaszban Franciaország a protestánsok mellé állt, így a Habsburgok békére kényszerültek.</li>
+            </ul>
+        </li>
+        <li>A háborút lezáró Vesztfáliai békét 1648-ban kötötték meg:
+            <ul>
+                <li>A Német-Római Birodalom több száz független állam halmaza maradt.</li>
+                <li>A birodalmi gyűlés döntésképtelenné vált.</li>
+                <li>A Habsburg dinasztia nem szenvedett teljes vereséget; az osztrák és cseh tartományokban felszámolta a rendiséget.</li>
+                <li>Franciaország Európa vezető hatalmává vált.</li>
+                <li>A porosz uralkodók megszerezték Brandenburgot.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>5. Közép- és Kelet-Európa a 16-17. században</h3>
+    <ul>
+        <li>A centrumtól keletre a kontinentális munkamegosztásnak köszönhetően Közép-Kelet-Európa áttért az élelmiszertermelésre:
+            <ul>
+                <li>Nyersanyagszállító és élelmiszertermelő szerep.</li>
+            </ul>
+        </li>
+        <li>A mezőgazdasági terményeket nagy haszonnal lehetett értékesíteni, ezért a nagybirtokosok:
+            <ul>
+                <li>Terményjáradékot követeltek a jobbágyoktól.</li>
+                <li>Kiterjesztették a majorságokat.</li>
+                <li>Növelték a robotmunka alkalmazását.</li>
+            </ul>
+        </li>
+        <li>Következménye:
+            <ul>
+                <li>Az Elbától keletre röghöz kötötték a jobbágyokat (második jobbágyság).</li>
+                <li>A nemesek megnövelték majorságukat, de a pénzt felélték.</li>
+                <li>Megfosztották a jobbágyokat a szabad költözés jogától.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Lengyelország hanyatlása</h3>
+    <ul>
+        <li>A lengyel feudális viszonyokra is jellemző az örökös jobbágyság kialakulása, melynek hatására a lengyel nemesség jelentősen meggazdagodott és pozíciói megerősödtek.</li>
+        <li>A 16-17. századi Lengyelország Közép-Európa meghatározó hatalma volt:
+            <ul>
+                <li>1572-ben kihalt a Jagelló-ház.</li>
+                <li>III. Henrik 1573-ban megerősítette a lengyel nemesség jogait (Henrik-cikkelyek):
+                    <ul>
+                        <li>A Szejm csak olyan törvényt fogadhatott el, amely ellen az országgyűlés egyetlen tagja sem tiltakozott, ezzel működésképtelenné téve a törvényhozást.</li>
+                        <li>Létrehozta a lengyel nemesi köztársaságot.</li>
+                    </ul>
+                </li>
+                <li>1576-1586 között Báthory István erdélyi fejedelem lengyel királyként átmenetileg stabilizálta a helyzetet.</li>
+                <li>Lengyelországot a 18. században (1772, 1792, 1796) felosztották Poroszország, a Habsburg Birodalom és Oroszország között, s 1920-ig elvesztette önállóságát.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Oroszország nagyhatalommá válása</h3>
+    <ul>
+        <li>IV. Iván (1533-1584) megerősítette a központi hatalmat:
+            <ul>
+                <li>Fellépett az ősi nemesi birtokosok ellen.</li>
+                <li>Felvette a császári = cári címet.</li>
+                <li>Megszerzte a Volga medencéjét.</li>
+            </ul>
+        </li>
+        <li>1613-ban Romanov-dinasztia került hatalomra.</li>
+        <li>I. (Nagy) Péter átvette a nyugat-európai mintákat:
+            <ul>
+                <li>Támogatta a manufaktúrákat.</li>
+                <li>Erős flottát és korszerű hadsereget épített.</li>
+                <li>Megalapította Szentpétervárt (1703).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Az Oszmán Birodalom fénykora és hanyatlása</h3>
+    <ul>
+        <li>A 16. századra jelentősen megerősödött. Fénykorát I. (Törvényhozó) Szulejmán (1520-1566) idején élte:
+            <ul>
+                <li>Meghódította Magyarország középső részét.</li>
+                <li>Folyamatos harcban állt a perzsákkal.</li>
+            </ul>
+        </li>
+        <li>A 16. század végétől megállt a terjeszkedése, ezért meggyengült:
+            <ul>
+                <li>A Habsburgok a XVII. század végén felszabadították Magyarországot.</li>
+                <li>Az Oszmán Birodalom elvesztette nagyhatalmi szerepét.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>6. Művelődés és életmód a kora újkorban</h3>
+    <ul>
+        <li>A természettudományos fejlődés hatással volt a világkép megváltozására:
+            <ul>
+                <li>Csillagászati felfedezések:
+                    <ul>
+                        <li>Kopernikusz (lengyel csillagász): a Nap a világegyetem központja = heliocentrikus világkép (szemben a geocentrikus világképpel).</li>
+                        <li>Galileo Galilei bizonyította Kopernikusz állítását (szabadesés, ingamozgás, bolygók mozgása) – „És mégis mozog a Föld!”</li>
+                        <li>Isaac Newton megalkotta az általános tömegvonzás és a mechanika törvényeit.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>A változások hatására átalakult a társadalom és államkép:
+            <ul>
+                <li>Machiavelli a fejedelmi hatalom mindenhatóságát hirdette: „A cél szentesíti az eszközt”.</li>
+                <li>Az ideális állam és társadalom megálmodói (utópisták):
+                    <ul>
+                        <li>John Locke: az alkotmányos monarchiát állította példának.</li>
+                        <li>Morus Tamás: Seholnincs ország.</li>
+                        <li>Campanella: Napállam.</li>
+                        <li>Francis Bacon: Új Atlantisz.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Új jelenségek a kora újkorban:
+            <ul>
+                <li>A jogi különbségek helyébe vagyoniak léptek.</li>
+                <li>Növekedni kezdtek a városok.</li>
+                <li>Terjedtek a könyvek, újságok, kávéházak.</li>
+                <li>Ritkán tisztálkodtak – éhínségek (kis jégkorszak), járványok pusztítottak.</li>
+            </ul>
+        </li>
+    </ul>

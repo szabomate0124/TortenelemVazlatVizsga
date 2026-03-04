@@ -1,0 +1,169 @@
+<h2>Vallások az ókorban</h2>
+
+<p>
+Az emberiség legősibb kérdéseinek egyike a világ keletkezése és működése.
+Az erre adott válaszok sokfélék lehetnek:
+</p>
+
+<ul>
+<li>mitológiai</li>
+<li>vallásos</li>
+<li>filozófiai</li>
+<li>tudományos (ősrobbanás elmélete, evolúció)</li>
+</ul>
+
+<hr>
+
+<h2>Az ókori Közel-Kelet vallásai</h2>
+
+<h3>Mezopotámia és Egyiptom</h3>
+
+<ul>
+<li>A mezopotámiai és az egyiptomi vallások népekhez és államokhoz kapcsolódtak.</li>
+<li>Politeista (többistenhívő) vallások voltak.</li>
+</ul>
+
+<h4>Mezopotámia</h4>
+<ul>
+<li>Kezdetben minden város saját hiedelemvilággal rendelkezett.</li>
+<li>A papok egységes sumer–akkád–babiloni mitológiát alakítottak ki.</li>
+<li>Isteneik ember alakúak voltak.</li>
+</ul>
+
+<h4>Egyiptom</h4>
+<ul>
+<li>Főisten: Ré (Napisten), akit Amon és Aton néven is tiszteltek.</li>
+<li>A fáraók a napisten nevében és védelme alatt uralkodtak.</li>
+<li>Isteneik gyakran állati alakot őriztek meg.</li>
+<li>Hitük szerint az ember a túlvilágon tovább él.</li>
+<li>A testet mumifikálással óvták meg az enyészettől.</li>
+</ul>
+
+<h4>Perzsa vallás</h4>
+<ul>
+<li>Dualista jellegű (jó és rossz küzdelme).</li>
+<li>Alapító: Zarathusztra.</li>
+<li>A jó teremtő és a gonosz romboló harca áll a középpontban.</li>
+<li>Az ember maga dönti el, melyik oldalra áll.</li>
+</ul>
+
+<h4>A zsidó vallás</h4>
+<ul>
+<li>Monoteista (egyistenhívő) vallás.</li>
+<li>A törzsi istenek közül Jahve tisztelete maradt fenn.</li>
+<li>Jahve a világmindenség egyetlen istene lett.</li>
+<li>Isten láthatatlan és mindenható.</li>
+<li>A babiloni fogság után (Kr. e. 6. század) megszilárdult a monoteizmus.</li>
+<li>Tanításaikat a héber Biblia (Ószövetség) foglalja össze.</li>
+</ul>
+
+<hr>
+
+<h2>Az ókori India és Kína vallásai</h2>
+
+<h3>India</h3>
+
+<ul>
+<li>Politeista vallások: brahmanizmus és buddhizmus.</li>
+<li>A brahmanizmus főistenei: Brahma, Visnu, Siva.</li>
+<li>Az újjászületést (reinkarnációt) a karma határozza meg.</li>
+<li>A buddhizmus célja a nirvána (a lélek nyugalmi állapota).</li>
+</ul>
+
+<h3>Kína</h3>
+
+<ul>
+<li>Az univerzizmus az ég, föld és ember harmonikus egységét hirdeti.</li>
+<li>Jelképe a jin–jang.</li>
+<li>Kr. e. 6. században két rendszer alakult ki:
+  <ul>
+    <li>Taoizmus</li>
+    <li>Konfucianizmus</li>
+  </ul>
+</li>
+<li>Konfuciusz (Kung-Fu-ce): erkölcsi nevelés, hagyománytisztelet, közösségi érdek.</li>
+<li>Lao-ce: a Tao (a természet törvénye) szerinti élet.</li>
+</ul>
+
+<hr>
+
+<h2>A görög vallás jellemzői</h2>
+
+<ul>
+<li>Politeista vallás.</li>
+<li>A világ és az istenek a káoszból jöttek létre.</li>
+<li>Isteneiket ember alakúnak (antropomorf) képzelték el.</li>
+<li>Tetteiket a görög mitológia meséli el.</li>
+<li>Az istenek több nemzedéke váltotta egymást.</li>
+<li>Az olimposzi isteneket az egész görögség tisztelte.</li>
+<li>Héroszok (félistenek) is szerepeltek a mítoszokban.</li>
+<li>A vallás a közösséghez tartozást fejezte ki.</li>
+<li>A templom előtt papok mutattak be áldozatot.</li>
+<li>Jóslás: Delphoi és Dodona jósdái.</li>
+<li>Ünnepségek és versenyek → színház és olimpia (Kr. e. 776).</li>
+<li>Kiemelt szerepük volt a pánhellén kultuszhelyeknek.</li>
+<li>A kultikus életből fejlődött ki az építészet és a művészet.</li>
+</ul>
+
+<hr>
+
+<h2>A római vallás jellemzői</h2>
+
+<ul>
+<li>Kezdetben természeti jelenségeket és ősök szellemét tisztelték.</li>
+<li>Az etruszk hatásra megjelentek a görög mintájú istenek.</li>
+<li>Az istenek meghatározott feladatkört láttak el.</li>
+<li>Akaratukat természeti jelek útján közölték.</li>
+<li>A jelek értelmezése a jóspapok feladata volt (pl. madárjós).</li>
+<li>Császárkultusz: az uralkodók vallásos tisztelete.</li>
+<li>Misztériumvallások keletről érkeztek.</li>
+<li>A válság hatására nőtt az istennel való személyes kapcsolat igénye.</li>
+<li>Ez elősegítette az új vallások (pl. kereszténység) terjedését.</li>
+</ul>
+
+<hr>
+
+<h2>A kereszténység kialakulása</h2>
+
+<h3>A vallási élet változása a Római Birodalomban</h3>
+<ul>
+<li>A görög–római vallás nem követelt meg hitet.</li>
+<li>A szertartásokon való részvétel volt a lényeg.</li>
+<li>Nem nyújtott vigaszt és biztonságot.</li>
+<li>Keleti kultuszok terjedtek:
+  <ul>
+    <li>Mithras</li>
+    <li>Ízisz</li>
+    <li>Dionüszosz</li>
+  </ul>
+</li>
+<li>Császárok istenítése (keleti tartományok).</li>
+</ul>
+
+<h3>Palesztina Jézus korában</h3>
+<ul>
+<li>A zsidók a Messiást várták.</li>
+<li>Farizeusok: írástudók.</li>
+<li>Esszénusok (Kumrán).</li>
+<li>Őskeresztény gyülekezet.</li>
+</ul>
+
+<h3>Jézus Krisztus</h3>
+<ul>
+<li>Elnevezései: Názáreti, Józsua, Messiás, Krisztosz.</li>
+<li>Tanításait az evangéliumok (Máté, Márk, Lukács, János) őrzik.</li>
+<li>Hirdette a megbocsátást és az üdvösséget.</li>
+<li>Az Istenbe vetett hit és az egymás iránti szeretet számít.</li>
+<li>Halálra ítélték.</li>
+</ul>
+
+<hr>
+
+<h2>A kereszténység győzelme</h2>
+
+<ul>
+<li>1–3. század: üldözések.</li>
+<li>313: milánói ediktum (Constantinus).</li>
+<li>325: niceai zsinat.</li>
+<li>391: Theodosius államvallássá tette.</li>
+</ul>

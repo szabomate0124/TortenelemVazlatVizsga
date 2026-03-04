@@ -1,0 +1,153 @@
+<h2>A kereszténység születése és tanításai</h2>
+
+<hr>
+
+<h2>A kereszténység kialakulása</h2>
+
+<h3>A vallási élet változása a Római Birodalomban</h3>
+
+<ul>
+<li>A görög–római vallás nem követelt meg hitet.</li>
+<li>A lényeg a szertartásokon való részvétel volt (szoros kapcsolat az állammal).</li>
+<li>Nem nyújtott vigaszt és nem ígért biztonságot.</li>
+<li>Ezért egyre többen fordultak a keleti kultuszok felé:</li>
+</ul>
+
+<ul>
+<li>Misztériumvallások (Mithrász, Ízisz, Dionüszosz).</li>
+<li>Császárok istenítése (különösen a keleti tartományokban).</li>
+</ul>
+
+<h3>Palesztina Jézus korában</h3>
+
+<ul>
+<li>A zsidók egyistenhívő nép voltak.</li>
+<li>Várták a Megváltót (Messiás).</li>
+<li>A hagyomány őrzői a farizeusok (zsidó írástudók).</li>
+<li>Az esszénusok közössége (Kumrán-hegység).</li>
+<li>Őskeresztény gyülekezet.</li>
+<li>A Megváltó eljövetelét és a bűnbánatot hirdették.</li>
+</ul>
+
+<h3>Jézus Krisztus</h3>
+
+<p><strong>Elnevezései:</strong></p>
+
+<ul>
+<li>Názáreti Jézus</li>
+<li>Jézus = Józsua</li>
+<li>Megváltó = Messiás (héber: felszabadító)</li>
+<li>Krisztus = Krisztosz (görög)</li>
+</ul>
+
+<p>
+Életét és tanításait az evangéliumok (örömhír) beszélik el az Újszövetségben:
+Máté, Márk, Lukács, János.
+</p>
+
+<ul>
+<li>Élete utolsó 3 évében tanított.</li>
+<li>Új alapokra helyezte a zsidó hitet.</li>
+<li>Isten egyetemes, nem csak a zsidó nép istene.</li>
+<li>Ezért halálra ítélték.</li>
+<li>Tanítványaival, az apostolokkal járta Júdea városait.</li>
+<li>Hirdette a végítéletet, a megbocsátást és az üdvösség reményét.</li>
+<li>Csak az Istenbe vetett hit és az egymás iránti szeretet számít.</li>
+<li>Ostorozta a vagyonszerzést, a kapzsiságot, a gyűlöletet és az erőszakot.</li>
+</ul>
+
+<hr>
+
+<h2>A keresztény egyház kialakulása</h2>
+
+<h3>Jézus tanításainak terjedése</h3>
+
+<p>
+Jézus tanításai a Római Birodalom széles tömegeire hatottak.
+</p>
+
+<h3>Szent Pál (Saulus) tanítása</h3>
+
+<ul>
+<li>Jézus halálával minden ember bűneit megváltotta.</li>
+<li>Tanítása minden népet megszólított.</li>
+<li>Mindenki egyenlőnek számított (a rabszolgák is).</li>
+<li>Minden keresztény vagyonának és jövedelmének egy részét a közös kasszába adta.</li>
+<li>Összejöveteleiket vasárnap tartották.</li>
+<li>A szertartást pap vagy püspök vezette.</li>
+</ul>
+
+<h3>A keresztény dogmák kialakulása</h3>
+
+<ul>
+<li>Jézus Krisztus Isten egyszülött fia, a Messiás.</li>
+<li>Egyszerre valóságos ember és Isten.</li>
+<li>Szentháromság tana: Isten egylényegű három személy:
+  <ul>
+    <li>Atya</li>
+    <li>Fiú</li>
+    <li>Szentlélek</li>
+  </ul>
+</li>
+<li>Szűz Mária = Istenanya (Jézus anyja).</li>
+<li>Jézust keresztre feszítették és feltámadt.</li>
+</ul>
+
+<h3>Korai egyházszervezet</h3>
+
+<ul>
+<li>Állandó szertartásrend alakult ki.</li>
+<li>Ünnepek.</li>
+<li>Áldozás.</li>
+<li>Keresztelés.</li>
+<li>Úrvacsora.</li>
+</ul>
+
+<p><strong>Az egyház tisztségviselői:</strong></p>
+
+<ul>
+<li>Püspökök (episzkoposz = felügyelő).</li>
+<li>Presbiterek (idősebbek).</li>
+<li>Diakónusok (szolgák).</li>
+</ul>
+
+<hr>
+
+<h2>A kereszténység győzelme</h2>
+
+<ul>
+<li>Az 1–3. század császárai üldözték a keresztényeket.</li>
+<li>Terjedésüket nem tudták megakadályozni.</li>
+<li>A 4. század elejétől engedményeket tettek.</li>
+</ul>
+
+<ul>
+<li>313: Constantinus milánói ediktuma → engedélyezte a keresztény vallás gyakorlását.</li>
+<li>325: niceai zsinat → döntés Jézus egylényegűségéről (Szentháromság tana).</li>
+<li>391: Theodosius császár a kereszténységet egyedüli vallássá nyilvánította.</li>
+</ul>
+
+<hr>
+
+<h2>A keresztény egyházszervezet megszilárdulása</h2>
+
+<ul>
+<li>A 4. században megszilárdult az egyház szervezete.</li>
+<li>A közösségeket plébánosok és diakónusok irányították.</li>
+<li>Az egyházkerületeket püspökök vezették.</li>
+<li>A tartományi központok püspökei metropoliták voltak.</li>
+</ul>
+
+<h3>Az 5 patriarchátus</h3>
+
+<ul>
+<li>Róma</li>
+<li>Konstantinápoly</li>
+<li>Antiochia</li>
+<li>Jeruzsálem</li>
+<li>Alexandria</li>
+</ul>
+
+<p>
+Az öt patriarchátus élén egymással egyenlő pátriárkák álltak.
+</p>
