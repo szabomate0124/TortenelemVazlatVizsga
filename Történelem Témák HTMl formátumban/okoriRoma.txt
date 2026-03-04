@@ -1,0 +1,306 @@
+<h2>Az ókori Róma</h2>
+
+<h3>Itália földje</h3>
+<ul>
+<li>A Földközi-tengerbe hosszan benyúló félsziget.</li>
+<li>Északról az Alpok hegyei védik.</li>
+<li>Közepén az Appenninek hegyláncai húzódnak.</li>
+<li>A partok mentén földművelésre alkalmas dombvidékek vannak.</li>
+<li>Éghajlata mediterrán.</li>
+</ul>
+
+<h3>Itália népei</h3>
+<ul>
+<li>Italicus törzsek (i. e. 2. évezred): latinok, szabinok, szamniszok, umberek.</li>
+<li>Etruszkok: i. e. 1. évezredben városokat hoztak létre a nyugati részen.</li>
+<li>Görögök: városaik a déli részen épültek a gyarmatosítás korában.</li>
+</ul>
+
+<hr>
+
+<h2>Róma alapítása</h2>
+<ul>
+<li>A hagyomány szerint Romulus és Remus alapította i. e. 753-ban.</li>
+<li>A 10. században latin és szabin pásztorok telepedtek le a Tiberis melletti hét dombon.</li>
+</ul>
+
+<hr>
+
+<h2>A római történelem korszakai</h2>
+
+<h3>A királyság kora</h3>
+<ul>
+<li>Hét király uralkodott (első: Romulus).</li>
+<li>Utolsó három etruszk eredetű → erős etruszk befolyás.</li>
+<li>Átvették az etruszk szokásokat: művészet, írás, jóslás, életmód.</li>
+</ul>
+
+<h4>Társadalom</h4>
+<ul>
+<li>Patríciusok: nemzetségfők, földbirtokosok.</li>
+<li>Plebejusok: jognélküli köznép.</li>
+</ul>
+
+<p>
+I. e. 510-ben elűzték Tarquinius Superbust → kialakult a respublica (köztársaság).
+</p>
+
+<hr>
+
+<h3>A köztársaság kora</h3>
+
+<h4>Államszervezet</h4>
+<ul>
+<li>Magistratusok:
+  <ul>
+    <li>Consul</li>
+    <li>Praetor</li>
+    <li>Quaestor</li>
+    <li>Censor</li>
+    <li>Aedilis</li>
+    <li>Dictator</li>
+  </ul>
+</li>
+<li>Népgyűlés</li>
+<li>Szenátus (SPQR)</li>
+</ul>
+
+<h4>Patrícius–plebejus harc</h4>
+<ul>
+<li>Néptribunus vétójoggal</li>
+<li>XII táblás törvények</li>
+<li>Adósrabszolgaság eltörlése</li>
+<li>Licinius–Sextius földtörvény</li>
+<li>Hivatalviselés joga</li>
+<li>Házasság engedélyezése</li>
+</ul>
+
+<p>
+Kialakult a nobilitas (patrícius + gazdag plebejus).
+</p>
+
+<hr>
+
+<h2>Róma hódításai</h2>
+
+<h3>Itália meghódítása</h3>
+<ul>
+<li>Védekező háborúk etruszkok, gallok ellen.</li>
+<li>Közép- és Dél-Itália elfoglalása.</li>
+<li>Coloniák alapítása.</li>
+<li>Divide et impera elv.</li>
+</ul>
+
+<h3>Pun háborúk</h3>
+
+<h4>I. pun háború (i. e. 264–241)</h4>
+<ul>
+<li>Szicília birtoklása.</li>
+<li>Corvus alkalmazása.</li>
+<li>83 tonna ezüst sarc.</li>
+</ul>
+
+<h4>II. pun háború (i. e. 218–201)</h4>
+<ul>
+<li>Hannibal átkel az Alpokon.</li>
+<li>Cannae (i. e. 216).</li>
+<li>Zama (i. e. 202).</li>
+<li>3200 tonna ezüst jóvátétel.</li>
+</ul>
+
+<h4>III. pun háború (i. e. 149–146)</h4>
+<ul>
+<li>Karthágó lerombolása.</li>
+</ul>
+
+<h3>Hellenisztikus Kelet</h3>
+<ul>
+<li>Makedónia legyőzése (i. e. 168).</li>
+<li>Görög poliszok leigázása (i. e. 146).</li>
+<li>Mare nostrum.</li>
+</ul>
+
+<hr>
+
+<h2>A köztársaság válsága</h2>
+
+<h3>Okai</h3>
+<ul>
+<li>Földkérdés (ager publicus).</li>
+<li>Hadsereg problémája.</li>
+<li>Rabszolgafelkelések.</li>
+<li>Államirányítás zavarai.</li>
+</ul>
+
+<h3>Gracchusok</h3>
+<ul>
+<li>Tiberius (i. e. 133) – földreform.</li>
+<li>Caius (i. e. 123) – polgárjog, provinciák reformja.</li>
+</ul>
+
+<h3>Polgárháborúk</h3>
+<ul>
+<li>Néppárt (populares).</li>
+<li>Szenátori párt (optimates).</li>
+</ul>
+
+<h3>Marius reformjai</h3>
+<ul>
+<li>Zsoldoshadsereg.</li>
+<li>Veterán földosztás.</li>
+</ul>
+
+<h3>Sulla diktatúrája</h3>
+<ul>
+<li>Proscriptio.</li>
+<li>Szenátus létszámának növelése.</li>
+</ul>
+
+<h3>Spartacus (i. e. 74–71)</h3>
+<ul>
+<li>Felkelés Capuában.</li>
+<li>Keresztre feszítések.</li>
+</ul>
+
+<h3>Első triumvirátus</h3>
+<ul>
+<li>Caesar</li>
+<li>Crassus</li>
+<li>Pompeius</li>
+</ul>
+
+<h3>Caesar egyeduralma</h3>
+<ul>
+<li>Pharsalos (i. e. 48).</li>
+<li>Naptárreform.</li>
+<li>Meggyilkolása (i. e. 44).</li>
+</ul>
+
+<h3>Második triumvirátus</h3>
+<ul>
+<li>Octavianus</li>
+<li>Antonius</li>
+<li>Lepidus</li>
+<li>Actium (i. e. 31).</li>
+</ul>
+
+<hr>
+
+<h2>Augustus és a császárság</h2>
+
+<ul>
+<li>Augustus (i. e. 27 – i. u. 14).</li>
+<li>Princeps.</li>
+<li>Pax Romana.</li>
+<li>Természetes határok (Rajna–Duna).</li>
+</ul>
+
+<hr>
+
+<h2>A császárság kora</h2>
+
+<h3>Julius–Claudius dinasztia</h3>
+<ul>
+<li>Tiberius</li>
+<li>Caligula</li>
+<li>Claudius</li>
+<li>Nero</li>
+</ul>
+
+<h3>Flaviusok</h3>
+<ul>
+<li>Vespasianus</li>
+<li>Titus (Colosseum, Vezúv)</li>
+<li>Domitianus</li>
+</ul>
+
+<h3>Antoniusok</h3>
+<ul>
+<li>Nerva</li>
+<li>Traianus</li>
+<li>Hadrianus (Limes)</li>
+<li>Antoninus Pius</li>
+<li>Marcus Aurelius</li>
+<li>Lucius Verus</li>
+<li>Commodus</li>
+</ul>
+
+<hr>
+
+<h2>A 3. század válsága</h2>
+<ul>
+<li>Kétfrontos háborúk.</li>
+<li>Colonus rendszer.</li>
+<li>Gazdasági hanyatlás.</li>
+<li>Belviszályok.</li>
+</ul>
+
+<h3>Severusok</h3>
+<ul>
+<li>Septimius Severus</li>
+<li>Caracalla (212: polgárjog)</li>
+</ul>
+
+<h3>Katonacsászárok</h3>
+<ul>
+<li>Aurelianus</li>
+</ul>
+
+<hr>
+
+<h2>Dominatus</h2>
+
+<h3>Diocletianus</h3>
+<ul>
+<li>Tetrarchia</li>
+<li>Adóreform</li>
+<li>Közigazgatási reform</li>
+</ul>
+
+<h3>Constantinus</h3>
+<ul>
+<li>Constantinapolis</li>
+<li>Milánói ediktum (313)</li>
+<li>Niceai zsinat (325)</li>
+</ul>
+
+<hr>
+
+<h2>A birodalom bukása</h2>
+
+<ul>
+<li>395: kettészakadás.</li>
+<li>410: Alarich feldúlja Rómát.</li>
+<li>451: Catalaunum.</li>
+<li>455: vandál pusztítás.</li>
+<li>476: Romulus Augustulus trónfosztása (Odoaker).</li>
+</ul>
+
+<hr>
+
+<h2>Pannónia a római korban</h2>
+
+<h3>Meghódítása</h3>
+<ul>
+<li>Augustus (i. e. 12–9).</li>
+<li>Központ: Aquincum.</li>
+<li>Fontos városok: Gorsium, Savaria, Arrabona, Scarabantia, Sopianae.</li>
+</ul>
+
+<h3>Élet a provinciában</h3>
+<ul>
+<li>Fürdők, amfiteátrumok.</li>
+<li>Colóniák.</li>
+<li>Kereszténység terjedése.</li>
+</ul>
+
+<h3>Gazdaság</h3>
+<ul>
+<li>Szőlőművelés.</li>
+<li>Vas- és ezüstbányászat.</li>
+<li>Kereskedelem.</li>
+</ul>
+
+<p>
+Az 5. században a hunok megjelenése a római uralom végét jelentette Pannóniában.
+</p>

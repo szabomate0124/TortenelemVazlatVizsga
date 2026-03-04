@@ -1,0 +1,192 @@
+<h2>A Nyugat-Római birodalom utódállamai</h2>
+
+<ul>
+  <li><strong>Keleti Gót Királyság:</strong> Nagy Theodorik vezetésével jött létre az 5. század végén Itáliában.</li>
+  <li><strong>Longobárd Királyság:</strong> a 6. század közepén longobárdok alapították Itália északi részén.</li>
+  <li><strong>Pápai Állam:</strong>
+    <ul>
+      <li>a Róma központú egyház függetlenítette magát a világi hatalomtól</li>
+      <li>756-ban jött létre, amikor Kis Pippin Róma és Ravenna vidékét a pápaságnak adományozta</li>
+    </ul>
+  </li>
+  <li><strong>Frank Királyság:</strong>
+    <ul>
+      <li>a germán frank törzsek az 5. században betelepültek Gallia területére</li>
+      <li>Klodvig felvette a katolikus kereszténységet és dinasztiát alapított (Meroving dinasztia)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>A Frank Birodalom</h2>
+
+<h3>A Karoling-dinasztia felemelkedése</h3>
+<ul>
+  <li><strong>Martell Károly</strong> majordomus (udvarnagy) 732-ben Poitiers-nál legyőzte az előrenyomuló arabokat.</li>
+  <li>Fia, <strong>Kis Pippin</strong> 751-ben a pápa segítségével királlyá koronáztatta magát (hálából létrehozta a Pápai Államot).</li>
+  <li>Kis Pippin fia, <strong>Nagy Károly</strong>:
+    <ul>
+      <li>hódításokat folytatott</li>
+      <li>erős államot szervezett</li>
+      <li>800-ban császárrá koronáztatta magát</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>A frank állam</h3>
+<ul>
+  <li>Központja az Aacheni palota</li>
+  <li>A birodalom területét grófságokra és őrgrófságokra osztották:
+    <ul>
+      <li>élükön a grófok (comes) és őrgrófok álltak</li>
+      <li>feladatuk: adószedés, bíráskodás, hadvezetés</li>
+    </ul>
+  </li>
+  <li>Alkuin vezetésével egységesítették az írást (karoling minuscula):
+    <ul>
+      <li>az írásos ügyek intézését a kancellária végezte (oklevelek)</li>
+      <li>írott rendeletekkel irányították a birodalmat</li>
+    </ul>
+  </li>
+  <li>Nagy Károly halála után hatalmi harcok kezdődtek:
+    <ul>
+      <li>843-ban a verduni szerződésben unokái három részre osztották a birodalmat:
+        <ul>
+          <li>Nyugati frank királyság: Kopasz Károly birtoka (Franciaország)</li>
+          <li>Keleti frank királyság: Német Lajos birtoka (Németország)</li>
+          <li>Középső területek: Lothar birtoka (Itália, Burgundia, Lotharingia)</li>
+        </ul>
+      </li>
+      <li>A birodalom gyengeségét kihasználva a tartományok vezetői önállósodtak:
+        <ul>
+          <li>anarchia bontakozott ki</li>
+          <li>a normann (viking) és az arab támadások ellen sokáig képtelenek voltak védekezni</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>A külső támadások hatására erős központi hatalom jött létre:
+    <ul>
+      <li>Franciaország</li>
+      <li>Anglia</li>
+      <li>Német-Római Birodalom (I. Ottó hozta létre 962-ben)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>A Kelet-Római Birodalom</h2>
+<ul>
+  <li>A Keletrómai Birodalom a 6-10. század között a világ gazdasági, tudományos és művészeti központja volt:
+    <ul>
+      <li>Gazdasági fejlődés:
+        <ul>
+          <li>virágzó városokban nagyszámú kézműves réteg élt</li>
+          <li>fennmaradt a pénzgazdálkodás</li>
+          <li>fejlődött a kereskedelem</li>
+        </ul>
+      </li>
+      <li>Erős államhatalom:
+        <ul>
+          <li>központi hadsereg</li>
+          <li>adórend</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>6. században <strong>Justinianus császár</strong> (527-565):
+    <ul>
+      <li>Római jog gyűjteményes összefoglalása (Corpus Juris Civilis)</li>
+      <li>Hadjáratokat indított a nyugati területek visszahódításáért (Itália)</li>
+      <li>Felépítette a Hagia Sophia székesegyházat Konstantinápolyban</li>
+    </ul>
+  </li>
+  <li>8. században az arabok támadásai miatt területeket vesztett, majd a <strong>Makedón-dinasztia</strong> uralma alatt alakult ki a Bizánci Birodalom.</li>
+</ul>
+
+<h2>A szlávok</h2>
+<ul>
+  <li>Őshazájuk a Visztula - Dnyeper-folyók közötti terület (Pripjáty mocsarak)</li>
+  <li>6. században déli és nyugati irányba vándoroltak:
+    <ul>
+      <li>túlnépesedés</li>
+      <li>germán vándorlások</li>
+      <li>Bizánc meggyengülése</li>
+    </ul>
+  </li>
+  <li>Fejlődésük szétvált:
+    <ul>
+      <li>Nyugati szlávok: morvák, csehek, lengyelek</li>
+      <li>Déli szlávok: bolgárok, horvátok, szerbek</li>
+      <li>Keleti szlávok: oroszok, ukránok, fehér oroszok</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>A keresztény egyház helyzete a kora középkorban</h2>
+<ul>
+  <li>Nyugaton a Róma püspökei (pápa) függetlenedtek a világi hatalomtól (756-ban létrejött a Pápai állam)</li>
+  <li>Keleten fennmaradt a császárok egyház feletti hatalma</li>
+  <li>Az államalapítással egy időben az új népek felvették a kereszténységet:
+    <ul>
+      <li>Nyugati: Katolikus (Róma központú, egyetemes)</li>
+      <li>Keleti: Ortodox / görögkeleti (bizánci) kereszténység</li>
+    </ul>
+  </li>
+  <li>A térítő munkát szerzetesi közösségek végezték (pl. bencések)</li>
+  <li>Nyugati és Keleti egyház közötti ellentétek 1054-ben egyházszakadáshoz (Szkizma) vezettek</li>
+</ul>
+
+<h2>Az iszlám vallás kialakulása</h2>
+<ul>
+  <li>Arab-félsziget, nomád arabok (beduinok)
+    <ul>
+      <li>Harcoltak a vízért, oázisokért és állatokért</li>
+      <li>Kereskedővárosok a tömjénút mentén, pl. Mekka, ahol a Fekete Követ (Kába) őrizték</li>
+    </ul>
+  </li>
+  <li>Mohamed (570-632):
+    <ul>
+      <li>Vallási tanaihoz zsidó, keresztény és keleti tanításokat használt</li>
+      <li>Isten (Allah) Gábriel arkangyal útján nyilatkoztatta ki igazságait</li>
+      <li>Végítélet, egyetlen Isten (Allah) hatalma</li>
+      <li>Iszlám = teljes meghódolás, engedelmesség</li>
+      <li>622-ben Mekkából Medinába kergették (hidzsra) – a mohamedán időszámítás kezdete</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Az iszlám vallás fő tanításai</h2>
+<ul>
+  <li>Allah az isten, Mohamed a prófétája</li>
+  <li>Napi öt ima Mekka irányába</li>
+  <li>Alamizsnaosztás a szegényeknek</li>
+  <li>Ramadán havában böjt (Napkeltétől Napnyugtáig)</li>
+  <li>Mekkai zarándoklat</li>
+  <li>Dzsihád (Szent háború)</li>
+  <li>Kiegészítések:
+    <ul>
+      <li>maximum 4 feleség</li>
+      <li>tilalmak (pl. alkohol és disznóhús fogyasztása tilos)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Az iszlám terjedése</h2>
+<ul>
+  <li>7-8. század: arabok elfoglalták Afrikát, Hispániát, Közel-Keletet, eljutottak Indiáig
+    <ul>
+      <li>kezükbe kerültek a kereskedelmi utak</li>
+      <li>megőrizték és továbbadták a hellenisztikus műveltséget</li>
+      <li>meggyengült a Bizánci Birodalom</li>
+    </ul>
+  </li>
+  <li>Előretörésüket Európában 732 Poitiers-nál (Martell Károly), 740 Bizánciak (görögtűz) állították meg</li>
+  <li>Iszlám kultúra:
+    <ul>
+      <li>türelmes és befogadó más kultúrákkal szemben</li>
+      <li>arab fordítások az ókori görög, római, zsidó és más keleti kultúrák alkotásaiból</li>
+      <li>tudományok fejlődése: csillagászat, kémia (alkímia, elixír), matematika (algebra)</li>
+      <li>megőrizte az antik műveltséget és közvetítette Európa felé</li>
+      <li>kereskedők bejárták a világot, feljegyzéseket készítettek</li>
+    </ul>
+  </li>
+</ul>
