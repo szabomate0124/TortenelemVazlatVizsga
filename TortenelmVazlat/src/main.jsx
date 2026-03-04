@@ -11,6 +11,8 @@ import Login from './Login'
 import Register from './Register'
 import TopicPage from './TopicPage'
 import TopicDetailPage from "./TopicDetailPage"
+import TopicEditor from './TopicEditor'
+import AdminRoute from './AdminRoute'
 
 import { AuthProvider } from "./AuthContext"
 
@@ -24,13 +26,24 @@ createRoot(document.getElementById('root')).render(
           <Route path="/register" element={<Register />} />
 
           <Route element={<Layout />}>
+
             <Route path="/" element={<Fooldal />} />
             <Route path="/tema/:categoryId" element={<TopicPage />} />
             <Route path="/topic/:catId/:tpcId" element={<TopicDetailPage />} />
+
+            <Route 
+              path="/topicEditor/:catId/:tpcId"
+              element={
+                <AdminRoute>
+                  <TopicEditor />
+                </AdminRoute>
+              }
+            />
+
           </Route>
 
         </Routes>
       </BrowserRouter>
-    </AuthProvider> 
+    </AuthProvider>
   </StrictMode>
 )
