@@ -2,75 +2,79 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { AuthContext } from "./AuthContext" 
+import Spinner from "react-bootstrap/Spinner";
+import { AuthContext } from "./AuthContext";
 
 import "./topicDetail.css";
 
 function TopicDetailPage() {
   const { catId, tpcId } = useParams();
   const navigate = useNavigate();
+  const { isAdmin } = useContext(AuthContext);
 
   const [topic, setTopic] = useState(null);
   const [error, setError] = useState(false);
-  const { user, isAdmin } = useContext(AuthContext); 
-  console.log(user)
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     if (!catId || !tpcId) {
       setError(true);
+      setLoading(false);
       return;
     }
 
+    setLoading(true);
+
     fetch(`http://localhost:3000/api/content/${catId}/${tpcId}`)
       .then(res => {
-        if (!res.ok) throw new Error("Nem található");
+        if (!res.ok) throw new Error();
         return res.json();
       })
       .then(data => {
-        setTopic({
-          title: data.title,
-          content: data.content,
-        });
+        setTopic(data);
+        setLoading(false);
       })
-      .catch(err => {
-        console.error(err);
+      .catch(() => {
         setError(true);
+        setLoading(false);
       });
+
   }, [catId, tpcId]);
+
+  if (loading) {
+    return (
+      <Container className="my-5 text-center">
+        <Spinner animation="border" />
+        <p>Betöltés...</p>
+      </Container>
+    );
+  }
 
   if (error) {
     return (
       <Container className="my-5 text-center">
         <h2>Ez a tananyag nem található</h2>
-        <Button
-          className="btn-outline-custom mt-3"
-          onClick={() => navigate(-1)}
-        >
+        <Button onClick={() => navigate(-1)}>
           ← Vissza
         </Button>
       </Container>
     );
   }
 
-  if (!topic) {
-    return (
-      <Container className="my-5 text-center">
-        <h2>Betöltés...</h2>
-      </Container>
-    );
-  }
-
   return (
     <Container className="my-5">
-      
       <div className="history-content">
 
         <h1>{topic.title}</h1>
-        {isAdmin() 
-          ? <div> 
-              <button>Admin gomb 1</button>
-              <button>Admin gomb 2</button>
-             </div> 
-          : null}
+
+        {isAdmin() && (
+          <Button
+            className="btn-filled-custom mb-4"
+            onClick={() => navigate(`/topicEditor/${catId}/${tpcId}`)}
+          >
+            Téma szerkesztése
+          </Button>
+        )}
 
         <div
           dangerouslySetInnerHTML={{ __html: topic.content }}

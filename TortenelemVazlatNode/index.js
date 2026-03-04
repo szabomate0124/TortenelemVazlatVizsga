@@ -127,11 +127,6 @@ const authenticateToken = (req, res, next) => {
     });
 };
 
-
-
-
-
-
 app.listen(PORT, () => {
   console.log(`Szerver fut a http://localhost:${PORT} címen`)
 })
