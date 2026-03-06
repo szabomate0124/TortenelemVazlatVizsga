@@ -81,7 +81,7 @@ function TopicPage() {
               <Col md={4} sm={6} xs={12} key={topicId}>
                 <Card className="topic-card h-100">
                   {topic.img && (
-                    <Card.Img variant="top" src={topic.img} alt={topic.title} />
+                    <Card.Img variant="top" src={`http://localhost:3000/Torivazlatkepek/${topic.img}`} alt={topic.title} />
                   )}
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>{topic.title || "Névtelen téma"}</Card.Title>
