@@ -57,6 +57,28 @@ app.get('/api/content/:catId/:tpcId', (req, res)=>{
     });
 });
 
+//így tudod meghívni fetchben,  nyílván nem kötelező így meghívni a value-t = ${search}
+////---------http://localhost:3000/api/search?q=${search}------\\\\\\\
+app.get("/api/search", (req, res) => {
+  const query = req.query.q;
+
+  const sql = `
+    SELECT topics.id, topics.title, topics.img 
+    FROM topics 
+    WHERE topics.title LIKE ?
+  `;
+
+  connection.query(sql, [`%${query}%`], (err, results) => {
+    if (err) {
+      console.error("Hiba:", err);
+      return res.status(500).json({ error: "Adatbázis hiba" });
+    }
+
+    res.json(results);
+  });
+});
+
+
 
 
 app.post("/api/register", async (req, res) => {
@@ -130,12 +152,11 @@ const authenticateToken = (req, res, next) => {
 
 
 
-
+//admin features
 app.put("/api/topics/:catId/:tpcId", authenticateToken, (req, res) => {
   const { catId, tpcId } = req.params;
   const { title, content } = req.body;
 
-  // csak admin módosíthat
   if (req.user.auth_id !== 1) {
     return res.status(403).json({ error: "Nincs jogosultság" });
   }
