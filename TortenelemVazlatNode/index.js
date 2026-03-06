@@ -10,6 +10,7 @@ const PORT = 3000;
 const SECRET_KEY = "test";
 app.use(cors());
 app.use(express.json());
+app.use("/Torivazlatkepek", express.static("../Torivazlatkepek"));
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -126,6 +127,49 @@ const authenticateToken = (req, res, next) => {
         next();
     });
 };
+
+
+
+
+app.put("/api/topics/:catId/:tpcId", authenticateToken, (req, res) => {
+  const { catId, tpcId } = req.params;
+  const { title, content } = req.body;
+
+  // csak admin módosíthat
+  if (req.user.auth_id !== 1) {
+    return res.status(403).json({ error: "Nincs jogosultság" });
+  }
+
+  const sql = `
+    UPDATE topics
+    SET title = ?, content = ?
+    WHERE id = ? AND category_id = ?
+  `;
+
+  connection.query(sql, [title, content, tpcId, catId], (err, results) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Adatbázis hiba" });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({ error: "Nem található a téma" });
+    }
+
+    res.json({ message: "Sikeres módosítás" });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
 
 app.listen(PORT, () => {
   console.log(`Szerver fut a http://localhost:${PORT} címen`)
