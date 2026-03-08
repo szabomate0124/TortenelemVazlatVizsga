@@ -15,6 +15,7 @@ import TopicEditor from './TopicEditor'
 import AdminRoute from './AdminRoute'
 
 import { AuthProvider } from "./AuthContext"
+import SearchResults from './SearchResults'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/" element={<Fooldal />} />
             <Route path="/tema/:categoryId" element={<TopicPage />} />
             <Route path="/topic/:catId/:tpcId" element={<TopicDetailPage />} />
+            <Route path="/searchResults/:keywords" element={<SearchResults />} />
 
             <Route 
               path="/topicEditor/:catId/:tpcId"

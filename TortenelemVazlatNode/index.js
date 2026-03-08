@@ -60,22 +60,26 @@ app.get('/api/content/:catId/:tpcId', (req, res)=>{
 //így tudod meghívni fetchben,  nyílván nem kötelező így meghívni a value-t = ${search}
 ////---------http://localhost:3000/api/search?q=${search}------\\\\\\\
 app.get("/api/search", (req, res) => {
+
   const query = req.query.q;
 
   const sql = `
-    SELECT topics.id, topics.title, topics.img 
-    FROM topics 
-    WHERE topics.title LIKE ?
+    SELECT id, title, img, category_id
+    FROM topics
+    WHERE title LIKE ? OR content LIKE ?
   `;
 
-  connection.query(sql, [`%${query}%`], (err, results) => {
+  connection.query(sql, [`%${query}%`, `%${query}%`], (err, results) => {
+
     if (err) {
-      console.error("Hiba:", err);
+      console.error(err);
       return res.status(500).json({ error: "Adatbázis hiba" });
     }
 
     res.json(results);
+
   });
+
 });
 
 

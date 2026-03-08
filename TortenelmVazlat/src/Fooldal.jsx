@@ -15,9 +15,11 @@ import card3 from "./assets/card3.jpg";
 import card4 from "./assets/card4.jpg";
 import card5 from "./assets/card5.jpg";
 import card6 from "./assets/card6.jpg";
+import { useState } from "react";
 
 function Fooldal() {
   const navigate = useNavigate();
+  const [keywords, setKeywords] = useState("");
 
   const categoryMap = {
     egyetemes: 1,
@@ -37,6 +39,10 @@ function Fooldal() {
     { title: "Érdekességek", image: card6, slug: "erdekessegek" },
   ];
 
+  function search(){
+      navigate("/searchResults/" + keywords)
+  }
+
   return (
     <>
      
@@ -49,8 +55,8 @@ function Fooldal() {
             </p>
 
             <Form className="search-box">
-              <Form.Control placeholder="Keresés..." />
-              <Button className="btn-filled-custom">Keresés</Button>
+              <Form.Control onChange={(e)=>setKeywords(e.target.value)} value={keywords} placeholder="Keresés..." />
+              <Button onClick={search} className="btn-filled-custom">Keresés</Button>
             </Form>
           </div>
         </div>

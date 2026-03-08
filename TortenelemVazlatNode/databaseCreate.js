@@ -1,8 +1,6 @@
-const express = require("express");
 const mysql = require("mysql2");
-
-const app = express();
-const PORT = 3000;
+const fs = require("fs");
+const path = require("path")
 
 
 const connection = mysql.createConnection({
@@ -10,6 +8,7 @@ const connection = mysql.createConnection({
   user: "root",
   password: "",
   //database: "ToriTartalom",
+  multipleStatements: true,
   port: process.env.DB_PORT
 });
 
@@ -20,6 +19,7 @@ connection.connect((err) => {
     connection.changeUser({ database: "ToriTartalom" }, (err) => {
       if (err) console.error(err);
       createTables();
+      SeedDatabase();
     });
   });
 });
@@ -117,7 +117,28 @@ function createTables() {
   });
 }
 
+function SeedDatabase(){
+  const sqlPath = path.join(__dirname, 'toritartalom.sql');
 
+// 3. Fájl beolvasása és futtatása
+fs.readFile(sqlPath, 'utf8', (err, sqlQuery) => {
+  if (err) {
+    console.error("Hiba a fájl beolvasásakor:", err);
+    return;
+  }
+
+  connection.query(sqlQuery, (err, results) => {
+    if (err) {
+      console.error("Hiba az SQL futtatásakor:", err);
+    } else {
+      console.log("Az SQL fájl sikeresen lefutott!");
+      // Több utasítás esetén a results egy tömb lesz
+      console.log(results);
+    }
+    connection.end();
+  });
+});
+}
 
 
 
