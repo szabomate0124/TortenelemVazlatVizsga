@@ -82,7 +82,21 @@ app.get("/api/search", (req, res) => {
 
 });
 
+//új téma hozzáadása
+// a category_id-t ugyanúgy a weboldalról szürje ne az adminnak kelljen megadnia
+app.post('/api/insert', (req, res) => {
+    const { title, category_id, content, img } = req.body;
 
+    const sqlInsert = "INSERT INTO topics (title, category_id, content, img) VALUES (?,?,?,?)";
+    connection.query(sqlInsert, [title, category_id, content, img], (err, result) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send("Hiba a mentés során");
+        } else {
+            res.send("Sikeres mentés!");
+        }
+    });
+});
 
 
 app.post("/api/register", async (req, res) => {
