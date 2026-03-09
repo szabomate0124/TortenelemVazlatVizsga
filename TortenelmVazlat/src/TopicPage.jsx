@@ -1,10 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import "./topicPage.css";
+import { AuthContext } from "./AuthContext";
 
 import img4 from "./assets/4.jpg";
 import img5 from "./assets/5.jpg";
@@ -15,6 +16,7 @@ import mt from "./assets/mt.jpg";
 function TopicPage() {
   const { categoryId } = useParams();
   const navigate = useNavigate();
+  const { isAdmin } = useContext(AuthContext);
 
   const [topics, setTopics] = useState([]);
   const [error, setError] = useState(false);
@@ -73,7 +75,20 @@ function TopicPage() {
         </div>
       </div>
 
-      <Container className="my-5">
+      <Container className="my-5 text-center">
+        {/* --- Új téma létrehozása gomb adminoknak --- */}
+        {isAdmin() && (
+          <div className="create-topic-wrapper mb-4">
+            <button
+              className="create-topic-button"
+              onClick={() => navigate(`/createTopic/${categoryId}`)}
+            >
+              +
+            </button>
+            <div className="mt-2">Új téma létrehozása</div>
+          </div>
+        )}
+
         <Row className="g-4">
           {topics.map((topic, index) => {
             const topicId = topic.id ?? index + 1;
@@ -81,7 +96,11 @@ function TopicPage() {
               <Col md={4} sm={6} xs={12} key={topicId}>
                 <Card className="topic-card h-100">
                   {topic.img && (
-                    <Card.Img variant="top" src={`http://localhost:3000/Torivazlatkepek/${topic.img}`} alt={topic.title} />
+                    <Card.Img
+                      variant="top"
+                      src={`http://localhost:3000/Torivazlatkepek/${topic.img}`}
+                      alt={topic.title}
+                    />
                   )}
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>{topic.title || "Névtelen téma"}</Card.Title>

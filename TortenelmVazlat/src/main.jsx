@@ -17,6 +17,8 @@ import AdminRoute from './AdminRoute'
 import { AuthProvider } from "./AuthContext"
 import SearchResults from './SearchResults'
 
+import CreateTopic from './CreateTopic'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider> 
@@ -38,6 +40,15 @@ createRoot(document.getElementById('root')).render(
               element={
                 <AdminRoute>
                   <TopicEditor />
+                </AdminRoute>
+              }
+            />
+
+            <Route
+              path="/createTopic/:catId"
+              element={
+                <AdminRoute>
+                  <CreateTopic />
                 </AdminRoute>
               }
             />

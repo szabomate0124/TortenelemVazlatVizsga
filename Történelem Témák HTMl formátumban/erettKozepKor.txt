@@ -1,156 +1,256 @@
-<h2>1. A középkori gazdaság és társadalom fejlődése</h2>
+<h1>1. A középkori gazdaság és társadalom fejlődése</h1>
 
-<h3>A mezőgazdaság forradalma és hatásai</h3>
-<ul>
-  <li>A kora középkorban a megélhetés alapja a föld lett, ezért a gazdaság súlya a falvakba helyeződött.</li>
-  <li>Parasztok művelték a földesúr majorsági földjeit (robot), ezért:
-    <ul>
-      <li>Belső telek: kert, házhely</li>
-      <li>Külső telek: szántó</li>
-      <li>Közösen használták a birtokossal a réteket, legelőket, erdőket és vizeket</li>
-      <li>A földhasználatért a robotmunkán kívül terménnyel és pénzzel adóztak</li>
-      <li>+ egyéb járadékokkal, ajándékokkal tartoztak</li>
-    </ul>
-  </li>
-  <li>A 10. század végére Európa nyugati felén véget értek a hódító támadások (vikingek, magyarok, arabok), ezért megnőtt a népesség száma.</li>
-  <li>Új eszközök (szügyhám, nehézeke, lópatkó, borona) és a háromnyomásos földművelés következménye:
-    <ul>
-      <li>Nőtt a terméshozam</li>
-      <li>Újabb földeket kellett művelés alá vonni (erdőirtás, mocsarak és tavak lecsapolása)</li>
-    </ul>
-  </li>
-  <li>A kézművesek kiválása a mezőgazdaságból városokat hozott létre</li>
-</ul>
-<img src="kkv.jpg" alt="Középkori mezőgazdaság" style="max-width:100%;height:auto;">
+<h2>A mezőgazdaság forradalma és hatásai</h2>
 
-<h3>A középkori városok jellemzői</h3>
-<ul>
-  <li>Várostípusok:
-    <ul>
-      <li>Szabad királyi városok: király alá tartoznak (vásárvárosok, bányavárosok)</li>
-      <li>Mezővárosok: földesúr alá tartoznak</li>
-    </ul>
-  </li>
-  <li>Városok kialakulásának helyszínei:
-    <ul>
-      <li>Folyók és hegységek találkozása, folyók torkolata, utak kereszteződése</li>
-      <li>Királyi, egyházi, földesúri székhely (várak, kolostorok)</li>
-      <li>Nyersanyaglelőhelyek (bányák)</li>
-      <li>Kereskedelmi-piaci központok (vásárok)</li>
-      <li>Ókori városok romjai</li>
-    </ul>
-  </li>
-  <li>Város célja: függetlenedni a földesuraktól → kommuna mozgalom</li>
-  <li>Városi kiváltságok:
-    <ul>
-      <li>Szabad bíróválasztás és bíráskodás</li>
-      <li>Saját közigazgatás, adószedés</li>
-      <li>Vásártartás, vámmentesség, árumegállító jog</li>
-      <li>Évente egy összegben adózás a királynak</li>
-      <li>Saját véderő és védőfal</li>
-      <li>Saját plébános megválasztása</li>
-      <li>Pallosjog, stb.</li>
-    </ul>
-  </li>
-</ul>
-<img src="gir.jpg" alt="Középkori város" style="max-width:100%;height:auto;">
+<p>A kora középkorban a megélhetés alapja a föld lett, ezért a gazdaság súlya a falvakba helyeződött. A földbirtokosok uradalmaiban letelepült parasztok művelték a földesúr majorsági földjeit (robot).</p>
 
-<h3>A céhek és a távolsági kereskedelem</h3>
+<p>A föld egy részét használatba kapták:</p>
+
 <ul>
-  <li>A céhek az azonos mesterségű polgárok érdekvédelmi szervezetei</li>
-  <li>Feladataik:
-    <ul>
-      <li>Szabályozza a piacot és a termelést</li>
-      <li>Korlátozza a versenyt (minőség, mennyiség)</li>
-      <li>Védelmez árvák, özvegyek és a város érdekeit</li>
-    </ul>
-  </li>
-  <li>Távolsági kereskedelem: India és Kína is célpont</li>
-  <li>Középkori kereskedelmi útvonalak:
-    <ul>
-      <li>Hanza-kereskedelem: Anglia ↔ Oroszország</li>
-      <li>Levantei kereskedelem: Európa ↔ Közel- és Távol-Kelet</li>
-      <li>Szárazföldi kereskedelem: Velence, Genova ↔ Flandria</li>
-    </ul>
-  </li>
-  <li>Pénzgazdálkodás elterjedése: arany és ezüst pénz használata</li>
+<li>belső telek: kert, házhely</li>
+<li>külső telek: szántó</li>
+<li>közösen használták a birtokossal a réteket, legelőket, erdőket és a vizeket</li>
+<li>a földhasználatért a robotmunkán kívül terménnyel és pénzzel adóztak</li>
+<li>+ egyéb járadékokkal, ajándékokkal tartoztak</li>
 </ul>
 
-<h2>2. A katolikus egyház világuralmi tervei</h2>
-<img src="inveszt.jpg" alt="Invesztitúra háborúk" style="max-width:100%;height:auto;">
+<p>A 10. század végére Európa nyugati felén véget értek a zsákmányszerző – hódító támadások (vikingek, magyarok, arabok), ezért megnőtt a népesség száma.</p>
 
-<h3>A pápák és a császárok küzdelmei</h3>
+<p>A hagyományos művelési módszerekkel (talajváltó és kétnyomásos földművelés) nem tudtak elegendő élelmet termelni, ezért új eszközök alkalmazásával áttértek a háromnyomásos földművelésre.</p>
+
 <ul>
-  <li>Invesztitúra háborúk: egyház elvilágiasodása, simónia, invesztitúra, pápa-császár konfliktus</li>
-  <li>10. századi megújulás: zarándoklat, vezeklés, szerzetesrendek alapítása (domonkosok, ferencesek, ciszterciták, trappisták)</li>
-  <li>Cluny kolostor 910: pápát Isten utáni legfőbb embernek tekintették</li>
-  <li>1054: keleti és nyugati egyház szakadása (Szkizma)</li>
-  <li>1075: VII. Gergely pápa Dictatus Papae bullája → hatalmi konfliktus IV. Henrik császárral</li>
-  <li>1122: Wormsi konkordátum → egyházi beiktatás a pápa, világi a császár joga</li>
-  <li>I. Barbarossa uralma: Lombard Liga, legnanói csata 1176</li>
-  <li>13. század közepétől: Német-Római Császárság gyengülése → Habsburgok felemelkedése</li>
+<li>szügyhám</li>
+<li>nehézeke</li>
+<li>lópatkó</li>
+<li>borona</li>
 </ul>
 
-<h3>A keresztes háborúk</h3>
+<p>Következmények:</p>
+
 <ul>
-  <li>Okok: túlnépesedés, feudális öröklési rend, vallási ok, lovagi érdekek, Szentföld felszabadítása</li>
-  <li>Résztvevők: lovagok, városi szegények, falusi szegények</li>
-  <li>Időszak: 1096–1270
-    <ul>
-      <li>1. hadjárat (1096-99): Jeruzsálem elfoglalása, keresztes államok</li>
-      <li>12. sz. vége: Szaladin visszafoglalta Jeruzsálemet</li>
-    </ul>
-  </li>
-  <li>Következmények:
-    <ul>
-      <li>Feudális feszültség levezetése</li>
-      <li>Lovagrendek létrejötte (templomosok, johanniták, ispotályosok)</li>
-      <li>Levantei kereskedelem Európa felé</li>
-      <li>Arab tudomány és ókori műveltség elterjedése</li>
-      <li>Egyetemek létrejötte, reneszánsz előkészítése</li>
-    </ul>
-  </li>
+<li>jelentősen nőtt a terméshozam</li>
+<li>a jobb megélhetés újabb népességrobbanást eredményezett</li>
+<li>új földeket kellett művelés alá vonni (erdőirtás, mocsarak lecsapolása)</li>
 </ul>
 
-<h2>3. A rendiség kora</h2>
+<p>Az elegendő élelem lehetővé tette a kézművesek kiválását a mezőgazdaságból, akik vásárhelyekre költöztek, és létrehozták a középkori városokat.</p>
 
-<h3>A rendi országgyűlések</h3>
+<div class="image-section">
+<img src="./assets/kkv.jpg" alt="Középkori város">
+<small>Középkori város</small>
+</div>
+
+<h2>A középkori városok jellemzői</h2>
+
+<h3>A városok típusai</h3>
+
 <ul>
-  <li>Feudális rendek: nemesség, papság, polgárság (3. rend)</li>
-  <li>Kialakulás: földadományok, városok fejlődése, kollektív kiváltságok</li>
-  <li>Országgyűlés: két- és háromkamarás</li>
-  <li>Lehetővé teszi: erőforrások összpontosítását, belső egységet, külső veszély elleni fellépést</li>
+<li>szabad királyi városok – a király alá tartoznak (vásárvárosok, bányavárosok)</li>
+<li>mezővárosok – a földesúr alá tartoznak</li>
 </ul>
 
-<h3>Angol rendiség fejlődése</h3>
+<h3>A városok kialakulásának helyszínei</h3>
+
 <ul>
-  <li>1066: Hódító Vilmos → erős hűbérállam</li>
-  <li>12. század: II. Henrik → Franciaország részei az angol király kezében, központosítás</li>
-  <li>I. János: Magna Charta Libertatum 1215 → nemesek jogainak biztosítása</li>
-  <li>1265: rendi gyűlés állandósulása (Lordok Háza, Közösségek Háza)</li>
+<li>folyók és hegység találkozása</li>
+<li>folyók torkolata</li>
+<li>utak kereszteződése</li>
+<li>hegyvidék és síkság találkozása</li>
+<li>várak és kolostorok</li>
+<li>bányák</li>
+<li>kereskedelmi központok</li>
+<li>ókori városok romjai</li>
 </ul>
 
-<h3>Franciaország felemelkedése és a százéves háború</h3>
+<h3>A városok célja</h3>
+
+<p>Függetlenedni a földesuraktól. Ennek érdekében létrejött a <strong>kommuna-mozgalom</strong>, a városi önkormányzat.</p>
+
+<h3>Városi kiváltságok</h3>
+
 <ul>
-  <li>Capeting dinasztia, Párizs környéki hatalom</li>
-  <li>II. Fülöp Ágost és IX. (Szent) Lajos → királyi hatalom megerősítése</li>
-  <li>IV. Szép Fülöp: templomosok és egyházi vagyon elkobzása, Etats Generaux 1302</li>
-  <li>Százéves háború 1337-1453: angol-francia konfliktus, Jeanne d’Arc szerepe</li>
-  <li>Következmények: Franciaország központosított állam, Anglia polgárháború (rózsák háborúja)</li>
+<li>szabad bíróválasztás</li>
+<li>saját közigazgatás</li>
+<li>saját adószedés</li>
+<li>vásártartás és vámmentesség</li>
+<li>árumegállító jog</li>
+<li>évi egy összegben adózás</li>
+<li>saját véderő és védőfal</li>
+<li>saját plébános választása</li>
+<li>pallosjog</li>
 </ul>
 
-<h3>Nyugat-Európa válsága a 14. században</h3>
+<div class="image-section">
+<img src="./assets/gir.jpg" alt="Középkori városi élet">
+<small>Középkori városi élet</small>
+</div>
+
+<h3>A városok társadalma</h3>
+
+<p><strong>Patríciusok</strong></p>
+
 <ul>
-  <li>Gazdasági visszaesés, kis jégkorszak, földek kimerülése</li>
-  <li>Népesség csökkenése (80 → 60 millió)</li>
-  <li>Betegségek: pestis, himlő, kolera</li>
-  <li>Nyugati egyház szakadás: Husz János, Konstanzi Zsinat 1414-18</li>
+<li>a leggazdagabb lakók</li>
+<li>kereskedők és gazdag iparosok</li>
+<li>a város irányítói</li>
 </ul>
 
-<h2>4. Közép- és Kelet-Európa a középkorban</h2>
+<p><strong>Plebejusok</strong></p>
+
 <ul>
-  <li>Csehország: Luxemburg-ház, IV. Károly építkezései, német telepesek (hospesek), Husz János → huszita háborúk 1419-1434</li>
-  <li>Lengyelország: Lokietek Ulászló, III. (Nagy) Kázmér, Krakkói egyetem 1364, Jagelló unió, Grünwald 1410</li>
-  <li>Kelet-Európa: Mongol Birodalom, kulikovói csata 1380, Moszkva függetlensége 1480 (III. Iván)</li>
-  <li>Oszmán-Török Birodalom: I. Murád, Rigómező 1389, Nikápolyi győzelem 1396, II. Mohamed Konstantinápoly 1453</li>
+<li>a városi társadalom nagyobb része</li>
+<li>iparosok, kézművesek, napszámosok</li>
+<li>nincs polgárjoguk</li>
+</ul>
+
+<h2>A céhek</h2>
+
+<p>A céhek az azonos mesterségű városi polgárok érdekvédelmi szervezetei.</p>
+
+<ul>
+<li>szabályozzák a piacot</li>
+<li>korlátozzák a versenyt</li>
+<li>védelmezik az árvákat, özvegyeket</li>
+<li>védik a város érdekeit</li>
+</ul>
+
+<h2>A távolsági kereskedelem kialakulása</h2>
+
+<p>A céhek nagy mennyiségű árut termeltek, amelyet a kereskedők távolabbi vidékekre szállítottak.</p>
+
+<p>A távolsági kereskedelem legtávolabbi céljai India és Kína voltak.</p>
+
+<h3>Kereskedelmi útvonalak</h3>
+
+<ul>
+<li><strong>Hanza-kereskedelem</strong> – Anglia és Oroszország között</li>
+<li><strong>Levantei kereskedelem</strong> – Európa és a Közel-Kelet között</li>
+<li><strong>Szárazföldi kereskedelem</strong> – Velence és Genova, Champagne és Flandria között</li>
+</ul>
+
+<h2>A pénzgazdálkodás elterjedése</h2>
+
+<p>A kereskedelem fejlődése miatt ismét elterjedt a jó minőségű arany és ezüst pénz használata Európában.</p>
+
+<h1>2. A katolikus egyház világuralmi tervei</h1>
+
+<div class="image-section">
+<img src="./assets/inveszt.jpg" alt="Invesztitúra harc">
+<small>Invesztitúra harc</small>
+</div>
+
+<h2>A pápák és császárok küzdelmei</h2>
+
+<p>Az invesztitúra-harc az egyházi és világi hatalom közötti konfliktus volt.</p>
+
+<ul>
+<li>simónia: egyházi tisztségek adásvétele</li>
+<li>invesztitúra: egyházi méltóságba való beiktatás joga</li>
+</ul>
+
+<p>1075-ben <strong>VII. Gergely pápa</strong> kiadta a Dictatus Papae bullát.</p>
+
+<blockquote>
+1077-ben IV. Henrik Canossában vezekelt a pápa előtt.
+</blockquote>
+
+<p>1122-ben a wormsi konkordátum lezárta a konfliktust.</p>
+
+<h2>A keresztes háborúk</h2>
+
+<p>1095-ben <strong>II. Orbán pápa</strong> keresztes hadjáratot hirdetett a Szentföld felszabadítására.</p>
+
+<h3>Okai</h3>
+
+<ul>
+<li>túlnépesedés</li>
+<li>vallási okok</li>
+<li>lovagi érdekek</li>
+<li>Szentföld felszabadítása</li>
+</ul>
+
+<h3>Résztvevők</h3>
+
+<ul>
+<li>lovagok</li>
+<li>városi szegények</li>
+<li>falusi szegények</li>
+</ul>
+
+<p>1096–1270 között zajlottak.</p>
+
+<p>Az első hadjárat során elfoglalták Jeruzsálemet és keresztes államok jöttek létre.</p>
+
+<h1>3. A rendiség kora</h1>
+
+<h2>A rendi országgyűlések</h2>
+
+<p>A rendek a feudális társadalom kiváltságos csoportjai.</p>
+
+<ul>
+<li>nemesség</li>
+<li>papság</li>
+<li>polgárság</li>
+</ul>
+
+<p>A rendi országgyűlés lehetővé tette az ország erőforrásainak összpontosítását.</p>
+
+<h2>Az angol rendiség</h2>
+
+<p>1066-ban a hastingsi csatában <strong>Hódító Vilmos</strong> meghódította Angliát.</p>
+
+<p>1215-ben kiadták a <strong>Magna Charta Libertatum</strong> oklevelet.</p>
+
+<h2>Franciaország felemelkedése</h2>
+
+<p>A Capeting-dinasztia uralkodott.</p>
+
+<p>IV. Szép Fülöp összehívta a rendi gyűlést (1302).</p>
+
+<h2>A százéves háború (1337–1453)</h2>
+
+<p>Anglia és Franciaország között zajlott.</p>
+
+<p>Jeanne d’Arc fellépése segítette Franciaország győzelmét.</p>
+
+<h2>Nyugat-Európa válsága a 14. században</h2>
+
+<ul>
+<li>éghajlat lehűlése</li>
+<li>járványok (pestis)</li>
+<li>háborúk</li>
+</ul>
+
+<p>Európa népessége 80 millióról 60 millióra csökkent.</p>
+
+<h1>4. Közép- és Kelet-Európa a középkorban</h1>
+
+<h2>Csehország fejlődése</h2>
+
+<p>IV. Károly idején élte fénykorát.</p>
+
+<p>Husz János reformokat követelt, de 1415-ben eretnekként elégették.</p>
+
+<h2>Lengyelország fejlődése</h2>
+
+<p>III. Kázmér megerősítette az országot.</p>
+
+<p>1364-ben létrejött a krakkói egyetem.</p>
+
+<h2>Kelet-Európa</h2>
+
+<p>A mongol hódítás megállította a fejlődést.</p>
+
+<p>III. Iván egyesítette az orosz fejedelemségeket.</p>
+
+<h2>Az Oszmán Birodalom kialakulása</h2>
+
+<p>Oszmán egyesítette a török törzseket.</p>
+
+<p>1453-ban II. Mohamed elfoglalta Konstantinápolyt.</p>
+
+<ul>
+<li>katonaállam</li>
+<li>központosított hatalom</li>
+<li>vilajetekre és szandzsákokra osztott közigazgatás</li>
 </ul>

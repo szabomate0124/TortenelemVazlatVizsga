@@ -26,6 +26,33 @@
   --transition-smooth: 0.45s cubic-bezier(.2,.8,.2,1);
 }
 
+.create-topic-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-topic-button {
+  font-size: 2.5rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background: var(--gold-gradient);
+  color: var(--primary-dark-deep);
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-topic-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
 .portfolio-header {
   position: relative;
   background-size: cover;
