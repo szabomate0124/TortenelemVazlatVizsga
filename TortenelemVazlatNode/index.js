@@ -3,6 +3,9 @@ const mysql = require("mysql2");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const { randomUUID } = require("crypto"); 
+const fs = require("fs");
+const path = require("path"); 
 
 
 const app = express();
@@ -11,6 +14,8 @@ const SECRET_KEY = "test";
 app.use(cors());
 app.use(express.json());
 app.use("/Torivazlatkepek", express.static("../Torivazlatkepek"));
+app.use(express.json({ limit: "10mb" }));
+app.use(express.urlencoded({ limit: "10mb", extended: true })); 
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -66,7 +71,7 @@ app.get("/api/search", (req, res) => {
   const sql = `
     SELECT id, title, img, category_id
     FROM topics
-    WHERE title LIKE ? OR content LIKE ?
+    WHERE title LIKE ?
   `;
 
   connection.query(sql, [`%${query}%`, `%${query}%`], (err, results) => {
@@ -85,18 +90,30 @@ app.get("/api/search", (req, res) => {
 //új téma hozzáadása
 // a category_id-t ugyanúgy a weboldalról szürje ne az adminnak kelljen megadnia
 app.post('/api/insert', (req, res) => {
+
+    const base64Image = req.body.img;
+
+    if (!base64Image) {
+        return res.status(400).send("No image provided");
+    }
+
+    const base64Data = base64Image.replace(/^data:image\/\w+;base64,/, "");
+    const fileName = randomUUID() + ".png";
+    const savePath = path.join(__dirname, "../Torivazlatkepek", fileName);
+    fs.writeFileSync(savePath, Buffer.from(base64Data, "base64")); 
+
     const { title, category_id, content, img } = req.body;
 
     const sqlInsert = "INSERT INTO topics (title, category_id, content, img) VALUES (?,?,?,?)";
-    connection.query(sqlInsert, [title, category_id, content, img], (err, result) => {
+    connection.query(sqlInsert, [title, category_id, content, fileName], (err, result) => {
         if (err) {
             console.log(err);
-            res.status(500).send("Hiba a mentés során");
+            res.status(500).send({message: "Hiba a mentés során!"} );
         } else {
-            res.send("Sikeres mentés!");
+            res.send({message: "Sikeres mentés"} );
         }
     });
-});
+});a
 
 
 app.post("/api/register", async (req, res) => {
