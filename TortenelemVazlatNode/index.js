@@ -113,7 +113,7 @@ app.post('/api/insert', (req, res) => {
             res.send({message: "Sikeres mentés"} );
         }
     });
-});a
+});
 
 
 app.post("/api/register", async (req, res) => {
