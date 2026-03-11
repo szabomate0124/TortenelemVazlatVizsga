@@ -7,24 +7,46 @@ function CreateTopic() {
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState("");
+
+  const convertToBase64 = async (file) => {
+
+    
+    const fileReader = new FileReader();
+    fileReader.readAsDataURL(file);
+
+    fileReader.onload = () => {
+      setImage(fileReader.result);
+    };
+
+    fileReader.onerror = (error) => {
+      alert(error);
+    };
+
+  }
+
 
   const handleSubmit = async () => {
     const token = localStorage.getItem("token");
 
-    const formData = new FormData();
+    const adatok = {
 
-    formData.append("title", title);
-    formData.append("content", content);
-    formData.append("category_id", catId);
-    formData.append("img", image);
+      title: title,
+      category_id: catId ,
+      content: content,
+      img: image
+
+    }
+
+    console.log(adatok)
 
     const res = await fetch("http://localhost:3000/api/insert", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json"
       },
-      body: formData,
+      body: JSON.stringify(adatok),
     });
 
     const data = await res.json();
@@ -46,7 +68,7 @@ function CreateTopic() {
       <input
         type="file"
         className="form-control mb-3"
-        onChange={(e) => setImage(e.target.files[0])}
+        onChange={(e) => convertToBase64(e.target.files[0])}
       />
 
       <Editor
