@@ -99,6 +99,9 @@ function TopicEditor() {
           height: 500,
           menubar: false,
           plugins: ["lists", "link", "image", "table", "code"],
+          images_upload_url: 'http://localhost:3000/upload',
+          automatic_uploads: true,
+          images_reuse_filename: true,
           toolbar:
             "undo redo | bold italic underline | alignleft aligncenter alignright | bullist numlist | table | code"
         }}

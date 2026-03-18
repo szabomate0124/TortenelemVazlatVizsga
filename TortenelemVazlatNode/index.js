@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const { randomUUID } = require("crypto"); 
 const fs = require("fs");
 const path = require("path"); 
+const multer = require('multer'); 
 
 
 const app = express();
@@ -25,6 +26,29 @@ const connection = mysql.createConnection({
   port: process.env.DB_PORT
 });
 
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, '../Torivazlatkepek/'); 
+    },
+    filename: function (req, file, cb) {
+        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+        cb(null, uniqueSuffix + path.extname(file.originalname));
+    }
+});
+
+const upload = multer({ 
+    storage: storage,
+    limits: { fileSize: 5 * 1024 * 1024 }, 
+    fileFilter: (req, file, cb) => {
+        console.log(file)
+        console.log(req)
+        if (file.mimetype.startsWith('image/')) {
+            cb(null, true);
+        } else {
+            cb(new Error('Csak képfájlok engedélyezettek!'));
+        }
+    }
+});
 
 
 
@@ -86,6 +110,17 @@ app.get("/api/search", (req, res) => {
   });
 
 });
+
+app.post('/upload', upload.single('file'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).json({ error: 'Nincs fájl kiválasztva' });
+    }
+
+    const fileUrl = `http://localhost:${PORT}/Torivazlatkepek/${req.file.filename}`;
+    
+    res.json({ location: fileUrl });
+});
+
 
 //új téma hozzáadása
 // a category_id-t ugyanúgy a weboldalról szürje ne az adminnak kelljen megadnia

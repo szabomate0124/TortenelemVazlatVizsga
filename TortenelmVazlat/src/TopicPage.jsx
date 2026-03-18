@@ -76,7 +76,6 @@ function TopicPage() {
       </div>
 
       <Container className="my-5 text-center">
-        {/* --- Új téma létrehozása gomb adminoknak --- */}
         {isAdmin() && (
           <div className="create-topic-wrapper mb-4">
             <button
