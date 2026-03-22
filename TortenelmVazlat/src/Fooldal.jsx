@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import card1 from "./assets/card1.jpg";
 import card2 from "./assets/card2.jpg";
@@ -39,13 +39,12 @@ function Fooldal() {
     { title: "Érdekességek", image: card6, slug: "erdekessegek" },
   ];
 
-  function search(){
-      navigate("/searchResults/" + keywords)
+  function search() {
+    navigate("/searchResults/" + keywords);
   }
 
   return (
     <>
-     
       <div className="slogen-box">
         <div className="slogen-overlay text-center">
           <div>
@@ -55,8 +54,14 @@ function Fooldal() {
             </p>
 
             <Form className="search-box">
-              <Form.Control onChange={(e)=>setKeywords(e.target.value)} value={keywords} placeholder="Keresés..." />
-              <Button onClick={search} className="btn-filled-custom">Keresés</Button>
+              <Form.Control
+                onChange={(e) => setKeywords(e.target.value)}
+                value={keywords}
+                placeholder="Keresés..."
+              />
+              <Button onClick={search} className="btn-filled-custom">
+                Keresés
+              </Button>
             </Form>
           </div>
         </div>
@@ -87,7 +92,10 @@ function Fooldal() {
             <Col md={4} className="mb-3">
               <h5>Rólunk</h5>
               <p className="text-light-50">
-                Törivázlat – tanuláshoz, felkészüléshez és érdekességekhez.
+                A Törivázlat célja, hogy a történelem tanulása gyorsabb,
+                átláthatóbb és élvezhetőbb legyen. Gondosan rendszerezett
+                tananyagokkal, vizsgafelkészítő tartalmakkal és hasznos
+                segédanyagokkal támogatjuk a tanulást.
               </p>
             </Col>
 
@@ -96,25 +104,43 @@ function Fooldal() {
               <ul className="list-unstyled">
                 <li>
                   <i className="bi bi-book me-2"></i>
-                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}
+                  >
                     Egyetemes történelem
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-book-half me-2"></i>
-                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.magyar}`)}>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate(`/tema/${categoryMap.magyar}`)}
+                  >
                     Magyar történelem
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-pencil-square me-2"></i>
-                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.segedanyagok}`)}>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() =>
+                      navigate(`/tema/${categoryMap.segedanyagok}`)
+                    }
+                  >
                     Segédanyagok
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-journal-check me-2"></i>
-                  <span className="footer-link" style={{ cursor: "pointer" }} onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}>
+                  <span
+                    className="footer-link"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}
+                  >
                     Érettségi
                   </span>
                 </li>
@@ -124,8 +150,12 @@ function Fooldal() {
             <Col md={4} className="mb-3">
               <h5>Kövess minket</h5>
               <div className="d-flex gap-3 mt-2">
-                <a href="#" className="footer-icon"><i className="bi bi-facebook"></i></a>
-                <a href="#" className="footer-icon"><i className="bi bi-instagram"></i></a>
+                <a href="#" className="footer-icon">
+                  <i className="bi bi-facebook"></i>
+                </a>
+                <a href="#" className="footer-icon">
+                  <i className="bi bi-instagram"></i>
+                </a>
               </div>
             </Col>
           </Row>
@@ -135,7 +165,8 @@ function Fooldal() {
           <Row>
             <Col className="text-center">
               <small className="text-light-50">
-                © {new Date().getFullYear()} Törivázlat – Holczman József, Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
+                © {new Date().getFullYear()} Törivázlat – Holczman József,
+                Zsupos Dominik, Szabó Máté – Minden jog fenntartva.
               </small>
             </Col>
           </Row>
