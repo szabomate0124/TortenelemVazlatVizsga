@@ -31,7 +31,6 @@ export default function SearchResults() {
 
   }, [keywords]);
 
-
   if (error) {
     return (
       <Container className="my-5 text-center">
@@ -72,7 +71,9 @@ export default function SearchResults() {
 
                 <button
                   className="open-button mt-auto"
-                  onClick={() => navigate(`/topic/1/${talalat.id}`)}
+                  onClick={() =>
+                    navigate(`/topic/${talalat.category_id}/${talalat.id}`)
+                  }
                 >
                   Megnyitás
                 </button>

@@ -89,11 +89,13 @@ function TopicPage() {
         )}
 
         <Row className="g-4">
-          {topics.map((topic, index) => {
-            const topicId = topic.id ?? index + 1;
+          {topics.map((topic) => {
+            if (!topic.id) return null;
+
             return (
-              <Col md={4} sm={6} xs={12} key={topicId}>
+              <Col md={4} sm={6} xs={12} key={topic.id}>
                 <Card className="topic-card h-100">
+
                   {topic.img && (
                     <Card.Img
                       variant="top"
@@ -101,18 +103,26 @@ function TopicPage() {
                       alt={topic.title}
                     />
                   )}
+
                   <Card.Body className="d-flex flex-column">
-                    <Card.Title>{topic.title || "Névtelen téma"}</Card.Title>
-                    <p className="card-text">{topic.description || ""}</p>
+                    <Card.Title>
+                      {topic.title || "Névtelen téma"}
+                    </Card.Title>
+
+                    <p className="card-text">
+                      {topic.description || ""}
+                    </p>
+
                     <button
                       className="open-button mt-auto"
                       onClick={() =>
-                        navigate(`/topic/${categoryId}/${topicId}`)
+                        navigate(`/topic/${categoryId}/${topic.id}`)
                       }
                     >
                       Megnyitás
                     </button>
                   </Card.Body>
+
                 </Card>
               </Col>
             );
