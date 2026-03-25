@@ -4,6 +4,7 @@ import { Editor } from "@tinymce/tinymce-react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
+import "./topicEditor.css";
 
 function TopicEditor() {
   const { catId, tpcId } = useParams();
@@ -80,40 +81,48 @@ function TopicEditor() {
   }
 
   return (
-    <Container className="my-5">
-      <h2>Téma szerkesztése</h2>
+    <Container className="my-5 topic-editor-container">
+      <div className="topic-editor-box">
 
-      <input
-        type="text"
-        className="form-control mb-3"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        placeholder="Téma címe"
-      />
+        <h2 className="editor-title">Téma szerkesztése</h2>
 
-      <Editor
-        apiKey="umbatoq91wae4ignquxjlhkaxl11r4e4t5bhrkwkdhkspqmn"
-        value={content}
-        onEditorChange={(newValue) => setContent(newValue)}
-        init={{
-          height: 500,
-          menubar: false,
-          plugins: ["lists", "link", "image", "table", "code"],
-          images_upload_url: 'http://localhost:3000/upload',
-          automatic_uploads: true,
-          images_reuse_filename: true,
-          toolbar:
-            "undo redo | bold italic underline | alignleft aligncenter alignright | bullist numlist | table | code"
-        }}
-      />
+        <input
+          type="text"
+          className="form-control mb-3 editor-input"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Téma címe"
+        />
 
-      <Button
-        className="btn-filled-custom mt-3"
-        onClick={handleSave}
-        disabled={saving}
-      >
-        {saving ? "Mentés..." : "Mentés"}
-      </Button>
+        <div className="editor-wrapper">
+          <Editor
+            apiKey="umbatoq91wae4ignquxjlhkaxl11r4e4t5bhrkwkdhkspqmn"
+            value={content}
+            onEditorChange={(newValue) => setContent(newValue)}
+            init={{
+              height: 500,
+              menubar: false,
+              plugins: ["lists", "link", "image", "table", "code"],
+              images_upload_url: 'http://localhost:3000/upload',
+              automatic_uploads: true,
+              images_reuse_filename: true,
+              toolbar:
+                "undo redo | bold italic underline | alignleft aligncenter alignright | bullist numlist | table | code"
+            }}
+          />
+        </div>
+
+        <div className="editor-actions">
+          <Button
+            className="btn-filled-custom"
+            onClick={handleSave}
+            disabled={saving}
+          >
+            {saving ? "Mentés..." : "Mentés"}
+          </Button>
+        </div>
+
+      </div>
     </Container>
   );
 }

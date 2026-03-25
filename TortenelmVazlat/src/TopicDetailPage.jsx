@@ -16,6 +16,16 @@ function TopicDetailPage() {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  const handleDelete = () => {
+    const confirmDelete = window.confirm("Biztosan törölni szeretnéd ezt a témát?");
+
+    if (!confirmDelete) return;
+
+    console.log("Téma törlése:", tpcId);
+
+    navigate(-1);
+  };
+
   useEffect(() => {
     if (!catId || !tpcId) {
       setError(true);
@@ -68,12 +78,21 @@ function TopicDetailPage() {
         <h1>{topic.title}</h1>
 
         {isAdmin() && (
-          <Button
-            className="btn-filled-custom mb-4"
-            onClick={() => navigate(`/topicEditor/${catId}/${tpcId}`)}
-          >
-            Téma szerkesztése
-          </Button>
+          <div className="mb-4">
+            <Button
+              className="btn-filled-custom me-2"
+              onClick={() => navigate(`/topicEditor/${catId}/${tpcId}`)}
+            >
+              Téma szerkesztése
+            </Button>
+
+            <Button
+              className="btn-filled-custom danger"
+              onClick={handleDelete}
+            >
+              Téma törlése
+            </Button>
+          </div>
         )}
 
         <div
