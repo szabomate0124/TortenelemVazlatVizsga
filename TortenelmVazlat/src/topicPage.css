@@ -1,3 +1,6 @@
+/* =====================
+   ROOT VARIABLES
+===================== */
 :root {
   --primary-dark: #2f3c4f;
   --primary-dark-deep: #1f2935;
@@ -13,32 +16,38 @@
     var(--gold-dark)
   );
 
-  --text-light: #f5f5f5; 
+  --text-light: #f5f5f5;
   --text-dark: #222;
 
   --font-display: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;
 
-  --section-spacing: 6rem;
-  --radius-lg: 20px; 
-  --radius-md: 12px;
+  --section-spacing: 5rem;
+  --radius-lg: 18px;
+  --radius-md: 10px;
 
   --transition-fast: 0.25s ease;
-  --transition-smooth: 0.45s cubic-bezier(.2,.8,.2,1);
+  --transition-smooth: 0.4s cubic-bezier(.2,.8,.2,1);
 }
 
+/* =====================
+   BASE
+===================== */
 body {
   font-family: var(--font-body);
   background:
-    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.6), transparent 60%),
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.5), transparent 60%),
     url("./assets/paperstylebackground.png") center / cover no-repeat fixed;
   color: var(--text-dark);
   line-height: 1.7;
 }
 
+/* =====================
+   HEADER
+===================== */
 .portfolio-header {
   position: relative;
-  min-height: 600px;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,14 +73,13 @@ body {
   position: relative;
   z-index: 1;
   max-width: 700px;
-  text-align: left;
   color: white;
   padding: 2rem;
 }
 
 .header-overlay h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
   color: white;
 }
 
@@ -80,75 +88,35 @@ body {
   margin-top: 1rem;
 }
 
+/* =====================
+   BUTTONS
+===================== */
 .create-topic-button {
-  font-size: 2.5rem;
-  width: 70px;
-  height: 70px;
+  font-size: 2.2rem;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   border: none;
   background: var(--gold-gradient);
   color: var(--primary-dark-deep);
   cursor: pointer;
-
   transition: var(--transition-fast);
 }
 
 .create-topic-button:hover {
   transform: translateY(-3px) scale(1.05);
-}
-
-.topic-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  transition: all var(--transition-smooth);
-}
-
-.topic-card:hover {
-  transform: translateY(-10px) scale(1.02);
-}
-
-.topic-card img {
-  width: 100%;
-  height: 260px; 
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.topic-card:hover img {
-  transform: scale(1.08);
-}
-
-.topic-card .card-body {
-  position: absolute; 
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  padding: 1.5rem;
-
-  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
-  color: white;
-}
-
-.topic-card .card-title {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  color: white;
-}
-
-.topic-card .card-text {
-  color: rgba(255,255,255,0.8);
+  filter: brightness(1.05);
 }
 
 .open-button {
-  margin-top: 1rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 999px; 
+  margin-top: 0.8rem;
+  align-self: flex-start;
+
+  padding: 0.5rem 1.3rem;
+  border-radius: 999px;
   border: none;
   font-weight: 600;
+  font-size: 0.9rem;
 
   background: var(--gold-gradient);
   color: var(--primary-dark-deep);
@@ -158,23 +126,96 @@ body {
 
 .open-button:hover {
   transform: translateY(-2px);
+  filter: brightness(1.05);
 }
 
 .back-button {
   color: var(--primary-gold);
   cursor: pointer;
   font-weight: 500;
+  transition: var(--transition-fast);
 }
 
 .back-button:hover {
   transform: translateX(-3px);
 }
 
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* =====================
+   TOPIC CARDS (FIXED)
+===================== */
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  transition: var(--transition-smooth);
 }
 
+.topic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.topic-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* BODY */
+.topic-card .card-body {
+  background: white;
+  padding: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* TITLE */
+.topic-card .card-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+  transition: var(--transition-fast);
+}
+
+/* TEXT */
+.topic-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* HOVER EFFECT */
+.topic-card:hover .card-title {
+  color: var(--primary-gold);
+}
+
+/* =====================
+   ANIMATIONS
+===================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
 @media (max-width: 768px) {
   .portfolio-header {
     min-height: 420px;
@@ -185,6 +226,6 @@ body {
   }
 
   .topic-card img {
-    height: 200px;
+    height: 180px;
   }
 }
