@@ -16,15 +16,32 @@ function TopicDetailPage() {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const handleDelete = () => {
-    const confirmDelete = window.confirm("Biztosan törölni szeretnéd ezt a témát?");
+ const handleDelete = async () => {
+  const confirmDelete = window.confirm("Biztosan törölni szeretnéd ezt a témát?");
+  if (!confirmDelete) return;
 
-    if (!confirmDelete) return;
+  try {
+    const token = localStorage.getItem("token");
 
-    console.log("Téma törlése:", tpcId);
+    const res = await fetch(`http://localhost:3000/api/topics/${catId}/${tpcId}`, {
+      method: "DELETE",
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    });
 
+    if (!res.ok) {
+      throw new Error("Hiba törlés közben");
+    }
+
+    alert("Sikeres törlés!");
     navigate(-1);
-  };
+
+  } catch (err) {
+    console.error(err);
+    alert("Nem sikerült törölni");
+  }
+};
 
   useEffect(() => {
     if (!catId || !tpcId) {

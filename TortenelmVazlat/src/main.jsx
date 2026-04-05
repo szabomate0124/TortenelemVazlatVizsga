@@ -16,8 +16,11 @@ import AdminRoute from './AdminRoute'
 
 import { AuthProvider } from "./AuthContext"
 import SearchResults from './SearchResults'
-
 import CreateTopic from './CreateTopic'
+
+import AdminDashboard from './AdminDashboard'
+import UserEditor from './UserEditor'
+import AllTopic from './allTopic'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -34,6 +37,33 @@ createRoot(document.getElementById('root')).render(
             <Route path="/tema/:categoryId" element={<TopicPage />} />
             <Route path="/topic/:catId/:tpcId" element={<TopicDetailPage />} />
             <Route path="/searchResults/:keywords" element={<SearchResults />} />
+
+            <Route
+              path="/adminDashboard"
+              element={
+                <AdminRoute>
+                  <AdminDashboard />
+                </AdminRoute>
+              }
+            />
+
+            <Route
+              path="/userEditor"
+              element={
+                <AdminRoute>
+                  <UserEditor />
+                </AdminRoute>
+              }
+            />
+
+            <Route
+              path="/allTopic"
+              element={
+                <AdminRoute>
+                  <AllTopic />
+                </AdminRoute>
+              }
+            />
 
             <Route 
               path="/topicEditor/:catId/:tpcId"

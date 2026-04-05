@@ -1,15 +1,15 @@
-import { Outlet, useNavigate } from "react-router-dom";
-import { useContext } from "react"; 
-import { AuthContext } from "./AuthContext"; 
+import { Outlet, useNavigate, Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "./AuthContext";
 import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import "./Layout.css"; 
+import "./Layout.css";
 
 function Layout() {
   const navigate = useNavigate();
-  const { user, logout } = useContext(AuthContext); 
+  const { user, logout } = useContext(AuthContext);
 
   const categoryMap = {
     egyetemes: 1,
@@ -33,16 +33,22 @@ function Layout() {
           <Navbar.Collapse id="main-navbar">
             <Nav className="mx-auto navbar-links">
               <Nav.Link onClick={() => navigate("/")}>Kezdőlap</Nav.Link>
-              <Nav.Link onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}>
+              <Nav.Link
+                onClick={() => navigate(`/tema/${categoryMap.egyetemes}`)}
+              >
                 Egyetemes történelem
               </Nav.Link>
               <Nav.Link onClick={() => navigate(`/tema/${categoryMap.magyar}`)}>
                 Magyar történelem
               </Nav.Link>
-              <Nav.Link onClick={() => navigate(`/tema/${categoryMap.segedanyagok}`)}>
+              <Nav.Link
+                onClick={() => navigate(`/tema/${categoryMap.segedanyagok}`)}
+              >
                 Segédanyagok
               </Nav.Link>
-              <Nav.Link onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}>
+              <Nav.Link
+                onClick={() => navigate(`/tema/${categoryMap.erettsegi}`)}
+              >
                 Érettségi
               </Nav.Link>
             </Nav>
@@ -52,9 +58,20 @@ function Layout() {
                 <>
                   <div className="user-profile-container">
                     <span className="username-display">{user.username}</span>
+
+                    {user?.auth_id === 1 && (
+                      <Link to="/adminDashboard" className="username-display">
+                        Admin szerkesztő
+                      </Link>
+                    )}
+
                     <div className="profile-popup">
-                      <p><strong>Felhasználónév:</strong> {user.username}</p>
-                      <p><strong>Email:</strong> {user.email}</p>
+                      <p>
+                        <strong>Felhasználónév:</strong> {user.username}
+                      </p>
+                      <p>
+                        <strong>Email:</strong> {user.email}
+                      </p>
                     </div>
                   </div>
 

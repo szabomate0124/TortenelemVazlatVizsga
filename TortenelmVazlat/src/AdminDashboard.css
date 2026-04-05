@@ -1,0 +1,40 @@
+.admin-dashboard {
+  min-height: 80vh;
+}
+
+.dashboard-title {
+  font-family: var(--font-display);
+  color: var(--primary-dark);
+  letter-spacing: 1px;
+}
+
+.admin-card {
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-smooth);
+  background: #fff;
+  cursor: pointer;
+}
+
+.admin-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.admin-card .card-title {
+  font-family: var(--font-display);
+  color: var(--primary-dark-deep);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-card .card-text {
+  color: #555;
+  line-height: 1.4;
+}
+
+.admin-card .btn-filled-custom {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
