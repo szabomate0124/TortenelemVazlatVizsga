@@ -1,22 +1,26 @@
 :root {
   --primary-dark: #2f3c4f;
+  --primary-dark-deep: #1f2935;
   --primary-gold: #c6a173;
   --gold-light: #e4c79d;
   --gold-dark: #a88457;
   --gold-gradient: linear-gradient(135deg, var(--gold-light), var(--primary-gold), var(--gold-dark));
   --text-light: #f5f5f5;
   --text-dark: #222;
-  --radius-lg: 16px;
-  --radius-md: 8px;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --radius-lg: 20px;
+  --radius-md: 12px;
   --transition-fast: 0.25s ease;
+  --transition-smooth: 0.45s cubic-bezier(.2,.8,.2,1);
 }
 
 .user-card-container {
-  padding: 2rem 0;
+  padding: var(--section-spacing, 6rem) 0;
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-display);
   font-size: 2rem;
   color: var(--primary-dark);
   margin-bottom: 2rem;
@@ -26,8 +30,10 @@ h2 {
 .user-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
   cursor: default;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .user-card:hover {
@@ -43,7 +49,7 @@ h2 {
 }
 
 .user-card .card-title {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-display);
   font-size: 1.5rem;
   color: var(--primary-dark);
 }
@@ -60,7 +66,7 @@ h2 {
   border-radius: 999px;
   padding: 0.6rem 1rem;
   text-transform: uppercase;
-  transition: all 0.25s ease;
+  transition: all var(--transition-fast);
 }
 
 .user-card .d-flex button:hover {
@@ -87,10 +93,11 @@ h2 {
   border: none;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
   .user-card .d-flex {
     flex-direction: column;
+    gap: 0.5rem;
   }
   
   .user-card .d-flex button {

@@ -4,20 +4,28 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import "./UserEditor.css"; 
+import "./UserEditor.css";
 
 export default function UserEditor() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const token = localStorage.getItem("token"); // JWT token tárolva a bejelentkezéskor
+
   const fetchUsers = () => {
-    fetch("http://localhost:3000/api/allUsers")
+    fetch("http://localhost:3000/api/allUsers", {
+      headers: { Authorization: `Bearer ${token}` },
+    })
       .then((res) => res.json())
       .then((data) => {
         const sorted = data.sort((a, b) =>
-          a.username.localeCompare(b.username, undefined, { sensitivity: 'base' })
+          a.username.localeCompare(b.username, undefined, { sensitivity: "base" })
         );
         setUsers(sorted);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
         setLoading(false);
       });
   };
@@ -28,16 +36,26 @@ export default function UserEditor() {
 
   const toggleAdmin = async (userId, currentRole) => {
     const newRole = currentRole === 1 ? 2 : 1;
+
     try {
-      await fetch(`http://localhost:3000/api/users/${userId}/role`, {
+      const res = await fetch(`http://localhost:3000/api/users/${userId}/role`, {
         method: "PUT",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
         body: JSON.stringify({ auth_id: newRole }),
       });
-      fetchUsers(); // frissítjük a listát
+
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.error || "Hiba történt a jogosultság módosításakor");
+      }
+
+      fetchUsers();
     } catch (err) {
       console.error(err);
-      alert("Hiba történt a jogosultság módosításakor!");
+      alert(err.message);
     }
   };
 
@@ -45,13 +63,22 @@ export default function UserEditor() {
     if (!window.confirm("Biztosan törölni szeretnéd a felhasználót?")) return;
 
     try {
-      await fetch(`http://localhost:3000/api/users/${userId}`, {
+      const res = await fetch(`http://localhost:3000/api/users/${userId}`, {
         method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       });
-      fetchUsers(); // frissítjük a listát
+
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.error || "Hiba történt a törlés során");
+      }
+
+      fetchUsers();
     } catch (err) {
       console.error(err);
-      alert("Hiba történt a törlés során!");
+      alert(err.message);
     }
   };
 
@@ -77,10 +104,7 @@ export default function UserEditor() {
                   >
                     {user.auth_id === 1 ? "Admin eltávolítása" : "Admin jog hozzáadása"}
                   </Button>
-                  <Button
-                    variant="danger"
-                    onClick={() => deleteUser(user.id)}
-                  >
+                  <Button variant="danger" onClick={() => deleteUser(user.id)}>
                     Profil törlése
                   </Button>
                 </div>
