@@ -271,6 +271,53 @@ app.delete("/api/topics/:catId/:tpcId", authenticateToken, (req, res) => {
 });
 
 
+app.put("/api/users/:id/role", authenticateToken, (req, res) => {
+  const userId = req.params.id;
+  const { auth_id } = req.body;
+
+  if (req.user.auth_id !== 1) {
+    return res.status(403).json({ error: "Nincs jogosultság" });
+  }
+
+  const sql = "UPDATE users SET auth_id = ? WHERE id = ?";
+  connection.query(sql, [auth_id, userId], (err, results) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Adatbázis hiba" });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({ error: "Nem található a felhasználó" });
+    }
+
+    res.json({ message: "Jogosultság módosítva" });
+  });
+});
+
+
+app.delete("/api/users/:id", authenticateToken, (req, res) => {
+  const userId = req.params.id;
+
+  if (req.user.auth_id !== 1) {
+    return res.status(403).json({ error: "Nincs jogosultság" });
+  }
+
+  const sql = "DELETE FROM users WHERE id = ?";
+  connection.query(sql, [userId], (err, results) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Adatbázis hiba" });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({ error: "Nem található a felhasználó" });
+    }
+
+    res.json({ message: "Felhasználó törölve" });
+  });
+});
+
+
 
 app.listen(PORT, () => {
   console.log(`Szerver fut a http://localhost:${PORT} címen`)
