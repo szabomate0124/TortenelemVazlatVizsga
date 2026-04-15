@@ -199,6 +199,16 @@ app.post("/api/login", (req, res) => {
             return res.status(401).json({ error: "Helytelen email vagy jelszó" });
         }
 
+        const ip = req.ip || req.socket.remoteAddress; // IP cím lekérése
+        const logSql = "INSERT INTO loginlog (users_id, ip_address) VALUES (?, ?)";
+        
+        connection.query(logSql, [user.id, ip], (logErr) => {
+            if (logErr) {
+                console.error("Nem sikerült a naplózás:", logErr);
+            }
+        });
+
+
         const token = jwt.sign(
           { id: user.id, username: user.username, email: user.email, auth_id: user.auth_id },
           SECRET_KEY,
@@ -225,24 +235,46 @@ const authenticateToken = (req, res, next) => {
 app.put("/api/topics/:catId/:tpcId", authenticateToken, (req, res) => {
   const { catId, tpcId } = req.params;
   const { title, content } = req.body;
+  const userId = req.user.id;
+
 
   if (req.user.auth_id !== 1) {
     return res.status(403).json({ error: "Nincs jogosultság" });
   }
 
-  const sql = ` UPDATE topics SET title = ?, content = ? WHERE id = ? AND category_id = ?`;
-
-  connection.query(sql, [title, content, tpcId, catId], (err, results) => {
-    if (err) {
-      console.error(err);
-      return res.status(500).json({ error: "Adatbázis hiba" });
+  const selectSql = "SELECT title, content FROM topics WHERE id = ?";
+  
+  connection.query(selectSql, [tpcId], (err, oldResults) => {
+    if (err || oldResults.length === 0) {
+      return res.status(404).json({ error: "A téma nem található" });
     }
 
-    if (results.affectedRows === 0) {
-      return res.status(404).json({ error: "Nem található a téma" });
-    }
+    const oldData = oldResults[0];
+    const changesDescription = `Módosítva: [Cím: ${oldData.title} -> ${title}], [Tartalom hossza: ${oldData.content.length} -> ${content.length}]`;
 
-    res.json({ message: "Sikeres módosítás" });
+ 
+    const updateTopicSql = `UPDATE topics SET title = ?, content = ? WHERE id = ? AND category_id = ?`;
+
+    connection.query(updateTopicSql, [title, content, tpcId, catId], (updateErr, results) => {
+      if (updateErr) {
+        console.error(updateErr);
+        return res.status(500).json({ error: "Adatbázis hiba a módosításkor" });
+      }
+
+      if (results.affectedRows === 0) {
+        return res.status(404).json({ error: "Nem található a téma" });
+      }
+
+      const logSql = `INSERT INTO \`update\` (changes, topics_id, users_id) VALUES (?, ?, ?)`;
+      
+      connection.query(logSql, [changesDescription, tpcId, userId], (logErr) => {
+        if (logErr) {
+          console.error("Naplózási hiba:", logErr);
+        }
+        
+        res.json({ message: "Sikeres módosítás és naplózás" });
+      });
+    });
   });
 });
 
