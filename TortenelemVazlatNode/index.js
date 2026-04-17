@@ -48,9 +48,13 @@ const upload = multer({
     }
 });
 
-app.get("/api/allUsers", (req,res) =>{ connection.query("SELECT * FROM users", (err, results) => { if (err) { console.error(err); return res.status(500).json({ error: "Adatbázis hiba" }); } res.json(results); }); } )
+app.get("/api/allUsers", (req,res) =>{ connection.query("SELECT * FROM users", (err, results) => { if (err) { return res.status(500).json({ error: "Adatbázis hiba" }); } res.json(results); }); } )
     
-app.get("/api/allCategory", (req, res) =>{ connection.query("SELECT * FROM topics", (err, results)=>{ return res.status(200).json(results) }) })
+app.get("/api/allCategory", (req, res) =>{
+  connection.query("SELECT * FROM topics", (err, results)=>{ 
+  if(err){
+  return res.status(500).json({error: "Adatbázis hiba"})
+} return res.json(results) }) })
 
 
 app.get('/api/topicsByCategory/:id', (req, res)=>{
