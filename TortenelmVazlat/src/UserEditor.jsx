@@ -19,7 +19,9 @@ export default function UserEditor() {
       .then((res) => res.json())
       .then((data) => {
         const sorted = data.sort((a, b) =>
-          a.username.localeCompare(b.username, undefined, { sensitivity: "base" })
+          a.username.localeCompare(b.username, undefined, {
+            sensitivity: "base",
+          }),
         );
         setUsers(sorted);
         setLoading(false);
@@ -38,18 +40,23 @@ export default function UserEditor() {
     const newRole = currentRole === 1 ? 2 : 1;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/users/${userId}/role`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
+      const res = await fetch(
+        `http://localhost:3000/api/users/${userId}/role`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ auth_id: newRole }),
         },
-        body: JSON.stringify({ auth_id: newRole }),
-      });
+      );
 
       if (!res.ok) {
         const err = await res.json();
-        throw new Error(err.error || "Hiba történt a jogosultság módosításakor");
+        throw new Error(
+          err.error || "Hiba történt a jogosultság módosításakor",
+        );
       }
 
       fetchUsers();
@@ -95,14 +102,23 @@ export default function UserEditor() {
                 <Card.Title>{user.username}</Card.Title>
                 <Card.Text>
                   Email: {user.email} <br />
-                  Jogosultság: {user.auth_id === 1 ? "Admin" : "Felhasználó"}
+                  Jogosultság: {user.auth_id === 1
+                    ? "Admin"
+                    : "Felhasználó"}{" "}
+                  <br />
+                  Utolsó belépés:{" "}
+                  {user.last_login
+                    ? new Date(user.last_login).toLocaleString()
+                    : "Még nem lépett be"}
                 </Card.Text>
                 <div className="d-flex gap-2 mt-2">
                   <Button
                     variant={user.auth_id === 1 ? "secondary" : "warning"}
                     onClick={() => toggleAdmin(user.id, user.auth_id)}
                   >
-                    {user.auth_id === 1 ? "Admin eltávolítása" : "Admin jog hozzáadása"}
+                    {user.auth_id === 1
+                      ? "Admin eltávolítása"
+                      : "Admin jog hozzáadása"}
                   </Button>
                   <Button variant="danger" onClick={() => deleteUser(user.id)}>
                     Profil törlése
